@@ -4,11 +4,11 @@
         background-image: url("../images/Homepage/Main-Banner@2x.jpg");
         background-position: center;
         background-size: cover;
-        font-family: Poppins;
         .container{
             max-width: 820px;
         }
         .title{
+            font-family: Poppins;
             font-size: 32px;
             font-weight: bold;
             font-style: normal;
@@ -16,9 +16,14 @@
             line-height: 1.13;
             letter-spacing: normal;
             color: $white;
+            margin-bottom: 20px;
         }
-        .subtitle{
-            margin: 3rem 0 3.5rem;
+        .sub-title{
+            font-family: Poppins;
+            font-size: 18px;
+            font-weight: 500;
+            color: $white;
+            margin-bottom: 40px;
         }
         .search-wrapper{
             background: $white;
@@ -77,14 +82,15 @@
                 font-size: 11px;
                 font-weight: bold;
                 color: $charcoal-grey-60-p;
-                margin: .25rem 3rem;
+                margin: .25rem 3rem 0;
+                text-transform: uppercase;
             }
             .sort{
                 font-family: Poppins;
                 font-size: 32px;
                 font-weight: bold;
                 color: $charcoal-grey;
-                margin: .25rem 3rem;
+                margin: 0 3rem .25rem;
             }
             .cards-w{
                 margin: 1.5rem 0;
@@ -121,6 +127,7 @@
                             font-family: Karla;
                             font-size: 14px;
                             font-weight: bold;
+                            letter-spacing: 0.4px;
                             color: $charcoal-grey-60-p;
                         }
                         .description{
@@ -147,7 +154,21 @@
                                     font-size: 16px;
                                     font-weight: bold;
                                     color: $charcoal-grey;
-                                    margin-right: 1.5rem;
+                                }
+                                .text::after{
+                                    content: "";
+                                    display: block;
+                                    float: right;
+                                    background: url(../images/right_arrow.png) no-repeat;
+                                    background-position: center;
+                                    background-size: cover;
+                                    width: 25px;
+                                    height: 25px;
+                                    margin-left: 1rem;                                    
+                                    transition: all 0.5s ease;
+                                }
+                                .text:hover:after{
+                                    margin-left: 2rem;
                                 }
                             }
                             .button{
@@ -166,6 +187,16 @@
                 font-size: 16px;
                 color: $cerise;
             }
+            .show-all-action:after{
+                content: "\f054";
+                font-weight: 900;
+                font-family: "Font Awesome 5 Free";
+                margin-left: 1rem;
+                transition: all 0.5s ease;
+            }
+            .show-all-action:hover:after{
+                margin-left: 2rem;
+            }
         }
     }
     .set-up-listing-section{
@@ -173,7 +204,7 @@
         padding: 2rem 1rem;
         .set-up-listing-w{
             height: 350px;
-            padding: 3.75rem 2.75rem;
+            padding: 3.75rem 2.5rem;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -189,7 +220,8 @@
                 font-family: Poppins;
                 font-size: 25px;
                 font-weight: 600;
-                color: $charcoal-grey
+                color: $charcoal-grey;
+                margin-bottom: 20px;
             }
             .sub-title{
                 max-width: 550px;
@@ -254,6 +286,16 @@
                     display: flex;
                     align-items: center;
                 }
+                .action-w:after{
+                    content: "\f054";
+                    font-family: "Font Awesome 5 Free";
+                    font-weight: bold;
+                    margin-left: 1rem;
+                    transition: all 0.5s ease;
+                }
+                .action-w:hover:after{
+                    margin-left: 2rem;
+                }
             }
         }
     }
@@ -262,6 +304,11 @@
         padding: 2rem 1rem 7rem;
         .scalable-activations-w{
             height: 350px;
+            padding: 100px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
             .title{
                 margin: 0;
             }

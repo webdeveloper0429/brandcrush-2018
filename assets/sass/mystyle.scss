@@ -35,7 +35,7 @@ $dark: $charcoal-grey;
 
 //change variable
 $navbar-height: 3.75rem;
-
+$dropdown-content-radius: 0px;
 
 @import "../../lib/css/bulma-0.7.1/bulma.sass";
 
@@ -48,6 +48,17 @@ $navbar-height: 3.75rem;
 @font-face { 
     font-family: Poppins; 
     src: url('../fonts/Poppins/Poppins-Regular.ttf'); 
+}
+
+.navbar.is-spaced .navbar-dropdown, .navbar-dropdown.is-boxed{
+    border: none;
+    border-radius: 0;
+    top: 100%;
+    box-shadow: initial;
+}
+.navbar-dropdown a.navbar-item{
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
 }
 
 .search-w{
@@ -91,7 +102,6 @@ $navbar-height: 3.75rem;
     padding: 3.75rem 1rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
     border-radius: 4px;
     background-image: linear-gradient(251deg, #db0a5b, #971b50);
@@ -164,6 +174,7 @@ hr{
                 height: 40px;
                 font-family: Poppins;
                 font-size: 20px;
+                font-weight: 600;
             }
         }
     }
