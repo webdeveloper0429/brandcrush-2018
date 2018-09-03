@@ -1,2 +1,0 @@
-# brandcrush-static
-
