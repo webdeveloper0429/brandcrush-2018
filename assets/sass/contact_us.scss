@@ -1,7 +1,4 @@
 .contact-us-page{
-    .page-heading-w{
-        padding: 4rem 0;
-    }
     .contact-main-section{
         padding: 3rem 0;
         background-color: $pale-grey;
@@ -106,7 +103,8 @@
                     .button{
                         height: 40px;
                         font-family: Poppins;
-                        font-size: 20px;
+                        font-size: 22px;
+                        font-weight: 600;
                     }
                 }
             }

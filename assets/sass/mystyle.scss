@@ -466,7 +466,7 @@ hr{
 }
 .page-heading-section{
     .page-heading-w{
-        padding: 1.5rem 1rem;
+        padding: 5rem 1rem;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -474,7 +474,8 @@ hr{
         background-image: linear-gradient(251deg, #db0a5b, #971b50);
         .title{
             font-family: Poppins;
-            font-size: 28px;
+            font-size: 32px;
+            font-weight: bold;
             text-align: center;
             color: $white;
         }

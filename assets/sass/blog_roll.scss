@@ -1,4 +1,13 @@
 .blog-roll-page{
+    .page-heading-section{
+        .page-heading-w{
+            padding: 1.5rem 0;
+            .title{
+                font-size: 28px;
+                font-weight: normal;
+            }
+        }
+    }
     .banner-section{
         background: linear-gradient(rgba($color: #000000, $alpha: 0.5), rgba($color: #000000, $alpha: 0.5)), url("../images/Homepage/Cards/bruce-mars-554386-unsplash.jpg");
         background-position: center;
