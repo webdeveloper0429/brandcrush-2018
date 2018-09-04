@@ -220,7 +220,10 @@ hr{
                     color: $charcoal-grey-60-p;
                 }
                 .terms-text{
-                    color: $charcoal-grey;
+                    color: $charcoal-grey; 
+                }
+                .terms-text:hover{
+                    text-decoration: underline solid $charcoal-grey;
                 }
             }
             .icons-w{
