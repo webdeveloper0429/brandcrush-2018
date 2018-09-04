@@ -52,13 +52,21 @@
                 text-align: center;
                 color: $charcoal-grey;
                 max-width: 650px;
-                margin: 1rem auto 2rem;
+                margin: 4px auto 2rem;
             }
             .video-w{
                 img{
                     width: 100%;
                     height: auto;
                 }
+            }
+        }
+    }
+    .we-connect-brands-section{
+        background: $pale-grey;
+        .post-body{
+            .post-title{
+                margin: 1rem 0;
             }
         }
     }
