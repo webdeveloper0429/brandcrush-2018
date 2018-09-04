@@ -26,8 +26,24 @@
                     height: 40px;
                     font-family: Poppins;
                     font-size: 20px;
-                    // font-weight: 600;
+                    font-weight: 600;
+                    img{
+                        margin-right: 0.5rem;
+                    }
                 }
+            }
+        }
+    }
+    .why-activate-section{
+        .why-activate-w{
+            border-radius: 0;
+        }
+    }
+    .how-does-it-work-section{
+        background: $pale-grey;
+        .post-body{
+            .post-title{
+                margin: 1rem 0;
             }
         }
     }

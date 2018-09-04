@@ -26,13 +26,18 @@
                     height: 40px;
                     font-family: Poppins;
                     font-size: 20px;
-                    // font-weight: 600;
+                    font-weight: 600;
+                    img{
+                        margin-right: 0.5rem;
+                    }
                 }
             }
         }
-    }    
-    .we-are-here-section{
-        // padding: 0 1rem;
+    }
+    .brandcrush-benefit-section{
+        .brandcrush-benefit-w{
+            border-radius: 0;
+        }
     }
     .brand-activation-section{
         padding: 1rem 1rem;
@@ -45,9 +50,23 @@
                 margin: 3rem auto;
                 display: flex;
                 justify-content: space-between;
-                .button{
+                .tab-btn{
                     width: 200px;
                     height: 34px;
+                    border-radius: 4px;
+                    border: 1px solid $charcoal-grey;
+                    font-family: Karla;
+                    font-size: 14px;
+                    font-weight: bold;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: $charcoal-grey;
+                    cursor: pointer;
+                }
+                .actived-btn{
+                    border: 1px solid $cerise;
+                    color: $cerise;
                 }
             }
             .image-list-w{
