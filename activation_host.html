@@ -20,8 +20,6 @@
             });
             $("#component_footer").load("component_footer.html");
             $("#component_activation_concept").load("component_activation_concept.html");
-            $("#component_activated_by").load("component_activated_by.html");
-            $("#component_step_process").load("component_step_process.html");
         })
     </script>
     <body>
@@ -85,7 +83,128 @@
                     </div>
                 </div>
             </section>
-            <div id="component_activated_by"></div>
+            <section class="activated-by-section">
+                <div class="container">
+                    <div class="activated-by-w">
+                        <div class="title">Activated by:</div>
+                        <div class="button-w">
+                            <div id="activation" class="tab-btn actived-btn">Activation Host</div>
+                            <div id="brand" class="tab-btn">Brand</div>
+                        </div>
+                        <div class="tab_content" id="content_activation">
+                            <hr class="has-background-primary"/>
+                            <div class="main-description">
+                                <b>The Activation Host</b> distributes samples or brand messages for your brand in their space. Save on staff and logistics costs, and activate intimately at scale.
+                            </div>
+                            <hr/>
+                            <div class="item-row">
+                                <div class="columns">
+                                    <div class="column">
+                                        <div class="item-title">Space Type</div>
+                                    </div>
+                                    <div class="column">
+                                        <div class="item-body">
+                                            <div>Physical Retail and Popups</div>
+                                            <div>Online Retail & Subscription Boxes</div>
+                                            <div>Consumer Events & Festivals</div>
+                                            <div>Trade Events & Conferences</div>
+                                            <div>PR Events</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr/>
+                            <div class="item-row">
+                                <div class="columns">
+                                    <div class="column">
+                                        <div class="item-title">Space Position</div>
+                                    </div>
+                                    <div class="column">
+                                        <div class="item-body">
+                                            <div>Gift with Purchase</div>
+                                            <div>Product Demo</div>
+                                            <div>Conter Top</div>
+                                            <div>Mini Bar</div>
+                                            <div>On the Menu</div>
+                                            <div>Goody Bag</div>
+                                            <div>Subscription Box</div>
+                                            <div>Fridge</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr/>
+                            <div class="item-row">
+                                <div class="columns">
+                                    <div class="column">
+                                        <div class="item-title">Activation Report</div>
+                                    </div>
+                                    <div class="column">
+                                        <div class="item-body">
+                                            <div>YES</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr/>
+                        </div>
+                        <div class="tab_content" id="content_brand">
+                            <hr class="has-background-primary"/>
+                            <div class="main-description">
+                                You provide staff to leverage existing foot traffic in a space.
+                            </div>
+                            <hr/>
+                            <div class="item-row">
+                                <div class="columns">
+                                    <div class="column">
+                                        <div class="item-title">Space Type</div>
+                                    </div>
+                                    <div class="column">
+                                        <div class="item-body">
+                                            <div>Physical Retail and Popups</div>
+                                            <div>Online Retail & Subscription Boxes</div>
+                                            <div>Consumer Events & Festivals</div>
+                                            <div>Trade Events & Conferences</div>
+                                            <div>PR Events</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr/>
+                            <div class="item-row">
+                                <div class="columns">
+                                    <div class="column">
+                                        <div class="item-title">Space Position</div>
+                                    </div>
+                                    <div class="column">
+                                        <div class="item-body">
+                                            <div>Booth</div>
+                                            <div>Market Stall</div>
+                                            <div>Street</div>
+                                            <div>Foyer</div>
+                                            <div>Product Demo</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr/>
+                            <div class="item-row">
+                                <div class="columns">
+                                    <div class="column">
+                                        <div class="item-title">Activation Report</div>
+                                    </div>
+                                    <div class="column">
+                                        <div class="item-body">
+                                            <div>NO</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr/>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <section class="how-much-charge-section">
                 <div class="container">
                     <div class="how-much-charge-w">
@@ -244,4 +363,19 @@
             <div id="component_footer"></div>
         </div>
     </body>
+    <script>
+        $(document).ready(function(){
+            $('.tab_content').hide();
+            $('.tab_content:first').show();
+            $('.tab-btn').click(function(){
+                var t = $(this).attr('id');
+                if(!$(this).hasClass('actived-btn')){
+                    $('.tab-btn').removeClass('actived-btn');
+                    $(this).addClass('actived-btn');
+                    $('.tab_content').hide();
+                    $('#content_'+t).fadeIn('slow');
+                }
+            })
+        })
+    </script>
 </html>
