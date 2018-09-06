@@ -43,105 +43,15 @@
                 <div class="container">
                     <div class="faq-main-w">
                         <div class="tab-w">
-                            <div class="tab-btn actived-btn">General</div>
-                            <div class="tab-btn">Brands</div>
-                            <div class="tab-btn">Activation Hosts</div>
-                            <div class="tab-btn">Consumers</div>
+                            <div id="general" class="tab-btn actived-btn">General</div>
+                            <div id="brand" class="tab-btn">Brands</div>
+                            <div id="activation" class="tab-btn">Activation Hosts</div>
+                            <div id="consumer" class="tab-btn">Consumers</div>
                         </div>
-                        <div class="faq-w">
-                            <div class="faq-item-w">
-                                <div class="question">
-                                    What is Brandcrush?
-                                </div>
-                            </div>
-                            <hr/>
-                            <div class="faq-item-w">
-                                <div class="question opened">
-                                    What's a Brand?
-                                </div>
-                                <div class="answer">
-                                    A Brand is any business with a product or message that they want to share with sonsumers.
-                                </div>
-                            </div>
-                            <hr/>
-                            <div class="faq-item-w">
-                                <div class="question">
-                                    What's an Activation?
-                                </div>
-                            </div>
-                            <hr/>
-                            <div class="faq-item-w">
-                                <div class="question">
-                                    What's an Activation Host?
-                                </div>
-                            </div>
-                            <hr/>
-                            <div class="faq-item-w">
-                                <div class="question">
-                                    What is "Gift with Purchases"?
-                                </div>
-                            </div>
-                            <hr/>
-                            <div class="faq-item-w">
-                                <div class="question">
-                                    What is a Pop Up activation?
-                                </div>
-                            </div>
-                            <hr/>
-                            <div class="faq-item-w">
-                                <div class="question">
-                                    What is "Product Reach"?
-                                </div>
-                            </div>
-                            <hr/>
-                            <div class="faq-item-w">
-                                <div class="question">
-                                    Is Brandcrush in all countries?
-                                </div>
-                            </div>
-                            <hr/>
-                            <div class="faq-item-w">
-                                <div class="question">
-                                    How does Brandcrush make money?
-                                </div>
-                            </div>
-                            <hr/>
-                            <div class="faq-item-w">
-                                <div class="question">
-                                    Who executes the activation?
-                                </div>
-                            </div>
-                            <hr/>
-                            <div class="faq-item-w">
-                                <div class="question">
-                                    Who is responsible for activation merchandise & samples?
-                                </div>
-                            </div>
-                            <hr/>
-                            <div class="faq-item-w">
-                                <div class="question">
-                                    What happens if an Activation Host doesn't distribute samples?
-                                </div>
-                            </div>
-                            <hr/>
-                            <div class="faq-item-w">
-                                <div class="question">
-                                    Is Brandcrush cutting out Activation and PR agencies?
-                                </div>
-                            </div>
-                            <hr/>
-                            <div class="faq-item-w">
-                                <div class="question">
-                                    How does Brandcrush monitor Activation Hosts & Product Reach estimates
-                                </div>
-                            </div>
-                            <hr/>
-                            <div class="faq-item-w">
-                                <div class="question">
-                                    How does Brandcrush ensure Activations have been executed?
-                                </div>
-                            </div>
-                        </div>
+                        <div class="faq-w tab_content" id="content_general"></div>
+                        <div class="faq-w tab_content" id="content_brand"></div>
+                        <div class="faq-w tab_content" id="content_activation"></div>
+                        <div class="faq-w tab_content" id="content_consumer"></div>
                     </div>
                 </div>
             </section>
@@ -175,4 +85,103 @@
             <div id="component_footer"></div>
         </div>
     </body>
+    <script>
+        $(document).ready(function(){
+            var generalStr = ''
+            generalArr.map((item)=>{
+                generalStr += `
+                            <div class="faq-item-w">
+                                <div class="question">
+                                    ${item.question}
+                                </div>
+                                <div class="answer">
+                                    <p>
+                                        ${item.answer}
+                                    </p>
+                                </div>
+                            </div>
+                            <hr/>
+                `
+            })
+            $('#content_general').html(generalStr);
+
+            var brandStr = ''
+            brandArr.map((item)=>{
+                brandStr += `
+                            <div class="faq-item-w">
+                                <div class="question">
+                                    ${item.question}
+                                </div>
+                                <div class="answer">
+                                    <p>
+                                        ${item.answer}
+                                    </p>
+                                </div>
+                            </div>
+                            <hr/>
+                `
+            })
+            $('#content_brand').html(brandStr);
+
+            var activationStr = ''
+            activationArr.map((item)=>{
+                activationStr += `
+                            <div class="faq-item-w">
+                                <div class="question">
+                                    ${item.question}
+                                </div>
+                                <div class="answer">
+                                    <p>
+                                        ${item.answer}
+                                    </p>
+                                </div>
+                            </div>
+                            <hr/>
+                `
+            })
+            $('#content_activation').html(activationStr);
+
+            var consumerStr = ''
+            consumerArr.map((item)=>{
+                consumerStr += `
+                            <div class="faq-item-w">
+                                <div class="question">
+                                    ${item.question}
+                                </div>
+                                <div class="answer">
+                                    <p>
+                                        ${item.answer}
+                                    </p>
+                                </div>
+                            </div>
+                            <hr/>
+                `
+            })
+            $('#content_consumer').html(consumerStr);
+
+            ////collapse-start////
+            $('.question').click(function(){
+                $('.question').removeClass('opened');
+                $('.answer').css('height', '0');
+                $(this).addClass('opened');
+                var panel = $(this).next()[0];
+                panel.style.height = panel.scrollHeight + "px";
+            })
+            ////collapse-end////
+            
+            ////tab-start////
+            $('.tab_content').hide();
+            $('.tab_content:first').show();
+            $('.tab-btn').click(function(){
+                var t = $(this).attr('id');
+                if(!$(this).hasClass('actived-btn')){
+                    $('.tab-btn').removeClass('actived-btn');
+                    $(this).addClass('actived-btn');
+                    $('.tab_content').hide();
+                    $('#content_'+t).fadeIn('slow');
+                }
+            })
+            ////tab-end////
+        })
+    </script>
 </html>
