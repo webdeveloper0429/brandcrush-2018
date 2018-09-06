@@ -1,6 +1,6 @@
 .about-brandcrush-page{
     .banner-section{
-        background: linear-gradient(rgba($color: #000000, $alpha: 0.5), rgba($color: #000000, $alpha: 0.5)), url("../images/Homepage/homepage_banner_cutted_2.png");
+        background: linear-gradient(rgba($color: #000000, $alpha: 0.5), rgba($color: #000000, $alpha: 0.5)), url("../images/Homepage/Stocksy_txp829abf37kJ2200_Medium_1205211-cut.jpg");
         background-position: center;
         background-size: cover;
         .hero-body{
@@ -12,6 +12,7 @@
                     font-family: Poppins;
                     font-size: 32px;
                     font-weight: bold;
+                    margin: 3rem;
                 }
                 .subtitle{
                     font-family: Poppins;
@@ -25,7 +26,7 @@
                     height: 40px;
                     font-family: Poppins;
                     font-size: 20px;
-                    // font-weight: 600;
+                    font-weight: 600;
                 }
             }
         }
