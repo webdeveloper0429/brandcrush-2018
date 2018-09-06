@@ -3,7 +3,6 @@
         background: linear-gradient(rgba($color: #000000, $alpha: 0.5), rgba($color: #000000, $alpha: 0.5)), url("../images/Staticpages/Stocksy_txp829abf37kJ2200_Medium_1205144.jpg");
         background-position: center;
         background-size: cover;
-        background-color: rgba($color: #000000, $alpha: 0.5);
         .hero-body{
             .banner-w{
                 display: flex;
@@ -26,8 +25,24 @@
                     height: 40px;
                     font-family: Poppins;
                     font-size: 20px;
-                    // font-weight: 600;
+                    font-weight: 600;
+                    img{
+                        margin-right: 0.5rem;
+                    }
                 }
+            }
+        }
+    }
+    .why-activate-section{
+        .why-activate-w{
+            border-radius: 0;
+        }
+    }
+    .how-does-it-work-section{
+        background: $pale-grey;
+        .post-body{
+            .post-title{
+                margin: 1rem 0;
             }
         }
     }

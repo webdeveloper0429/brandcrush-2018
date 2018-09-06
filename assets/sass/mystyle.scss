@@ -35,7 +35,7 @@ $dark: $charcoal-grey;
 
 //change variable
 $navbar-height: 3.75rem;
-
+$dropdown-content-radius: 0px;
 
 @import "../../lib/css/bulma-0.7.1/bulma.sass";
 
@@ -48,6 +48,17 @@ $navbar-height: 3.75rem;
 @font-face { 
     font-family: Poppins; 
     src: url('../fonts/Poppins/Poppins-Regular.ttf'); 
+}
+
+.navbar.is-spaced .navbar-dropdown, .navbar-dropdown.is-boxed{
+    border: none;
+    border-radius: 0;
+    top: 100%;
+    box-shadow: initial;
+}
+.navbar-dropdown a.navbar-item{
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
 }
 
 .search-w{
@@ -91,7 +102,6 @@ $navbar-height: 3.75rem;
     padding: 3.75rem 1rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
     border-radius: 4px;
     background-image: linear-gradient(251deg, #db0a5b, #971b50);
@@ -164,6 +174,7 @@ hr{
                 height: 40px;
                 font-family: Poppins;
                 font-size: 20px;
+                font-weight: 600;
             }
         }
     }
@@ -190,6 +201,7 @@ hr{
                     font-size: 11px;
                     font-weight: bold;
                     text-transform: uppercase;
+                    letter-spacing: 1px;
                     color: $cerise;
                 }
                 .list-body{
@@ -209,17 +221,21 @@ hr{
                     color: $charcoal-grey-60-p;
                 }
                 .terms-text{
-                    color: $charcoal-grey;
+                    color: $charcoal-grey; 
+                }
+                .terms-text:hover{
+                    text-decoration: underline solid $charcoal-grey;
                 }
             }
             .icons-w{
                 margin: 3rem 0;
                 display: flex;
                 align-items: center;
-                justify-content: space-between;
+                justify-content: flex-end;
                 img{
                     width: 40px;
                     height: 40px;
+                    margin-left: 1rem;
                 }
             }
         }
@@ -249,7 +265,7 @@ hr{
     }
 }
 .post-component{
-    padding: 3.75rem 0;
+    padding: 3.75rem 1rem;
     background-color: $pale-grey;
     .image{
         width: 90%;
@@ -272,7 +288,7 @@ hr{
             font-size: 16px;
             color: $charcoal-grey;
             p{
-                margin: 1.5rem 0;
+                margin: 1.25rem 0;
             }
             ul{
                 list-style: disc;
@@ -301,9 +317,23 @@ hr{
             max-width: 400px;
             display: flex;
             justify-content: space-between;
-            .button{
+            .tab-btn{
                 width: 150px;
                 height: 34px;
+                border-radius: 4px;
+                border: 1px solid $charcoal-grey;
+                font-family: Karla;
+                font-size: 14px;
+                font-weight: bold;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: $charcoal-grey;
+                cursor: pointer;
+            }
+            .actived-btn{
+                border: 1px solid $cerise;
+                color: $cerise;
             }
         }
         .main-description{
@@ -345,7 +375,7 @@ hr{
             .list-icon{
                 width: 40px;
                 height: 40px;
-                background-image: url(../images/sucess@3x.png);
+                background-image: url(../images/icons/sucess.svg);
                 background-position: center;
                 background-size: cover;
                 margin-right: 20px;
@@ -368,7 +398,7 @@ hr{
     }
 }
 .step-process-section{
-    padding: 3rem 1rem;
+    padding: 3rem 1rem 3.75rem;
     .container{
         max-width: 820px;
     }
@@ -436,7 +466,7 @@ hr{
 }
 .page-heading-section{
     .page-heading-w{
-        padding: 1.5rem 1rem;
+        padding: 5rem 1rem;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -444,7 +474,8 @@ hr{
         background-image: linear-gradient(251deg, #db0a5b, #971b50);
         .title{
             font-family: Poppins;
-            font-size: 28px;
+            font-size: 32px;
+            font-weight: bold;
             text-align: center;
             color: $white;
         }

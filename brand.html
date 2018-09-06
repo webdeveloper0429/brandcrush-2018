@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>I'm a Brand</title>
+        <link href="https://fonts.googleapis.com/css?family=Karla:400,700|Poppins:400,500,600,700" rel="stylesheet">
         <link rel="stylesheet" href="./assets/css/mystyle.css">
         <script defer src="./lib/js/fontawesome-5.2.0/js/all.js"></script>
         <script src="./lib/js/jquery/jquery.min.js"></script>
@@ -20,13 +21,13 @@
             $("#component_footer").load("component_footer.html");
             $("#component_activation_concept").load("component_activation_concept.html");
             $("#component_activated_by").load("component_activated_by.html");
-            $("#component_step_process").load("component_step_process.html");
+            // $("#component_step_process").load("component_step_process.html");
         })
     </script>
     <body>
         <div id="component_nav_with_search"></div>
         <div class="brand-page">
-            <section class="hero is-medium is-info banner-section">
+            <section class="hero is-medium is-primary banner-section">
                 <div class="hero-body">
                     <div class="banner-w">
                         <p class="title">
@@ -35,7 +36,7 @@
                         <p class="subtitle">
                             A Guide for Brands
                         </p>
-                        <div class="button is-primary">Watch Video</div>
+                        <div class="button is-primary"><img src="./assets/images/icons/white_play.svg" />Watch Video</div>
                     </div>
                 </div>
             </section>
@@ -48,17 +49,15 @@
             </section>
             <div id="component_activation_concept"></div>
             <section class="why-activate-section">
-                <div class="container">
-                    <div class="why-activate-w cerise-bg">
-                        <div class="title">
-                            Why activate?
-                        </div>
-                        <div class="desc">
-                            "68% of consumers are more likely to buy a product after trying it"
-                        </div>
-                        <div class="sub-desc">
-                            Australia Post
-                        </div>
+                <div class="why-activate-w cerise-bg">
+                    <div class="title">
+                        Why activate?
+                    </div>
+                    <div class="desc">
+                        "68% of consumers are more likely to buy a product after trying it"
+                    </div>
+                    <div class="sub-desc">
+                        Australia Post
                     </div>
                 </div>
             </section>
@@ -112,7 +111,7 @@
                                             <div class="list-icon"></div>
                                         </div>
                                         <div class="text-w">
-                                            <div class="title">Consoildated</div>
+                                            <div class="title">Scalable</div>
                                             <div class="description">Allowing brands to activate across a volume of localised spaces with intimacy and scalability.</div>
                                         </div>
                                     </div>
@@ -136,7 +135,44 @@
                     </div>
                 </div>
             </section>
-            <div id="component_step_process"></div>
+            <section class="step-process-section">
+                <div class="container">
+                    <div class="step-process-w">
+                        <div class="title">5 step process</div>
+                        <div class="process-box">
+                            <div class="process-number">1</div>
+                            <div class="process-text">
+                                Enter your business details and brand info
+                            </div>
+                        </div>
+                        <div class="process-box">
+                            <div class="process-number">2</div>
+                            <div class="process-text">
+                                Search for activation spaces and save spaces with a ‘like’ or ‘add to campaign’
+                            </div>
+                        </div>
+                        <div class="process-box">
+                            <div class="process-number">3</div>
+                            <div class="process-text">
+                                Upload product info or message and submit your activation request 
+                            </div>
+                        </div>
+                        <div class="process-box">
+                            <div class="process-number">4</div>
+                            <div class="process-text">
+                                Download shipping information and distribute samples/merchandise
+                            </div>
+                        </div>
+                        <div class="process-box">
+                            <div class="process-number">5</div>
+                            <div class="process-text">
+                                Activation takes place. Review post campaign report and rate your Activation Host
+                            </div>
+                        </div>
+                        <a href="https://dev.app.brandcrush.io/brand/signup"><div class="button is-primary sign-up-btn">Sign up now</div></a>
+                    </div>
+                </div>
+            </section>
             <div class="container" style="max-width: 1030px;"><div class="custom-hr"></div></div>
             <section class="top-insights-section">
                 <div class="container">
@@ -146,19 +182,19 @@
                             <div class="columns">
                                 <div class="column">
                                     <div class="item-box">
-                                        <img class="item-icon" src="./assets/images/icon-calendar@3x.png" />
-                                        <div class="item-desc">The average activation is 7 days</div>
+                                        <img class="item-icon" src="./assets/images/icons/icon-calendar.svg" />
+                                        <div class="item-desc">The average activation is 3 days</div>
                                     </div>
                                 </div>
                                 <div class="column">
                                     <div class="item-box">
-                                        <img class="item-icon" src="./assets/images/icon-key@3x.png" />
+                                        <img class="item-icon" src="./assets/images/icons/icon-key.svg" />
                                         <div class="item-desc">Most brands book 12 spaces per activation</div>
                                     </div>
                                 </div>
                                 <div class="column">
                                     <div class="item-box">
-                                        <img class="item-icon" src="./assets/images/icon-shopping-basket@3x.png" />
+                                        <img class="item-icon" src="./assets/images/icons/icon-shopping-basket.svg" />
                                         <div class="item-desc">Test geographic pockets and measure sales uplift in nearby retailers</div>
                                     </div>
                                 </div>
@@ -167,18 +203,18 @@
                     </div>
                 </div>
             </section>
-            <section class="we-are-here-section">
+            <section class="good-luck-section">
                 <div class="container">
-                    <div class="we-are-here-w post-component">
+                    <div class="good-luck-w post-component">
                         <div class="columns">
                             <div class="column">
                                 <div class="image" style="background-image: url(./assets/images/Staticpages/Stocksy_txp829abf37kJ2200_Medium_2014570.jpg)"></div>
                             </div>
                             <div class="column">
                                 <div class="post-body">
-                                    <div class="post-title">We're here to help!</div>
+                                    <div class="post-title">Good luck with your next activation</div>
                                     <div class="post-desc">
-                                        <p>Please don’t hesitate to use our Activation Host Concierge service via the live support button below, or you can <a class="has-text-primary" href="#">review our FAQS here</a>. </p>
+                                        <p>Please don’t hesitate to use our Brand Concierge service via the live support button below, or you can <a class="has-text-primary" href="FAQ.html">review our FAQS here</a>. </p>
                                     </div>
                                 </div>
                             </div>

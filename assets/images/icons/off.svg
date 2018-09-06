@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>51FBC69B-BA28-43B9-A870-E189FD1F80CE</title>
+    <desc>Created with sketchtool.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon_search/OFF">
+            <rect id="bound" x="0" y="0" width="30" height="30"></rect>
+            <path d="M18,18 L22.364,22.364" id="Stroke-1" stroke="#404041" stroke-width="2"></path>
+            <path d="M20,14 C20,17.313 17.313,20 14,20 C10.687,20 8,17.313 8,14 C8,10.687 10.687,8 14,8 C17.313,8 20,10.687 20,14 Z" id="Stroke-3" stroke="#404041" stroke-width="2"></path>
+            <path d="M12.5542,12.6182 C12.9182,12.2372 13.4312,12.0002 14.0002,12.0002 C15.1042,12.0002 16.0002,12.8952 16.0002,14.0002" id="Stroke-5" stroke="#404041" stroke-width="2"></path>
+        </g>
+    </g>
+</svg>

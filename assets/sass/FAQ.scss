@@ -9,23 +9,45 @@
                 display: flex;
                 justify-content: space-around;
                 margin: 2rem auto;
-                .button{
+                .tab-btn{
                     width: 150px;
                     height: 34px;
+                    border-radius: 4px;
+                    border: 1px solid $charcoal-grey;
+                    font-family: Karla;
+                    font-size: 14px;
+                    font-weight: bold;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: $charcoal-grey;
+                    cursor: pointer;
+                }
+                .actived-btn{
+                    border: 1px solid $cerise;
+                    color: $cerise;
                 }
             }
             .faq-w{
                 padding: 2rem 0;
                 .faq-item-w{
-                    .question-w{
-                        display: flex;
-                        align-items: center;
-                        justify-content: space-between;
-                        .question{
-                            font-family: Karla;
-                            font-size: 20px;
-                            color: $charcoal-grey;
-                        }
+                    .question{
+                        font-family: Karla;
+                        font-size: 20px;
+                        color: $charcoal-grey;
+                    }
+                    .question:after{
+                        content: "\f107";
+                        font-family: "Font Awesome 5 Free";
+                        font-weight: bold;
+                        float: right;
+                        color: $charcoal-grey;
+                    }
+                    .opened{
+                        color: $cerise;
+                    }
+                    .opened:after{
+                        content: "\f106"
                     }
                     .answer{
                         margin-top: 1rem;
@@ -35,7 +57,7 @@
         }
     }
     .know-more-section{
-        padding: 4rem 0;
+        padding: 5rem 0;
         background-color: $pale-grey;
         .container{
             max-width: 850px;
@@ -46,12 +68,15 @@
                 font-size: 28px;
                 text-align: center;
                 color: $charcoal-grey;
+                margin-bottom: 3.75rem;
             }
             .square-box{
+                border: solid 2px $white;
                 max-width: 400px;
                 margin: 0 auto;
                 border-radius: 4px;
                 box-shadow: 0 8px 16px 0 rgba(64, 64, 65, 0.2);
+                background-color: $white;
                 padding: 2rem;
                 display: flex;
                 flex-direction: column;
@@ -75,6 +100,10 @@
                     color: $charcoal-grey;
                     margin: 1rem auto;
                 }
+            }
+            .square-box:hover{
+                box-shadow: 0 8px 16px 0 rgba(219, 10, 91, 0.3);
+                border: solid 2px $cerise;
             }
         }
     }
