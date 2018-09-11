@@ -1,7 +1,7 @@
 .homepage{
     .banner-section{
         // background-image: linear-gradient(251deg, #db0a5b, #971b50);
-        background-image: url("../images/Homepage/Main-Banner@2x.jpg");
+        background-image: url("/assets/images/Homepage/Main-Banner@2x.jpg");
         background-position: center;
         background-size: cover;
         .container{
@@ -210,7 +210,7 @@
             justify-content: space-between;
             align-items: flex-start;
             border-radius: 4px;
-            background: url("../images/Homepage/homepagebanner1.jpg") no-repeat;
+            background: url("/assets/images/Homepage/homepagebanner1.jpg") no-repeat;
             background-position: right;
             background-size: cover;
             background-color: #eeeef0;

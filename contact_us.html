@@ -6,20 +6,20 @@
         <title>Contact Us</title>
         <link href="https://fonts.googleapis.com/css?family=Karla:400,700|Poppins:400,500,600,700" rel="stylesheet">
         <link rel="stylesheet" href="./assets/css/mystyle.css">
-        <script defer src="./lib/js/fontawesome-5.2.0/js/all.js"></script>
-        <script src="./lib/js/jquery/jquery.min.js"></script>
-        <script src="./assets/js/script.js"></script>
+        <script defer src="/lib/js/fontawesome-5.2.0/js/all.js"></script>
+        <script src="/lib/js/jquery/jquery.min.js"></script>
+        <script src="/assets/js/script.js"></script>
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     </head>
     <script>
         $(function(){
-            $("#component_nav_with_search").load("component_nav_with_search.html", function(){
+            $("#component_nav_with_search").load("/component_nav_with_search.html", function(){
                 $(".navbar-burger").click(function() {
                     $(".navbar-burger").toggleClass("is-active");
                     $(".navbar-menu").toggleClass("is-active");            
                 });
             });
-            $("#component_footer").load("component_footer.html");
+            $("#component_footer").load("/component_footer.html");
         })
     </script>
     <body>

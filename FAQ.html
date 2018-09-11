@@ -6,20 +6,20 @@
         <title>FAQ</title>
         <link href="https://fonts.googleapis.com/css?family=Karla:400,700|Poppins:400,500,600,700" rel="stylesheet">
         <link rel="stylesheet" href="./assets/css/mystyle.css">
-        <script defer src="./lib/js/fontawesome-5.2.0/js/all.js"></script>
-        <script src="./lib/js/jquery/jquery.min.js"></script>
-        <script src="./assets/js/script.js"></script>
+        <script defer src="/lib/js/fontawesome-5.2.0/js/all.js"></script>
+        <script src="/lib/js/jquery/jquery.min.js"></script>
+        <script src="/assets/js/script.js"></script>
         <link href="./lib/fontawesome-free-5.2.0-web/css/all.css" rel="stylesheet">
     </head>
     <script>
         $(function(){
-            $("#component_nav_with_search").load("component_nav_with_search.html", function(){
+            $("#component_nav_with_search").load("/component_nav_with_search.html", function(){
                 $(".navbar-burger").click(function() {
                     $(".navbar-burger").toggleClass("is-active");
                     $(".navbar-menu").toggleClass("is-active");            
                 });
             });
-            $("#component_footer").load("component_footer.html");
+            $("#component_footer").load("/component_footer.html");
         })
     </script>
     <body>
@@ -62,7 +62,7 @@
                         <div class="columns">
                             <div class="column">
                                 <a class="square-box" href="contact_us.html">
-                                    <img class="square-icon" src="./assets/images/icons/speech-bubbles.svg" />
+                                    <img class="square-icon" src="/assets/images/icons/speech-bubbles.svg" />
                                     <div class="square-title">Get in touch</div>
                                     <div class="description">
                                         Send us a message or give us a call and we'll answer any other questions you have.
@@ -71,7 +71,7 @@
                             </div>
                             <div class="column">
                                 <a class="square-box" href="https://brandcrush.wistia.com/medias/1c339mj5sl">
-                                    <img class="square-icon" src="./assets/images/icons/play-button.svg" />
+                                    <img class="square-icon" src="/assets/images/icons/play-button.svg" />
                                     <div class="square-title">View a demo</div>
                                     <div class="description">
                                         Watch our 30 second demo video and find out more about Brandcrush.
