@@ -13,7 +13,7 @@ $(document).ready(function() {
 var generalArr = [
     {
         question: "What is Brandcrush?",
-        answer: "Brandcrush is a marketing platform that connects brands with thousands of Activation Spaces."
+        answer: "Brandcrush is a marketing platform that helps connect Brands with consumers via thousands of Activation Spaces."
     },{
         question: "What's a Brand?",
         answer: "A Brand is any business with a product or message that they want to share with consumers."
@@ -43,7 +43,7 @@ var generalArr = [
         answer: "Brandcrush is a global platform. Activations Hosts can sign up and list a space at any time and Brands are welcome to search Spaces in their local area. "
     },{
         question: "How does Brandcrush make money? ",
-        answer: "Brandcrush take a 10% commission from Activation Hosts and add a 10% booking fee for Brands. There are no setup or subscription fees. "
+        answer: "Brandcrush take a commission from Activation Hosts and add a service fee for Brands. There are no setup or subscription fees. "
     },{
         question: "Who executes the activation? ",
         answer: "Brands can choose to activate with their brand teams or they can request Activation Hosts to activate for them. You can search spaces by how they can be activated. By the brand or By the Activation Host. "
@@ -97,8 +97,8 @@ var brandArr=[
         question: "When is payment processed?",
         answer: "Payment is processed as soon as your activation request is accepted by an Activation Host. You can find a summary of payments in your dashboard. Brandcrush holds payment for a maximum of 5 days while your Activation Request is pending. "
     },{
-        question: "What fees do Brandcrush charge?",
-        answer: "Brandcrush charge brands a 10% booking fee on all transactions. "
+        question: "What is the Brandcrush service fee?",
+        answer: "This helps us run our platform and covers admin, moderation and transaction costs."
     },{
         question: "Why was payment taken before my Activation Request was approved?",
         answer: "Brandcrush holds payment for a maximum of 5 days while your Activation Request is pending. "
@@ -137,7 +137,7 @@ var brandArr=[
         answer: "Brands can book out Activation Spaces for extended periods providing them with effective or limited exclusivity with an Activation Host. "
     },{
         question: "Can I cancel a booking after being accepted by an Activation Host?",
-        answer: "Cancellation requests made 30 Days prior to an Activation date will receive a 100% refund. Any cancellation request made under 30 days of an Activation start date, will be refundable at 50% of the activation rate.  Any cancelation request made under 15 days of an Activation start date, will be non refundable. \nBrandcrush will still charge a 10% commission for all cancellation fees."
+        answer: "Cancellation requests made 30 Days prior to an Activation date will receive a 100% refund. Any cancellation request made under 30 days of an Activation start date, will be refundable at 50% of the activation rate.  Any cancelation request made under 15 days of an Activation start date, will be non refundable. \nBrandcrush will still charge a 12.5% commission for all cancellation fees."
     },{
         question: "What happens to our product, samples & materials if we cancel an Activation and items have already been delivered ?",
         answer: "Brands can arrange for pick up and return of product & materials at their own expense or message Activation Hosts to arrange the activation for another booking date. "
@@ -153,16 +153,16 @@ var activationArr=[
         answer: "Brandcrush connects you with like minded brands who are trying to reach your customers. You get paid to share an actvation space or to distribute their samples/mesages. "
     },{
         question: "What does it cost to list an Activation Space? ",
-        answer: "Nothing, it's 100% free to sign up and list a space on Brandcrush. We only ever take a 10% commission on successful bookings so when you win, we win. "
+        answer: "Nothing, it's 100% free to sign up and list a space on Brandcrush. We only ever take a 12.5% commission on successful bookings so when you win, we win. "
     },{
         question: "How do I get paid?",
         answer: "Brandcrush pays all Activation Hosts within 48 hours (or nearest business day) of reciving a completed Activation Report where required or from the Activation Date. Payments will be made into your prefered bank or paypal account. "
     },{
         question: "Does Brandcrush take a commission?",
-        answer: "Yes, Brandcrush take a 10% commission from Activation Hosts on all bookings. "
+        answer: "Yes, Brandcrush take a 12.5% commission from Activation Hosts on all bookings. "
     },{
         question: "How much should I charge?",
-        answer: "The rate you set is entirely up to you.  The more value you offer brands, the more you can earn. Active sampling (eg: Gift with purchase) can earn more than passive sampling (products on a counter Top) \nMost Activation Hosts charge $0.50 to $1.50  per product reach. For example if your daily product reach is 100 people, you could charge anywhere from $50 to $150 per day. "
+        answer: "The rate you set is entirely up to you.  The more value you offer brands, the more you can earn. Active sampling (eg: Gift with purchase) can earn more than passive sampling (products on a counter Top) \nMost Activation Hosts charge $0.40 to $1.50  per product reach. For example if your daily product reach is 100 people, you could charge anywhere from $50 to $150 per day. "
     },{
         question: "Can I approve/decline brands who want to activate in my space?",
         answer: "Yes, all Activation Requests are submitted for approval however you can also set up \"auto approve\" when listing your Space. "
@@ -183,7 +183,7 @@ var activationArr=[
         answer: "Product reach is the daily distribution capacity for your Space i.e how many samples can you successfully handout per day. "
     },{
         question: "What happens if there are samples leftover at the end of a scheduled activation? ",
-        answer: "Activation Hosts are required to distribute the number of samples indicated in the booking confirmation. If an extension is required then they must notify Brandcrush immediately via support@brandcrush.com"
+        answer: "Activation Hosts are required to distribute the number of samples indicated in the booking confirmation. If an extension is required then they must notify Brandcrush immediately via concierge@brandcrush.com"
     },{
         question: "How do brands measure Activation success?",
         answer: "Brands can activate strategically to support their retail footprint, giving them the opportunity measure sales up lift in your area. The more engaged your customers are, the more likely they are to purchase the product and the more chance you have of getting another booking. "
@@ -195,7 +195,7 @@ var activationArr=[
         answer: "You need to mark all samples as received under the Activation Booking. Activations should only take place on the specificed activation date. This allows Brands to measure the ROI of the Activation. Brandcrush will also promote consumers and mystery shoppers to visit your business during this time. "
     },{
         question: "Are Brand reviews public? ",
-        answer: "Yes, reviews will be shown in your Space listing. If you require any an assistance please contact support@brandcrush.com"
+        answer: "Yes, reviews will be shown in your Space listing. If you require any assistance please contact concierge@brandcrush.com"
     },{
         question: "Can I have a review removed from my profile? ",
         answer: "Brandcrush is a community drive marketplace and we value feedback. All users are required to treat each other with respect, honesty and transparency. If you require any an assistance please contact support@brandcrush.com "
@@ -210,7 +210,7 @@ var activationArr=[
         answer: "Activation Host's are encouraged to list multiple spaces so that they show up in a higher number of search results. Consider opening up your available dates, listing additional space types and space positions. "
     },{
         question: "Are brands allowed to negotiate?",
-        answer: "Brands can negotiate for longer term bookings or if they feel you are over priced. Brandcrush provides suggested pricing in the space set up process however you are also welcome to contact support@brandcrush.io for further information. "
+        answer: "Brands can negotiate for longer term bookings or if they feel you are over priced. Brandcrush provides suggested pricing in the space set up process however you are also welcome to contact concierge@brandcrush.com for further information. "
     },{
         question: "When do I get paid?",
         answer: "For activations run by our Activation Hosts, payment will be released 24 hours (or nearest business day) once you have submitted your Activation Report. For activations run by our Brands, payment will be released within 24 hours of the activation date. Payments will be made into your preferred bank or paypal account.  "
@@ -219,10 +219,10 @@ var activationArr=[
         answer: "Unfortunately no, in order to avoid double bookings we require Activation Hosts to list spaces exclusively with Brandcrush."
     },{
         question: "What is the cancellation policy? ",
-        answer: "There are no subscription fees with Brandcrush, Activation Hosts can pause or delete a listing at anytime and Brands are only charged on a booking by booking basis.  Any cancellation requests made by a Brand 30 Days prior to an Activation date will be fully refunded to the brand. Any cancellation request made under 30 days of an Activation start date, will be refundable to the brand at 50% of the activation rate.  Any cancellation request made by the Brand under 15 days of an Activation start date, will be non refundable. Brandcrush will still charge a 10% commission for all cancellation fees and Activation Hosts will receive the net rate as per the brand cancellation charges.  "
+        answer: "There are no subscription fees with Brandcrush, Activation Hosts can pause or delete a listing at anytime and Brands are only charged on a booking by booking basis.  Any cancellation requests made by a Brand 30 Days prior to an Activation date will be fully refunded to the brand. Any cancellation request made under 30 days of an Activation start date, will be refundable to the brand at 50% of the activation rate.  Any cancellation request made by the Brand under 15 days of an Activation start date, will be non refundable. Brandcrush will still charge a 12.5% commission for all cancellation fees and Activation Hosts will receive the net rate as per the brand cancellation charges.  "
     },{
         question: "Can I create a long term partnership with a Brand? ",
-        answer: "Yes, to increase your chances of building on going partnership please provide prompt and extensive Activation Reports. Any cancellation requests made by a Brand 30 Days prior to an Activation date will be fully refunded to the brand. Any cancellation request made under 30 days of an Activation start date, will be refundable to the brand at 50% of the activation rate.  Any cancellation request made by the Brand under 15 days of an Activation start date, will be non refundable. \nBrandcrush will still charge a 10% commission for all cancellation fees and Activation Hosts will receive the net rate as per the brand cancellation charges. "
+        answer: "Yes, to increase your chances of building on going partnership please provide prompt and extensive Activation Reports. 
     }
 ]
 
