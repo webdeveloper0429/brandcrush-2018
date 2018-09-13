@@ -4,10 +4,16 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>I'm an Activation Host</title>
+        <link rel="stylesheet" href="/lib/appleple-modal-video/css/modal-video.min.css">
         <link href="https://fonts.googleapis.com/css?family=Karla:400,700|Poppins:400,500,600,700" rel="stylesheet">
-        <link rel="stylesheet" href="./assets/css/mystyle.css">
+        <link rel="stylesheet" href="/assets/css/mystyle.css">
         <script defer src="/lib/js/fontawesome-5.2.0/js/all.js"></script>
         <script src="/lib/js/jquery/jquery.min.js"></script>
+        <!--[if lte IE 8]>
+            <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+        <![endif]-->
+        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+        <script src="/lib/appleple-modal-video/js/jquery-modal-video.min.js"></script>
         <script src="/assets/js/script.js"></script>
     </head>
     <script>
@@ -34,7 +40,7 @@
                         <p class="subtitle">
                             A Guide for Activation Hosts
                         </p>
-                        <div class="button is-primary"><img src="/assets/images/icons/white_play.svg" />Watch Video</div>
+                        <div class="button is-primary js-modal-btn" data-video-id="288944705"><img src="/assets/images/icons/white_play.svg" />Watch Video</div>
                     </div>
                 </div>
             </section>
@@ -376,6 +382,7 @@
                     $('#content_'+t).fadeIn('slow');
                 }
             })
+            $(".js-modal-btn").modalVideo({channel:'vimeo'});
         })
     </script>
 </html>

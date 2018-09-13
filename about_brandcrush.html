@@ -4,10 +4,16 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>About Brandcrush</title>
+        <link rel="stylesheet" href="/lib/appleple-modal-video/css/modal-video.min.css">
         <link href="https://fonts.googleapis.com/css?family=Karla:400,700|Poppins:400,500,600,700" rel="stylesheet">
-        <link rel="stylesheet" href="./assets/css/mystyle.css">
+        <link rel="stylesheet" href="/assets/css/mystyle.css">
         <script defer src="/lib/js/fontawesome-5.2.0/js/all.js"></script>
         <script src="/lib/js/jquery/jquery.min.js"></script>
+        <!--[if lte IE 8]>
+            <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+        <![endif]-->
+        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+        <script src="/lib/appleple-modal-video/js/jquery-modal-video.min.js"></script>
         <script src="/assets/js/script.js"></script>
     </head>
     <script>
@@ -53,7 +59,7 @@
                             Watch our 30 second video to understand how we help businesses monetise foot traffic and Brands create highly targeted activations.
                         </div>
                         <div class="video-w">
-                            <a href="https://brandcrush.wistia.com/medias/1c339mj5sl"><img src="/assets/images/video_control.png" /></a>
+                            <div class="js-modal-btn" data-video-id="288950419"><img src="/assets/images/video_control.png" /></div>
                         </div>
                     </div>
                 </div>
@@ -83,4 +89,9 @@
             <div id="component_footer"></div>
         </div>
     </body>
+    <script>
+        $(document).ready(function(){
+            $(".js-modal-btn").modalVideo({channel:'vimeo'});
+        })
+    </script>
 </html>
