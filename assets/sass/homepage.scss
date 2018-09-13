@@ -17,6 +17,9 @@
             letter-spacing: normal;
             color: $white;
             margin-bottom: 20px;
+            @media (max-width: $tablet){
+                font-size: 26px;
+            }
         }
         .sub-title{
             font-family: Poppins;
@@ -32,10 +35,18 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
+            @media (max-width: $tablet) {
+                flex-direction: column;
+                height: initial;
+			}
             .input-w{
                 display: flex;
                 align-items: center;
                 width: 75%;
+                height: 70px;
+                @media (max-width: $tablet) {
+                    width: 100%;
+                }
                 img{
                     width: 56px;
                     height: 56px;
