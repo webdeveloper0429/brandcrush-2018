@@ -9,6 +9,51 @@ $(document).ready(function() {
   
     });
 });
+const toast = swal.mixin({
+    toast: true,
+    position: 'top-end',
+    showConfirmButton: false,
+    timer: 3000
+});
+
+function subscription_init(){
+    $('#subscribe_btn').on('click', function(){
+        if($("#subscribe_email").val() === ''){
+            toast({
+                type: 'error',
+                title: "Please insert email!"
+            });
+            return false;
+        }
+        var formData = {
+                "fields":[
+                    {
+                        "name": "email",
+                        "value": $("#subscribe_email").val()
+                    }
+                ]
+            }
+        $.ajax({
+            type: 'post',
+            url: 'https://api.hsforms.com/submissions/v3/integration/submit/4363226/b6acb0d6-24c1-4442-a7c5-7bfea7798f4a',
+            contentType: "application/json",
+            data: JSON.stringify(formData),
+            success: function (data) {
+                toast({
+                    type: 'success',
+                    title: "Thanks your message has successfuly sent."
+                });
+                $("#subscribe_email").val("");
+            },
+            error: function (data) {
+                toast({
+                    type: 'error',
+                    title: "failed to send your email!"
+                });
+            },
+        });
+    })
+}
 
 var generalArr = [
     {
