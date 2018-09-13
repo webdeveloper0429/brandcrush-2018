@@ -6,6 +6,7 @@
         <title>About Brandcrush</title>
         <link rel="stylesheet" href="/lib/appleple-modal-video/css/modal-video.min.css">
         <link href="https://fonts.googleapis.com/css?family=Karla:400,700|Poppins:400,500,600,700" rel="stylesheet">
+        <link href="/lib/fontawesome-free-5.2.0-web/css/all.css" rel="stylesheet">
         <link rel="stylesheet" href="/assets/css/mystyle.css">
         <script defer src="/lib/js/fontawesome-5.2.0/js/all.js"></script>
         <script src="/lib/js/jquery/jquery.min.js"></script>
@@ -14,6 +15,7 @@
         <![endif]-->
         <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
         <script src="/lib/appleple-modal-video/js/jquery-modal-video.min.js"></script>
+        <script src="/lib/sweetalert2-7.26.28/dist/sweetalert2.all.min.js"></script>
         <script src="/assets/js/script.js"></script>
     </head>
     <script>
@@ -24,7 +26,7 @@
                     $(".navbar-menu").toggleClass("is-active");            
                 });
             });
-            $("#component_footer").load("/component_footer.html");
+            $("#component_footer").load("/component_footer.html", subscription_init);
             $("#component_activation_concept").load("/component_activation_concept.html");
         })
     </script>
