@@ -267,7 +267,7 @@ var activationArr=[
         answer: "There are no subscription fees with Brandcrush, Activation Hosts can pause or delete a listing at anytime and Brands are only charged on a booking by booking basis.  Any cancellation requests made by a Brand 30 Days prior to an Activation date will be fully refunded to the brand. Any cancellation request made under 30 days of an Activation start date, will be refundable to the brand at 50% of the activation rate.  Any cancellation request made by the Brand under 15 days of an Activation start date, will be non refundable. Brandcrush will still charge a 12.5% commission for all cancellation fees and Activation Hosts will receive the net rate as per the brand cancellation charges.  "
     },{
         question: "Can I create a long term partnership with a Brand? ",
-        answer: "Yes, to increase your chances of building on going partnership please provide prompt and extensive Activation Reports. 
+        answer: "Yes, to increase your chances of building on going partnership please provide prompt and extensive Activation Reports. "
     }
 ]
 
