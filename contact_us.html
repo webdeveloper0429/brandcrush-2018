@@ -63,13 +63,13 @@
                                         <div class="column">
                                             <div class="form-group">
                                                 <div class="label">first name</div>
-                                                <input type="text" />
+                                                <input type="text" id="cu_first_name" />
                                             </div>
                                         </div>
                                         <div class="column">
                                             <div class="form-group">
                                                 <div class="label">last name</div>
-                                                <input type="text" />
+                                                <input type="text" id="cu_last_name" />
                                             </div>
                                         </div>
                                     </div>
@@ -77,13 +77,13 @@
                                         <div class="column">
                                             <div class="form-group">
                                                 <div class="label">email</div>
-                                                <input type="text" />
+                                                <input type="text" id="cu_email" />
                                             </div>
                                         </div>
                                         <div class="column">
                                             <div class="form-group">
                                                 <div class="label">phone number</div>
-                                                <input type="text" />
+                                                <input type="text" id="cu_mobile_num" />
                                             </div>
                                         </div>
                                     </div>
@@ -92,10 +92,11 @@
                                             <div class="form-group">
                                                 <div class="label">I'm a</div>
                                                 <div class="custom_select">
-                                                    <select>
+                                                    <select id="cu_i_am">
                                                         <option>Brand</option>
                                                         <option>Activation Host</option>
-                                                        <option>Agency</option>
+                                                        <option>Investor</option>
+                                                        <option>Other</option>
                                                     </select>
                                                 </div>
                                             </div>
@@ -104,7 +105,7 @@
                                             <div class="form-group">
                                                 <div class="label">country</div>                                             
                                                 <div class="custom_select">
-                                                    <select>
+                                                    <select id="cu_country">
                                                         <option>Australia</option>
                                                         <option>Russia Federation</option>
                                                     </select>
@@ -116,14 +117,14 @@
                                         <div class="column">
                                             <div class="form-group">
                                                 <div class="label">message</div>
-                                                <textarea></textarea>
+                                                <textarea id="cu_message"></textarea>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="columns">
                                         <div class="column">
                                             <div class="form-group">
-                                                <div class="button is-primary is-fullwidth">Submit</div>
+                                                <div class="button is-primary is-fullwidth" id="contact_us_btn">Submit</div>
                                             </div>
                                         </div>
                                     </div>
@@ -136,4 +137,66 @@
             <div id="component_footer"></div>
         </div>
     </body>
+    <script>
+        $('#contact_us_btn').on('click', function(){
+            if($("#cu_email").val() === ''){
+                toast({
+                    type: 'error',
+                    title: "Please insert email!"
+                });
+                return false;
+            }
+            var formData = {
+                    "fields":[
+                        {
+                            "name": "firstname",
+                            "value": $("#cu_first_name").val()
+                        },{
+                            "name": "lastname",
+                            "value": $("#cu_last_name").val()
+                        },{
+                            "name": "email",
+                            "value": $("#cu_email").val()
+                        },{
+                            "name": "mobilephone",
+                            "value": $("#cu_mobile_num").val()
+                        },{
+                            "name": "i_m_a",
+                            "value": $("#cu_i_am").val()
+                        },{
+                            "name": "country",
+                            "value": $("#cu_country").val()
+                        },{
+                            "name": "message",
+                            "value": $("#cu_message").val()
+                        }
+                    ]
+                }
+            $.ajax({
+                type: 'post',
+                url: 'https://api.hsforms.com/submissions/v3/integration/submit/4363226/3cbcacb7-8d3a-445e-a920-0abda002a4fc',
+                contentType: "application/json",
+                data: JSON.stringify(formData),
+                success: function (data) {
+                    toast({
+                        type: 'success',
+                        title: "Thanks your message has successfuly sent."
+                    });
+                    $("#cu_first_name").val("");
+                    $("#cu_last_name").val("");
+                    $("#cu_email").val("");
+                    $("#cu_mobile_num").val("");
+                    $("#cu_i_am").val("Brand");
+                    $("#cu_country").val("Australia");
+                    $("#cu_message").val("");
+                },
+                error: function (data) {
+                    toast({
+                        type: 'error',
+                        title: "failed to send your message!"
+                    });
+                },
+            });
+        })
+    </script>
 </html>
