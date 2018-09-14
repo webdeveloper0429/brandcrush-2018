@@ -61,6 +61,44 @@ $dropdown-content-radius: 0px;
     padding-bottom: 0.75rem;
 }
 
+.mobile_menu{
+    .mobile_btn{
+        height: 38px;
+        border-radius: 0;
+        font-family: Karla;
+        font-size: 14px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+    a.navbar-item{
+        font-family: Karla;
+        font-size: 14px;
+        color: $charcoal-grey;
+        padding: 0.625rem 0.75rem;
+    }
+    hr{
+        margin: 0.625rem 0.75rem;
+    }
+    .mobile-social-w{
+        padding: 2.5rem 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .icons-w{
+            width: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            img{
+                width: 30px;
+                height: 30px;
+                margin: 10px;
+            }
+        }
+    }
+}
+
 .search-w{
     width: 400px;
     height: 40px;
