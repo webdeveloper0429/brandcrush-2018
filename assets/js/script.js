@@ -1,13 +1,6 @@
 $(document).ready(function() {
 
-    // Check for click events on the navbar burger icon
-    $(".navbar-burger").click(function() {
-  
-        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-        $(".navbar-burger").toggleClass("is-active");
-        $(".navbar-menu").toggleClass("is-active");
-  
-    });
+    
 });
 const toast = swal.mixin({
     toast: true,
@@ -15,6 +8,24 @@ const toast = swal.mixin({
     showConfirmButton: false,
     timer: 3000
 });
+
+function navbar_init(){
+    $(".navbar-burger").click(function() {  
+        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+        $(".navbar-burger").toggleClass("is-active");
+        $(".navbar-menu").toggleClass("is-active");  
+    });
+    $(".search-btn").click(function(){
+        var query = $(".search-query").val();
+        window.open('https://dev.app.brandcrush.io/brand/search?q=' + query, '_blank');
+    })
+    $(".search-query").on('keyup', function(e){
+        if(e.keyCode == 13){
+            var query = $(".search-query").val();
+            window.open('https://dev.app.brandcrush.io/brand/search?q=' + query, '_blank');
+        }
+    })
+}
 
 function subscription_init(){
     $('#subscribe_btn').on('click', function(){

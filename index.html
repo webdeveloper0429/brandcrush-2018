@@ -21,12 +21,7 @@
     </head>
     <script>
         $(function(){
-            $("#component_nav").load("/component_nav.html", function(){
-                $(".navbar-burger").click(function() {
-                    $(".navbar-burger").toggleClass("is-active");
-                    $(".navbar-menu").toggleClass("is-active");            
-                });
-            });
+            $("#component_nav").load("/component_nav.html", navbar_init);
             $("#component_footer").load("/component_footer.html", subscription_init);
         })
     </script>
@@ -44,11 +39,11 @@
                         </p>
                         <div class="search-wrapper">
                             <div class="input-w">
-                                <img src="/assets/images/icons/off.svg" width="56" height="56" />
-                                <input type="text" placeholder="Where do you want to activate (eg. Melbourne)" />
+                                <img class="search-btn" src="/assets/images/icons/off.svg" width="56" height="56" />
+                                <input class="search-query" type="text" placeholder="Where do you want to activate (eg. Melbourne)" />
                             </div>
                             <div class="button-w">
-                                <div class="button is-primary">Search</div>
+                                <div class="button is-primary search-btn">Search</div>
                             </div>
                         </div>
                     </div>
