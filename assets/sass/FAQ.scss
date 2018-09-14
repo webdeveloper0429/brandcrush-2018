@@ -12,6 +12,8 @@
                 .tab-btn{
                     width: 150px;
                     height: 34px;
+                    margin: 0 0.5rem;
+                    padding: 0 0.25rem;
                     border-radius: 4px;
                     border: 1px solid $charcoal-grey;
                     font-family: Karla;
@@ -21,6 +23,8 @@
                     align-items: center;
                     justify-content: center;
                     color: $charcoal-grey;
+                    text-align: center;
+                    line-height: 0.75rem;
                     cursor: pointer;
                 }
                 .actived-btn{
