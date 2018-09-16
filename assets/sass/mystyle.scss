@@ -166,7 +166,7 @@ $dropdown-content-radius: 0px;
 }
 
 .cookie-popup-section{
-    padding: 2.5rem 0rem;
+    padding: 1.25rem 0rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -183,7 +183,7 @@ $dropdown-content-radius: 0px;
         margin: 0 auto;
         .description{
             font-family: Karla;
-            font-size: 20px;
+            font-size: 16px;
             line-height: 1.4;
             color: $white;
             padding: 0 3rem;
@@ -197,7 +197,7 @@ $dropdown-content-radius: 0px;
             padding: 0 3rem;
             .button{
                 font-family: Poppins;
-                font-size: 20px;
+                font-size: 16px;
                 font-weight: 600;
                 line-height: 1.1;
             }            
@@ -277,6 +277,7 @@ hr{
             @media (max-width: $tablet) {
                 float: none;
                 margin-right: 0;
+                display: none;
             }
             .item-w{
                 padding: 0.25rem 0;

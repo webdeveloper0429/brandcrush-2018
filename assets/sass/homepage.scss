@@ -239,12 +239,18 @@
                 font-weight: 600;
                 color: $charcoal-grey;
                 margin-bottom: 20px;
+                @media (max-width: $tablet) {
+                    color: $white;
+                }
             }
             .sub-title{
                 max-width: 550px;
                 font-family: Karla;
                 font-size: 18px;
                 color: $charcoal-grey;
+                @media (max-width: $tablet) {
+                    color: $white;
+                }
             }
             .button{
                 width: 180px;
