@@ -19,7 +19,7 @@ $(document).ready(function() {
 
     }
     if($('.crushed-on-section').length) {
-        $.getJSON( "http://localhost:3000/blog/top3.json", function( data ) {
+        $.getJSON( "/blog/top3.json", function( data ) {
             var items = [];
             $.each( data.posts, function( key, val ) {
     const item = '<div class="column is-one-third"><div class="card-box">'
