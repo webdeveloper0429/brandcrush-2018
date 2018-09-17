@@ -15,7 +15,25 @@ $(document).ready(function() {
         $("#allow_cookie_btn").click(function(){
             $(".cookie-popup-section").remove();
             localStorage.setItem("brandcrush_cookie", "true");
-        })
+        });
+
+    }
+    if($('.crushed-on-section').length) {
+        $.getJSON( "http://localhost:3000/blog/top3.json", function( data ) {
+            var items = [];
+            $.each( data.posts, function( key, val ) {
+    const item = '<div class="column is-one-third"><div class="card-box">'
+        +'<div class="card-img" style="background-image: url('+val.image+')"></div>'
+        +'<div class="card-title">'+val.title+'</div>'
+        +'<div class="description">'+val.summary+'</div>'
+        +'<a class="action-w" href="'+val.link+'">Read More</a>'
+        +'</div></div>';
+            items.push(item);
+            });
+        
+            $(".crushed-on-section .cards-w .columns").html(items.join(''));
+            
+        });
     }
     
 });
