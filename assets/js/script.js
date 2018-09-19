@@ -1,4 +1,4 @@
-const cookie_popup_dom = `  <div class="cookie-popup-section">
+﻿const cookie_popup_dom = `  <div class="cookie-popup-section">
                                 <div class="cookie-popup-w">
                                     <div class="description">
                                         Brandcrush use cookies to ensure you get the best experience on our website. <a href="/terms.html">Learn more here</a>.
@@ -19,7 +19,7 @@ $(document).ready(function() {
 
     }
     if($('.crushed-on-section').length) {
-        $.getJSON( "http://localhost:3000/blog/top3.json", function( data ) {
+        $.getJSON( "/blog/top3.json", function( data ) {
             var items = [];
             $.each( data.posts, function( key, val ) {
     const item = '<div class="column is-one-third"><div class="card-box">'
