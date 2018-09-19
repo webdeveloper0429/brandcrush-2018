@@ -1,4 +1,4 @@
-const cookie_popup_dom = `  <div class="cookie-popup-section">
+﻿const cookie_popup_dom = `  <div class="cookie-popup-section">
                                 <div class="cookie-popup-w">
                                     <div class="description">
                                         Brandcrush use cookies to ensure you get the best experience on our website. <a href="/terms.html">Learn more here</a>.
@@ -52,12 +52,12 @@ function navbar_init(){
     });
     $(".search-btn").click(function(){
         var query = $(".search-query").val();
-        window.open('https://dev.app.brandcrush.io/brand/search?q=' + query, '_blank');
+        window.open('https://app.brandcrush.com/brand/search?q=' + query, '_blank');
     })
     $(".search-query").on('keyup', function(e){
         if(e.keyCode == 13){
             var query = $(".search-query").val();
-            window.open('https://dev.app.brandcrush.io/brand/search?q=' + query, '_blank');
+            window.open('https://app.brandcrush.com/brand/search?q=' + query, '_blank');
         }
     })
 }
