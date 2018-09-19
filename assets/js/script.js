@@ -1,4 +1,4 @@
-const cookie_popup_dom = `  <div class="cookie-popup-section">
+﻿const cookie_popup_dom = `  <div class="cookie-popup-section">
                                 <div class="cookie-popup-w">
                                     <div class="description">
                                         Brandcrush use cookies to ensure you get the best experience on our website. <a href="/terms.html">Learn more here</a>.
@@ -15,7 +15,25 @@ $(document).ready(function() {
         $("#allow_cookie_btn").click(function(){
             $(".cookie-popup-section").remove();
             localStorage.setItem("brandcrush_cookie", "true");
-        })
+        });
+
+    }
+    if($('.crushed-on-section').length) {
+        $.getJSON( "/blog/top3.json", function( data ) {
+            var items = [];
+            $.each( data.posts, function( key, val ) {
+    const item = '<div class="column is-one-third"><div class="card-box">'
+        +'<div class="card-img" style="background-image: url('+val.image+')"></div>'
+        +'<div class="card-title">'+val.title+'</div>'
+        +'<div class="description">'+val.summary+'</div>'
+        +'<a class="action-w" href="'+val.link+'">Read More</a>'
+        +'</div></div>';
+            items.push(item);
+            });
+        
+            $(".crushed-on-section .cards-w .columns").html(items.join(''));
+            
+        });
     }
     
 });
@@ -34,12 +52,12 @@ function navbar_init(){
     });
     $(".search-btn").click(function(){
         var query = $(".search-query").val();
-        window.open('https://dev.app.brandcrush.io/brand/search?q=' + query, '_blank');
+        window.open('https://app.brandcrush.com/brand/search?q=' + query, '_self');
     })
     $(".search-query").on('keyup', function(e){
         if(e.keyCode == 13){
             var query = $(".search-query").val();
-            window.open('https://dev.app.brandcrush.io/brand/search?q=' + query, '_blank');
+            window.open('https://app.brandcrush.com/brand/search?q=' + query, '_self');
         }
     })
 }
