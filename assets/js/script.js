@@ -52,12 +52,12 @@ function navbar_init(){
     });
     $(".search-btn").click(function(){
         var query = $(".search-query").val();
-        window.open('https://app.brandcrush.com/brand/search?q=' + query, '_blank');
+        window.open('https://app.brandcrush.com/brand/search?q=' + query, '_self');
     })
     $(".search-query").on('keyup', function(e){
         if(e.keyCode == 13){
             var query = $(".search-query").val();
-            window.open('https://app.brandcrush.com/brand/search?q=' + query, '_blank');
+            window.open('https://app.brandcrush.com/brand/search?q=' + query, '_self');
         }
     })
 }
