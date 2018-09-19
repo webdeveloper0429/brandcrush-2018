@@ -23,7 +23,7 @@ $(document).ready(function() {
             var items = [];
             $.each( data.posts, function( key, val ) {
     const item = '<div class="column is-one-third"><div class="card-box">'
-        +'<div class="card-img" style="background-image: url('+val.image+')"></div>'
+        +'<a href="'+val.link+'"><div class="card-img" style="background-image: url('+val.image+')"></div></a>'
         +'<div class="card-title">'+val.title+'</div>'
         +'<div class="description">'+val.summary+'</div>'
         +'<a class="action-w" href="'+val.link+'">Read More</a>'
