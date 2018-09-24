@@ -1,0 +1,40 @@
+
+window.onload = function(){
+
+    (function (app) {
+
+        var API_URL = 'https://api.brandcrush.com'
+        var qp = '&inline=images(url),spacePosition(name,ratePeriod),addresses(suburb,country_stateId),addresses.countryState(name)&fields=name,rate,reachDistributionCapacity,spacePositionId';
+
+        function loadSpaces() {
+
+            loadSpace('#health-wellness-sport', '?ids=738,699,688'+qp);
+            loadSpace('#lifestyle', '?ids=697,717,1223'+qp);
+            loadSpace('#bars-cafes', '?ids=750,1224,1226'+qp);
+        }
+
+        function loadSpace(el, queryParams) {
+            $.getJSON(API_URL+"/space"+queryParams, function( data ) {
+                $.each( data.data, function( key, val ) {
+                    var template = $('#card-template > div').clone();
+
+                    template.find('.card-img').attr('style', 'background-image: url('+val.images[0].url+')');
+                    template.find('.title').text(val.name);
+                    template.find('.sub-title').text(val.spacePosition.name.toUpperCase());
+                    template.find('.price').text('$'+val.rate + ' per '+val.spacePosition.ratePeriod + ' | ' + val.reachDistributionCapacity + ' Product Reach');
+                    template.find('.names').text(val.addresses[0].suburb+(val.addresses[0].countryState ? ', '+val.addresses[0].countryState.name : ""));
+                    template.find('.view-details').attr('href', 'https://app.brandcrush.com/brand/space/'+val.id);
+
+                    $(el).append(template);            
+                });
+            
+            });
+
+        }
+
+        app.loadSpaces = loadSpaces;
+
+    }(app = app || {}));
+    var app;
+    new app.loadSpaces();
+}

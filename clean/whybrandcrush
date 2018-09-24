@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Why Brandcrush</title>
+        <link rel="shortcut icon" href="/assets/images/favicon.png" >
+        <link rel="stylesheet" href="/lib/appleple-modal-video/css/modal-video.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Karla:400,700|Poppins:400,500,600,700" rel="stylesheet">
+        <link href="/lib/fontawesome-free-5.2.0-web/css/all.css" rel="stylesheet">
+        <link rel="stylesheet" href="/assets/css/mystyle.css">
+        <!-- <script defer src="/lib/js/fontawesome-5.2.0/js/all.js"></script> -->
+        <script src="/lib/js/jquery/jquery.min.js"></script>
+        <!--[if lte IE 8]>
+            <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+        <![endif]-->
+        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+        <script src="/lib/appleple-modal-video/js/jquery-modal-video.min.js"></script>
+        <script src="/lib/sweetalert2-7.26.28/dist/sweetalert2.all.min.js"></script>
+        <script src="/assets/js/script.js"></script>
+    </head>
+    <script>
+        $(function(){
+            $("#component_nav_with_search").load("/components/component_nav_with_search.html", navbar_init);
+            $("#component_footer").load("/components/component_footer.html", subscription_init);
+            $("#component_activation_concept").load("/components/component_activation_concept.html");
+        })
+    </script>
+    <body>
+        <div id="component_nav_with_search"></div>
+        <div class="why-brandcrush-page">
+            <section class="hero is-medium is-primary banner-section">
+                <div class="hero-body">
+                    <div class="banner-w">
+                        <p class="title">
+                            Why Brandcrush?
+                        </p>
+                        <p class="subtitle">
+                            Features and Benefits
+                        </p>
+                        <!-- <div class="button is-primary js-modal-btn" data-video-id="202177974"><img src="/assets/images/icons/white_play.svg" />Watch Video</div> -->
+                    </div>
+                </div>
+            </section>
+            <section class="activation-description-section">
+                <div class="container">
+                    <div class="activation-description-w">
+                        Brandcrush is a marketing platform that connects brands with thousands of activation spaces.
+                    </div>
+                </div>
+            </section>
+            <div id="component_activation_concept"></div>
+            <section class="brandcrush-benefit-section">
+                <div class="brandcrush-benefit-w cerise-bg">
+                    <div class="title">
+                        Benefits of Brandcrush
+                    </div>
+                </div>
+            </section>
+            <section class="brand-activation-section">
+                <div class="container">
+                    <div class="brand-activation-w">
+                        <div class="button-w">
+                            <div id="activation" class="tab-btn actived-btn">I'm an Activation Host</div>
+                            <div id="brand" class="tab-btn">I'm a Brand</div>
+                        </div>
+                        <div class="tab_content" id="content_activation">
+                            <hr class="has-background-primary"/>
+                            <div class="image-list-w">
+                                <div class="columns">
+                                    <div class="column">
+                                        <div class="image-w">
+                                            <div class="img" style="background-image: url(/assets/images/Staticpages/221333@2x.jpg)"></div>
+                                        </div>
+                                    </div>
+                                    <div class="column">
+                                        <div class="big-list-w" style="margin-right: 3.25rem">
+                                            <div class="big-list-item-w">
+                                                <div class="list-icon-w">
+                                                    <div class="list-icon"></div>
+                                                </div>
+                                                <div class="text-w">
+                                                    <div class="title">Revenue</div>
+                                                    <div class="description">maximise your income by monetising existing foot traffic.</div>
+                                                </div>
+                                            </div>
+                                            <div class="big-list-item-w">
+                                                <div class="list-icon-w">                                            
+                                                    <div class="list-icon"></div>
+                                                </div>
+                                                <div class="text-w">
+                                                    <div class="title">Value Add</div>
+                                                    <div class="description">Attract and delight customers with a free sample or brand message.</div>
+                                                </div>
+                                            </div>
+                                            <div class="big-list-item-w">
+                                                <div class="list-icon-w">
+                                                    <div class="list-icon"></div>
+                                                </div>
+                                                <div class="text-w">
+                                                    <div class="title">No Risk</div>
+                                                    <div class="description">Sign up for free - there are no setup or subscription fees.</div>
+                                                </div>
+                                            </div>
+                                            <div class="big-list-item-w">
+                                                <div class="list-icon-w">
+                                                    <div class="list-icon"></div>
+                                                </div>
+                                                <div class="text-w">
+                                                    <div class="title">Control</div>
+                                                    <div class="description">Accept or decline Activation Requests to ensure they complement your space.</div>
+                                                </div>
+                                            </div>
+                                            <div class="big-list-item-w">
+                                                <div class="list-icon-w">
+                                                    <div class="list-icon"></div>
+                                                </div>
+                                                <div class="text-w">
+                                                    <div class="title">Insight</div>
+                                                    <div class="description">Gain first hand access to new and exciting Brands.</div>
+                                                </div>
+                                            </div>
+                                            <div class="big-list-item-w">
+                                                <div class="list-icon-w">
+                                                    <div class="list-icon"></div>
+                                                </div>
+                                                <div class="text-w">
+                                                    <div class="title">Scalability</div>
+                                                    <div class="description">Multi location businesses can set up an account and invite franchise partners to list an Activation Space.  </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="footer-button-w">
+                                <a href="/activationhosts"><div class="button is-primary">Learn More</div></a>
+                            </div>
+                        </div>
+                        <div class="tab_content" id="content_brand">
+                            <hr class="has-background-primary"/>
+                            <div class="image-list-w">
+                                <div class="columns">
+                                    <div class="column">
+                                        <div class="big-list-w" style="margin-left: 3.25rem">
+                                            <div class="big-list-item-w">
+                                                <div class="list-icon-w">
+                                                    <div class="list-icon"></div>
+                                                </div>
+                                                <div class="text-w">
+                                                    <div class="title">Cost effective</div>
+                                                    <div class="description">Get product into the right consumer's hands for less.</div>
+                                                </div>
+                                            </div>
+                                            <div class="big-list-item-w">
+                                                <div class="list-icon-w">                                            
+                                                    <div class="list-icon"></div>
+                                                </div>
+                                                <div class="text-w">
+                                                    <div class="title">Highly targeted</div>
+                                                    <div class="description">Smart filters allow for consumer targeting by location, category and audience demographics.</div>
+                                                </div>
+                                            </div>
+                                            <div class="big-list-item-w">
+                                                <div class="list-icon-w">
+                                                    <div class="list-icon"></div>
+                                                </div>
+                                                <div class="text-w">
+                                                    <div class="title">Consoildated</div>
+                                                    <div class="description">Allowing brands to activate across a volume of localised spaces with intimacy and scalability.</div>
+                                                </div>
+                                            </div>
+                                            <div class="big-list-item-w">
+                                                <div class="list-icon-w">
+                                                    <div class="list-icon"></div>
+                                                </div>
+                                                <div class="text-w">
+                                                    <div class="title">Measurable</div>
+                                                    <div class="description">Activate in geographic pockets and measure sales uplift in a localised area. Plus, brands can get instant  consumer feedback via automated in-app reporting.</div>
+                                                </div>
+                                            </div>
+                                            <div class="big-list-item-w">
+                                                <div class="list-icon-w">
+                                                    <div class="list-icon"></div>
+                                                </div>
+                                                <div class="text-w">
+                                                    <div class="title">Secure</div>
+                                                    <div class="description">Payment is held by our trusted marketplace until a valid Activation Report has been submitted.</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="column">
+                                        <div class="image-w">
+                                            <div class="img" style="background-image: url(/assets/images/Staticpages/Stocksy_txp829abf37kJ2200_Medium_221333.jpg)"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="footer-button-w">
+                                <a href="/brands"><div class="button is-primary">Learn More</div></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="we-are-here-section">
+                <div class="container">
+                    <div class="we-are-here-w post-component">
+                        <div class="columns">
+                            <div class="column">
+                                <div class="image" style="background-image: url(/assets/images/Staticpages/bruce-mars-558921-unsplash@2x.jpg)"></div>
+                            </div>
+                            <div class="column">
+                                <div class="post-body">
+                                    <div class="post-title">We're here to help!</div>
+                                    <div class="post-desc">
+                                        <p>Please don’t hesitate to use our Concierge service via the live support button below, or you can <a class="has-text-primary" href="#">review our FAQS here</a>. </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div id="component_footer"></div>
+            <div class="asdf"></div>
+        </div>
+    </body>
+    <script>
+        $(document).ready(function(){
+            $('.tab_content').hide();
+            $('.tab_content:first').show();
+            $('.tab-btn').click(function(){
+                var t = $(this).attr('id');
+                if(!$(this).hasClass('actived-btn')){
+                    $('.tab-btn').removeClass('actived-btn');
+                    $(this).addClass('actived-btn');
+                    $('.tab_content').hide();
+                    $('#content_'+t).fadeIn('slow');
+                }
+            })
+            // $(".js-modal-btn").modalVideo({channel:'vimeo'});
+        })
+    </script>    
+</html>

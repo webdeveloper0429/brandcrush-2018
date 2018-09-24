@@ -9,3 +9,6 @@
 .navbar-item-logged-in{
  display: none;
 }
+.hidden {
+    display:none;
+}
