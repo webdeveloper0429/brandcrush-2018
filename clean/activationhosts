@@ -7,7 +7,7 @@
         <link rel="shortcut icon" href="/assets/images/favicon.png" >
         <link rel="stylesheet" href="/lib/appleple-modal-video/css/modal-video.min.css">
         <link href="https://fonts.googleapis.com/css?family=Karla:400,700|Poppins:400,500,600,700" rel="stylesheet">
-        <link href="/lib/fontawesome-free-5.2.0-web/css/all.css" rel="stylesheet">
+        <link href="/lib/fontawesome-free-5.2.0-web/css/all.css" rel="stylesheet">   
         <link rel="stylesheet" href="/assets/css/mystyle.css">
         <!-- <script defer src="/lib/js/fontawesome-5.2.0/js/all.js"></script> -->
         <script src="/lib/js/jquery/jquery.min.js"></script>
@@ -18,12 +18,13 @@
         <script src="/lib/appleple-modal-video/js/jquery-modal-video.min.js"></script>
         <script src="/lib/sweetalert2-7.26.28/dist/sweetalert2.all.min.js"></script>
         <script src="/assets/js/script.js"></script>
+        <script src="/assets/js/auth.js"></script>
     </head>
     <script>
         $(function(){
-            $("#component_nav_with_search").load("/component_nav_with_search.html", navbar_init);
-            $("#component_footer").load("/component_footer.html", subscription_init);
-            $("#component_activation_concept").load("/component_activation_concept.html");
+            $("#component_nav_with_search").load("/components/component_nav_with_search.html", navbar_init);
+            $("#component_footer").load("/components/component_footer.html", subscription_init);
+            $("#component_activation_concept").load("/components/component_activation_concept.html");
         })
     </script>
     <body>
@@ -98,7 +99,7 @@
                         <div class="tab_content" id="content_activation">
                             <hr class="has-background-primary"/>
                             <div class="main-description">
-                                You distribute samples or brand messages for brands in your space.
+                                <b>The Activation Host</b> distributes samples or brand messages for your brand in their space. Save on staff and logistics costs, and activate intimately at scale.
                             </div>
                             <hr/>
                             <div class="item-row">
@@ -155,7 +156,7 @@
                         <div class="tab_content" id="content_brand">
                             <hr class="has-background-primary"/>
                             <div class="main-description">
-                                Brands activate with their team in your space.
+                                You provide staff to leverage existing foot traffic in a space.
                             </div>
                             <hr/>
                             <div class="item-row">
@@ -356,7 +357,7 @@
                                 <div class="post-body">
                                     <div class="post-title">Good luck with your next activation!</div>
                                     <div class="post-desc">
-                                        <p>Please don’t hesitate to use our Activation Host Concierge service via the live support button below, or you can <a class="has-text-primary" href="/FAQ.html">review our FAQS here</a>.</p>
+                                        <p>Please don’t hesitate to use our Activation Host Concierge service via the live support button below, or you can <a class="has-text-primary" href="/FAQs">review our FAQS here</a>.</p>
                                     </div>
                                 </div>
                             </div>

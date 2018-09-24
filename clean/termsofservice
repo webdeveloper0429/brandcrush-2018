@@ -1,0 +1,1290 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Terms</title>
+        <link rel="shortcut icon" href="/assets/images/favicon.png" >
+        <link rel="stylesheet" href="/lib/appleple-modal-video/css/modal-video.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Karla:400,700|Poppins:400,500,600,700" rel="stylesheet">
+        <link href="/lib/fontawesome-free-5.2.0-web/css/all.css" rel="stylesheet">
+        <link rel="stylesheet" href="/assets/css/mystyle.css">
+        <!-- <script defer src="/lib/js/fontawesome-5.2.0/js/all.js"></script> -->
+        <script src="/lib/js/jquery/jquery.min.js"></script>
+        <!--[if lte IE 8]>
+            <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+        <![endif]-->
+        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+        <script src="/lib/appleple-modal-video/js/jquery-modal-video.min.js"></script>
+        <script src="/lib/sweetalert2-7.26.28/dist/sweetalert2.all.min.js"></script>
+        <script src="/assets/js/script.js"></script>
+    </head>
+    <script>
+        $(function(){
+            $("#component_nav_with_search").load("/components/component_nav_with_search.html", navbar_init);
+            $("#component_footer").load("/components/component_footer.html", subscription_init);
+        })
+    </script>
+    <body>
+        <div id="component_nav_with_search"></div>
+        <div class="terms-page">
+            <section class="terms-section">
+                <div class="container">
+                    <div class="terms-main-w">
+                        <div class="terms-w">                                
+                            <div class="terms-title">
+                                Terms of Service
+                            </div>
+                            <div class="terms-description">
+                                <p><b>Please read these Terms of Service carefully because they contain important information about your legal rights, remedies and obligations. By accessing or using the Brandcrush Platform, you agree to comply with, and be bound by, these Terms of Service.</b></p>
+                                <p>Please see FAQs for a description of terms used throughout these Terms of Service which are not defined in this document. </p>
+                                <p>Last Updated: September 2018</p>
+                                <p>These Terms of Service (<b>Terms</b>) constitute a legally binding agreement (<b>Agreement</b>) between you and Brandcrush Pty Ltd ACN 617 383 052 (<b>Brandcrush</b>) governing your access and use of: </p>
+                                <ul>
+                                    <li>the Brandcrush Platform and any websites used by Brandcrush to offer or deliver its services including the website brandcrush.com (collectively, <b>Website</b>); </li>
+                                    <li>Brandcrush’s web, mobile, tablet and other smart device applications and application program interfaces (collectively, <b>Application</b>); and</li>
+                                    <li>all services provided by Brandcrush in connection with the Website and Application (<b>Services</b>). </li>
+                                </ul>
+                                <p>The Website, Application and Services together are collectively referred to as the “Brandcrush Platform”. By clicking “sign up” or “continue with”, you acknowledge that you have read and agree to be bound by these Terms as well as our House Rules and Privacy Policy, which are all incorporated by reference into this Agreement. </p>
+                                <p>The access to or use of certain areas and features of the Brandcrush Platform may be subject to separate policies, standards or guidelines, or may require that you accept additional terms and conditions. If there is a conflict between these Terms and terms and conditions applicable to a specific area or feature of the Brandcrush Platform, the latter terms and conditions will take precedence with respect to your access to or use of that area or feature, unless specified otherwise.</p>
+                                <p><b>Activation Hosts are solely responsible for identifying and complying with all laws and rules that apply to their Space Listings and Activations. In some jurisdictions, Activations Hosts must obtain a permit or licence before providing certain Activations (for example, permits and licences associated with serving liquor, offering liquor for sale, food preparation and handling, fundraising activities, providing diagnostic or health advice and broadcasting). If you require guidance or assistance with complying with the relevant laws and rules, you should contact the applicable regulatory authorities and obtain legal advice as required. </b></p>
+                            </div>
+                            <hr />
+                            <div class="index-w">
+                                <a class="index-row" href="#section-1">
+                                    <div class="index-num">1.</div>
+                                    <div class="index-text">Scope of the Brandcrush Platform </div>
+                                </a>
+                                <a class="index-row" href="#section-2">
+                                    <div class="index-num">2.</div>
+                                    <div class="index-text">Eligibility to use the Brandcrush Platform</div>
+                                </a>
+                                <a class="index-row" href="#section-3">
+                                    <div class="index-num">3.</div>
+                                    <div class="index-text">Account registration</div>
+                                </a>
+                                <a class="index-row" href="#section-4">
+                                    <div class="index-num">4.</div>
+                                    <div class="index-text">Terms specific to Activation Hosts </div>
+                                </a>
+                                <a class="index-row" href="#section-5">
+                                    <div class="index-num">5.</div>
+                                    <div class="index-text">Terms specific to Brands </div>
+                                </a>
+                                <a class="index-row" href="#section-6">
+                                    <div class="index-num">6.</div>
+                                    <div class="index-text">Service Fees </div>
+                                </a>
+                                <a class="index-row" href="#section-7">
+                                    <div class="index-num">7.</div>
+                                    <div class="index-text">Content</div>
+                                </a>
+                                <a class="index-row" href="#section-8">
+                                    <div class="index-num">8.</div>
+                                    <div class="index-text">Insurance</div>
+                                </a>
+                                <a class="index-row" href="#section-9">
+                                    <div class="index-num">9.</div>
+                                    <div class="index-text">Ratings and Reviews </div>
+                                </a>
+                                <a class="index-row" href="#section-10">
+                                    <div class="index-num">10.</div>
+                                    <div class="index-text">Taxes </div>
+                                </a>
+                                <a class="index-row" href="#section-11">
+                                    <div class="index-num">11.</div>
+                                    <div class="index-text">Prohibited Activities </div>
+                                </a>
+                                <a class="index-row" href="#section-12">
+                                    <div class="index-num">12.</div>
+                                    <div class="index-text">Term, Termination and Suspension</div>
+                                </a>
+                                <a class="index-row" href="#section-13">
+                                    <div class="index-num">13.</div>
+                                    <div class="index-text">Modification of Terms </div>
+                                </a>
+                                <a class="index-row" href="#section-14">
+                                    <div class="index-num">14.</div>
+                                    <div class="index-text">Disclaimers</div>
+                                </a>
+                                <a class="index-row" href="#section-15">
+                                    <div class="index-num">15.</div>
+                                    <div class="index-text">Liability</div>
+                                </a>
+                                <a class="index-row" href="#section-16">
+                                    <div class="index-num">16.</div>
+                                    <div class="index-text">Indemnification</div>
+                                </a>
+                                <a class="index-row" href="#section-17">
+                                    <div class="index-num">17.</div>
+                                    <div class="index-text">Applicable Law and Jurisdiction </div>
+                                </a>
+                                <a class="index-row" href="#section-18">
+                                    <div class="index-num">18.</div>
+                                    <div class="index-text">General Provisions </div>
+                                </a>
+                            </div>
+                            <hr />
+                            <div class="terms-content-w">
+                                <div class="terms-item">
+                                    <div class="title" id="section-1">
+                                        1. Scope of the Brandcrush Platform 
+                                    </div>
+                                    <div class="description">
+                                        <div class="sub-title">
+                                            1.1 Overview 
+                                        </div>
+                                        <p>
+                                            The Brandcrush Platform is an online marketplace that enables registered users (Members) (Members who offer services are “Activation Hosts” and the services they offer are “Activations”) to advertise Activations on the Brandcrush Platform (Space Listings) and to communicate and transact directly with Members who wish to book Activations (Members using Activations are “Brands”). Activations may be by way of product sampling, pop up or experiential formats and include but not be limited to gift with purchase, goody bags, counter tops, fridge displays, booths or product demonstrations. Activations include the use by Brands of physical spaces with existing foot traffic (Activation Spaces) and may include the provision of staff to deliver a brand or product message on behalf of the brand.  
+                                        </p>
+                                        <div class="sub-title">
+                                            1.2 Legal relationship between Activation Hosts and Brands 
+                                        </div>
+                                        <p>
+                                            As the provider of the Brandcrush Platform, Brandcrush does not own, create, sell, resell, provide, control, manage, offer, deliver, or supply any Listings or Activations. Activation Hosts are solely responsible for their Space Listings and Activations. When Members make or accept a booking, they are entering into a contract directly with each other. Brandcrush is not and does not become a party to, or other participant in, any contractual relationship between Members. Brandcrush is not acting as an agent in any capacity for any Member.
+                                        </p>
+                                        <div class="sub-title">
+                                            1.3 Responsibility for Member Content 
+                                        </div>
+                                        <p>
+                                            While Brandcrush may from time to time help facilitate the resolution of disputes between Members, Brandcrush has no control over and does not guarantee:  
+                                        </p>
+                                        <ul>
+                                            <li>
+                                                the existence, quality, safety, suitability, or legality of any Space Listings or Activations;  
+                                            </li>
+                                            <li>
+                                                the truth, completeness or accuracy of any Space Listing descriptions; 
+                                            </li>
+                                            <li>
+                                                Ratings, Reviews, or other Member Content (as defined in clause 7 below); or  
+                                            </li>
+                                            <li>
+                                                the performance or conduct of any Member or third party.  
+                                            </li>
+                                        </ul>
+                                        <p>
+                                            Brandcrush does not endorse any Member, Space Listing or Activations. Any references to a Member being "verified" (or similar language) only indicates that the Member has completed a relevant verification or identification process and nothing else. Any such description is not an endorsement, certification or guarantee by Brandcrush about any Member, including of the Member's identity or background or whether the Member is trustworthy, safe or suitable. You should always exercise due diligence and care when deciding whether to book or accept an Activation request or when communicating and interacting with other Members, whether online or in person.  
+                                        </p>
+                                        <p>
+                                            Authorised Images (as defined in clause 7.6(i) below) are intended only to indicate a photographic representation of a Space Listing at the time the photograph was taken, and are therefore not an endorsement by Brandcrush of any Activation Host or Space Listing. 
+                                        </p>
+                                        <div class="sub-title">
+                                            1.4 Legal relationship between Brandcrush and Activation Hosts   
+                                        </div>
+                                        <p>
+                                            If you choose to use the Brandcrush Platform as an Activation Host, your relationship with Brandcrush is limited to being an independent, third-party contractor, and not an employee, agent, joint venturer or partner of Brandcrush for any reason, and you act exclusively on your own behalf and for your own benefit, and not on behalf, or for the benefit, of Brandcrush. Brandcrush does not, and shall not be deemed to, direct or control you generally or in your performance under these Terms specifically, including in connection with your provision of Activations. You acknowledge and agree that you have complete discretion whether to list Activations or otherwise engage in other business or employment activities.  
+                                        </p>
+                                        <div class="sub-title">
+                                            1.5 Advertisements  
+                                        </div>
+                                        <p>
+                                            To promote the Brandcrush Platform and to increase the exposure of Space Listings to potential Members, Space Listings and other Member Content may be displayed on other websites, in applications, within emails, and in online and offline advertisements.  
+                                        </p>
+                                        <div class="sub-title">
+                                            1.6 Third Party Services 
+                                        </div>
+                                        <p>
+                                            The Brandcrush Platform may contain links to third party websites or resources (Third Party Services). Such Third Party Services may be subject to different terms and conditions and privacy practices. Brandcrush is not responsible or liable for the availability or accuracy of such Third Party Services, or the content, products, or services available from such Third Party Services. Links to such Third Party Services are not an endorsement by Brandcrush of such Third Party Services. 
+                                        </p>
+                                        <div class="sub-title">
+                                            1.7 Access and availability of Brandcrush Platform   
+                                        </div>
+                                        <p>
+                                            Due to the nature of the Internet, Brandcrush cannot guarantee the continuous and uninterrupted availability, availability in any particular location,  and accessibility of the Brandcrush Platform. Brandcrush may restrict the availability of the Brandcrush Platform or certain areas or features thereof, if this is necessary in view of capacity limits, the security or integrity of our servers, or to carry out maintenance measures that ensure the proper or improved functioning of the Brandcrush Platform. Brandcrush may improve, enhance and modify the Brandcrush Platform and introduce new Brandcrush Services from time to time. 
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="terms-item">
+                                    <div class="title" id="section-2">
+                                        2. Eligibility to use Brandcrush platform
+                                    </div>
+                                    <div class="description">
+                                        <div class="sub-title">
+                                            2.1 Members 
+                                        </div>
+                                        <p>
+                                            In order to access and use the Brandcrush Platform or register as a Member, you must:  
+                                        </p>
+                                        <ul>
+                                            <li>
+                                                be an entity which is registered by the applicable government authority to carry on business in the countries in which you seek to either book or carry out Activations;
+                                            </li>
+                                            <li>
+                                                be registered for GST or equivalent sales tax in the countries where you seek to book or carry out Activations; and 
+                                            </li>
+                                            <li>
+                                                if registering as an Activation Host, be able to provide an estimate of foot traffic (<b>Market Reach Estimate</b>) (which is verifiable having regard to past and current data) and sufficiently accurate to enable Brands to assess whether the fees proposed for an Activation represent fair value and decide whether to book a particular Activation. 
+                                            </li>
+                                        </ul>
+                                        <div class="sub-title">
+                                            2.2 Representations and warranties  
+                                        </div>
+                                        <p>
+                                            By accessing or using the Brandcrush Platform you represent and warrant that:  
+                                        </p>
+                                        <ul>
+                                            <li>
+                                                you are an entity which is legally entitled to carry on business in the country where you are seeking to book or carry out Activations and have the legal capacity and authority to enter into a contract;  
+                                            </li>
+                                            <li>
+                                                if you are an individual registering on behalf of an entity, you have the authority to legally bind that entity and grant us all permissions and licenses provided in these Terms;  
+                                            </li>
+                                            <li>
+                                                you are registered for GST or equivalent sales tax in the countries where you seek to book or carry out Activations; and 
+                                            </li>
+                                            <li>
+                                                if registering as an Activation Host, your Market Reach Estimate in respect of each Listing is sufficiently accurate and verifiable.  
+                                            </li>
+                                        </ul>
+                                        <div class="sub-title">
+                                                2.3 Further conditions 
+                                        </div>
+                                        <P>
+                                            Brandcrush may make access to and use of the Brandcrush Platform, or certain areas or features of the Brandcrush Platform, subject to certain conditions or requirements, such as completing a verification process, meeting specific quality or eligibility criteria, meeting Ratings or Reviews thresholds, or a Member’s booking and cancellation history. 
+                                        </P>
+                                        <div class="sub-title">
+                                            2.4 Member verification   
+                                        </div>
+                                        <P>
+                                            Member verification without face-to-face meetings is difficult and we do not assume any responsibility for the confirmation of any Member’s identity. Notwithstanding the above, for transparency and fraud prevention purposes, and as permitted by applicable laws, we may, but have no obligation to:  
+                                        </P>
+                                        <ul>
+                                            <li>
+                                                ask Members to provide an extract from a government authority (for example, ASIC certificate of incorporation) or other information or undertake additional checks designed to help verify the identities or backgrounds of Members; and 
+                                            </li>
+                                            <li>
+                                                screen Members against third party databases (for example, credit reporting bodies) or other sources and request reports from service providers.  
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="terms-item">
+                                    <div class="title" id="section-3">
+                                        3. Account registration 
+                                    </div>
+                                    <div class="description">
+                                        <div class="sub-title">
+                                            3.1 Activation Hosts and Brands 
+                                        </div>
+                                        <p>
+                                            You must register an account (<b>Brandcrush Account</b>) to access and use certain features of the Brandcrush Platform, such as publish a Listing, book an Activation or receive a booking for an Activation. You may not register more than one (1) Brandcrush Account unless otherwise authorised in writing by Brandcrush. You may not assign or otherwise transfer your Brandcrush Account to any third party. 
+                                        </p>
+                                        <div class="sub-title">
+                                            3.2 Registration process 
+                                        </div>
+                                        <p>
+                                            You can register a Brandcrush Account using an email address, creating a password and providing certain business and contact information. 
+                                        </p>
+                                        <div class="sub-title">
+                                            3.3 Obligation to keep up-to-date 
+                                        </div>
+                                        <p>
+                                            You must provide accurate, current and complete information during the registration process and keep your Brandcrush Account and public Brandcrush Account profile page information up-to-date at all times. 
+                                        </p>
+                                        <div class="sub-title">
+                                            3.4 Credentials 
+                                        </div>
+                                        <p>
+                                            You are responsible for maintaining the confidentiality and security of your Brandcrush Account credentials and must not disclose your credentials to any third party. You must immediately notify Brandcrush if you know or have any reason to suspect that your credentials have been lost, stolen, misappropriated, or otherwise compromised or in case of any actual or suspected unauthorised use of your Brandcrush Account. You are liable for any and all activities conducted through your Brandcrush Account, unless such activities are not authorised by you and you are not otherwise negligent (such as failing to report the unauthorised use or loss of your credentials). 
+                                        </p>
+                                        <div class="sub-title">
+                                            3.5 Authorised third parties 
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                Brandcrush may enable features that allow you to authorise other Members or certain third parties (including media agencies) (Authorised Third Party) to take certain actions that affect your Brandcrush Account. For example, we may allow eligible Members or certain third parties to publish Listings or book Activations on behalf of other Members. These features do not require that you share your credentials with any other person. No third party is authorised by Brandcrush to ask for your credentials, and you must not request the credentials of another Member. 
+                                            </li>
+                                            <li>
+                                                Subject to clause 6.4, you may request that Brandcrush issue an invoice for Activation Host Fees and/or Brand Fees to an Authorised Third Party for payment on your behalf.  
+                                            </li>
+                                            <li>
+                                                If you appoint an Authorised Third Party to act as your agent in connection with the Brandcrush Platform (including to administer an Activation Host’s Listing(s) or book Activations on behalf of Brands), you and the Authorised Third Party represent and warrant that:  
+                                                <ul>
+                                                    <li>
+                                                        the Authorised Third Party has been duly appointed and authorised to act on your behalf in connection with the Brandcrush Platform (including to receive and remit payments);  
+                                                    </li>
+                                                    <li>
+                                                        you remain fully responsible for the performance of your obligations under this Agreement; and  
+                                                    </li>
+                                                    <li>
+                                                        any agreement formed between you and an Authorised Third Party does not conflict with these Terms.  
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                Media agencies using the Brandcrush Platform acknowledge and agree that the Activation Host Fees and/or Brand Fees is a cost of good and is non-commissionable. No agency rebated will be given. 
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="terms-item">
+                                    <div class="title" id="section-4">
+                                        4. Terms specific to Activation Hosts 
+                                    </div>
+                                    <div class="description">
+                                        <div class="sub-title">
+                                            4.1 Terms that apply to all Space Listings 
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                When creating a Listing through the Brandcrush Platform you must:  
+                                                <ul>
+                                                    <li>
+                                                        provide complete and accurate information about your Activation capacity (including details of your Activation Space and staff availability);   
+                                                    </li>
+                                                    <li>
+                                                        disclose any deficiencies, restrictions and requirements that apply; and  
+                                                    </li>
+                                                    <li>
+                                                        provide any other pertinent information requested by Brandcrush.  
+                                                    </li>
+                                                </ul>
+                                                You are responsible for keeping your Listing information (including availability) up-to-date at all times. 
+                                            </li>
+                                            <li>
+                                                You are solely responsible for setting a price (including any Taxes, if applicable) for your Activation Fee. Once a Brand requests a booking for an Activation, you must not request that the Brand pays a higher price than the Activation Fee quoted in the booking request. When setting your Activation Fee, Activation Hosts must use best endeavours to charge fair and reasonable Activation Fees that reflect the value offered by a particular Activation having regard to the nature of the Activation. For example, Activations that involve distribution of samples as a gift with purchase or provision of a dedicated staff member may be able to charge a higher Activation Fee than a passive counter top display.  
+                                            </li>
+                                            <li>
+                                                Any terms and conditions included in your Space Listing, in particular in relation to cancellations, must not conflict with these Terms.  
+                                            </li>
+                                            <li>
+                                                Pictures, animations or videos (collectively, "Images") used in your Space Listings must accurately reflect the quality and condition of your Activations and Activation Spaces. Brandcrush reserves the right to require that Space Listings have a minimum number of Images of a certain format, size and resolution. 
+                                            </li>
+                                            <li>
+                                                You must keep strictly confidential:  
+                                                <ul>
+                                                    <li>
+                                                        all Activation Reports (except to the extent that you provide this information to Brandcrush in accordance with these Terms);  
+                                                    </li>
+                                                    <li>
+                                                        prior to Activations, all materials related to Activations which identify a Brand or which a Brand may be reasonably identified, including details of any requests and correspondence made in connection with a Listing; and 
+                                                    </li>
+                                                    <li>
+                                                        all materials relating to an Activation which would be considered by a reasonable person to be commercially sensitive or confidential in nature.  
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                The placement and ranking of Space Listings in search results on the Brandcrush Platform may vary and depend on a variety of factors including Member search parameters and preferences, Activation Host requirements, price and availability, number and quality of Images, service and cancellation history, Reviews and Ratings and type of Activation.  
+                                            </li>
+                                            <li>
+                                                When you accept or have pre-approved a booking request by a Brand, you are entering into a legally binding agreement with the Brand and are required to provide the relevant Activation to the Brand as described in your Space Listing when the booking request is made. You also agree to pay the applicable Commission to Brandcrush and any applicable Taxes. 
+                                            </li>
+                                        </ul>
+                                        <div class="sub-title">
+                                            4.2 Activation Reports 
+                                        </div>
+                                        <p>
+                                            Where Activations are carried out on behalf of Brands by Activation Hosts:
+                                        </p>
+                                        <ul>
+                                            <li>
+                                                Activation Hosts must submit an Activation Report in the form prescribed by Brandcrush as soon as practicable, and no later than 72 hours after, completion of an Activation. Release by Brandcrush of the Activation Fee payable in connection with the Activation is contingent on Brandcrush receiving an Activation Report which proves the Activation was completed satisfactorily (as determined by Brandcrush, acting reasonably); and 
+                                            </li>
+                                            <li>
+                                                the Activation Host will forfeit any Activation Fee payable in relation to an Activation if an Activation Report has not been received by Brandcrush within 5 Business Days.  
+                                            </li>
+                                        </ul>
+                                        <div class="sub-title">
+                                            4.3 Images 
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                You grant Brandcrush and each Brand which books an Activation, a non-exclusive, worldwide, royalty-free, irrevocable, perpetual (or for the term of the protection), sub-licensable and transferable license to any Images contained in the applicable Activation Report (Activation Report Images) to access, use, store, copy, modify, prepare derivative works of, distribute, publish, transmit, stream, broadcast, and otherwise exploit in any manner such Activation Report Images to, in respect of Brandcrush, promote the Brandcrush Platform on social media platforms and in respect of the Brand, to promote the Brand on social media platforms. 
+                                            </li>
+                                            <li>
+                                                You must ensure that you obtain the consent of any person who is identifiable in the Activation Report Images in accordance with the following guidelines: 
+                                                <ul>
+                                                    <li>
+                                                        if the person is clearly identifiable and/or the Image will, or may be, the subject of an extensive or prominent marketing campaign, you must obtain the written consent and release signed by the relevant person; and 
+                                                    </li>
+                                                    <li>
+                                                        if the person is not clearly identifiable and/or not the main subject of the Image, or the image use is restricted to social media, you must obtain verbal or implied consent of the relevant person.  
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                It is the sole responsibility of the Activation Host to obtain, and be in the position to verify and prove that the relevant consents have been obtained, in connection with the Activation Report Images. By submitting the Activation Report Images to Brandcrush, you represent and warrant that such consents have been obtained.    
+                                            </li>
+                                        </ul>
+                                        <div class="sub-title">
+                                            4.4 Exclusivity  
+                                        </div>
+                                        <p>
+                                            In order for Brandcrush to ensure space inventory is managed and Brands have a satisfactory user experience, Activation Hosts must not use any third party intermediary platform aside from the Brandcrush Platform to list physical activation spaces for booking by third parties. This clause 4.4 does not prevent Activations Hosts booking physical activation spaces through their own channels which are not in the form of an online/marketplace platform.  
+                                        </p>
+                                        <div class="sub-title">
+                                            4.5 Product Reach Estimate  
+                                        </div>
+                                        <p>
+                                            In addition to providing a fair and accurate Market Reach Estimate as a condition of your registration as an Activation Host, you must also provide a fair and accurate assessment of your product reach in respect of an Activation Space, as calculated having regard to the number of products/samples/messages which can be distributed to consumers/members/people per day in a particular Activation Space.  
+                                        </p>
+                                        <div class="sub-title">
+                                            4.6 Receipt of samples 
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                Prior to the Sample Delivery Date (defined in clause 5.3(i) below), you will receive an email from Brandcrush requiring you to inform us whether you have received the relevant samples required for a booked Activation. You must respond promptly and accurately to the email.  
+                                            </li>
+                                            <li>
+                                                You must use best endeavours to accommodate any request by a Brand to extend a Sample Delivery Date (defined in clause 5.3(i) below) or vary the date for performance of an Activation in circumstances where there would not be any unreasonable impact on your business costs or operations.  
+                                            </li>
+                                        </ul>
+                                        <div class="sub-title">
+                                            4.7 Food storage, handling and safety 
+                                        </div>
+                                        <p>
+                                            Activation Hosts offering Activations that involve the distribution of perishable products must ensure:  
+                                        </p>
+                                        <ul>
+                                            <li>
+                                                the products are stored and handled in accordance with all relevant food safety laws and guidelines and as marked on packaging; and 
+                                            </li>
+                                            <li>
+                                                it holds all applicable licences and certifications required by the relevant laws and regulations (including any food handling certification of staff members in contact with unpackaged products).     
+                                            </li>
+                                        </ul>
+                                        <div class="sub-title">
+                                            4.8 Responsible service of alcohol  
+                                        </div>
+                                        <p>
+                                            Activation Hosts offering Activations that involve the service of alcohol or alcohol-related products must ensure:  
+                                        </p>
+                                        <ul>
+                                            <li>
+                                                alcohol or alcohol-related products are only served, distributed or promoted to those persons who meet the legal age for consumption of alcohol in the country in which the Activation is taking place; and  
+                                            </li>
+                                            <li>
+                                                it holds all applicable licences and certifications required by the relevant laws and regulations (including any responsible service of alcohol or other certification required by staff members in contact with the products).  
+                                            </li>
+                                        </ul>
+                                        <div class="sub-title">
+                                            4.9 Franchise agreements 
+                                        </div>
+                                        <p>
+                                            If you create a Space Listing in respect of an Activation Space which is a franchise location, you represent and warrant that the Space Listing and any subsequent Activation complies with the applicable franchise agreement and any other terms, conditions or rules relating to the availability or authorised use of the Activation Space and the brand representation required by the relevant franchisor. 
+                                        </p>
+                                        <div class="sub-title">
+                                            4.10 Mystery shoppers 
+                                        </div>
+                                        <p>
+                                            Brandcrush may engage “mystery shoppers” or carry out other forms of random or targeted audits of Activations provided by Activation Hosts.  
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="terms-item">
+                                    <div class="title" id="section-5">
+                                        5. Terms specific to Brands 
+                                    </div>
+                                    <div class="description">
+                                        <div class="sub-title">
+                                            5.1 Bookings and fees 
+                                        </div>
+                                        <p>
+                                            Subject to meeting any requirements (such as completing any verification processes) set by Brandcrush and/or the Activation Host, you can book a Space Listing available on the Brandcrush Platform by following the respective booking process. All applicable fees, including the Booking Fee, Activation Fee and any applicable Taxes (collectively, “Total Fees”) will be presented to you prior to booking a Listing. You agree to pay the Total Fees for any booking requested in connection with your Brandcrush Account. Brandcrush will collect the Total Fees at the time of the booking request.  
+                                        </p>
+                                        <div class="sub-title">
+                                            5.2 Brand information 
+                                        </div>
+                                        <p>
+                                            You must provide the Activation Host with reasonable details of your brand (including logo, brand description, social handles and trade marks) to enable the Activation Host to have an adequate representation of your brand in order to carry out the Activation.  
+                                        </p>
+                                        <div class="sub-title">
+                                            5.3 Delivery of samples 
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                Where an Activation is to be activated by the Activation Host, you must deliver the relevant samples (<b>Activation Samples</b>) to the Activation Host at least three (3) business days (being a day which is not a Saturday or Sunday or a public holiday in the place in which the relevant act is to be done, “<b>Business Day</b>”) before the Activation Date (<b>Sample Delivery Date</b>).  
+                                            </li>
+                                            <li>
+                                                If you fail to deliver Activation Samples by the Sample Delivery Date, you should contact the Activation Host via the message service and request that they accept delivery of the Activation Samples at a later date. You may also request that the Activation be moved to a later date. The Activation Host may, but has no obligation to, accept requests for extensions to the Sample Delivery Date and/or variations to the Activation Date. If you are unable to negotiate an extension to the Sample Delivery Date or a variation to the Activation Date, you will be deemed to have cancelled the Activation and Service Fees will be charged in accordance with clause 6.3.    
+                                            </li>
+                                            <li>
+                                                Unless otherwise agreed between you and the Activation Host, you must promptly collect any unused samples after completion of an Activation.  
+                                            </li>
+                                        </ul>
+                                        <div class="sub-title">
+                                            5.4 Flag notification  
+                                        </div>
+                                        <p>
+                                            Brands may use the “Flag this Activation Host” function on the Brandcrush Platform to notify Brandcrush of any significant issues with a particular booked Activation or Activation Host (for example, an Activation Space does not exist or is materially inconsistent with the relevant Listing). Where a Brand “flags” an Activation Host, all Service Fees in connection with the booked Activation will be paused and any future bookings suspended pending investigation by Brandcrush. Brandcrush will use reasonable endeavours to investigate the issue(s) and will make a determination in relation to payment of Service Fees. Brandcrush’s decisions in relation to disputes between Members will be final and binding.  
+                                        </p>
+                                        <div class="sub-title">
+                                            5.5 Non-exclusivity 
+                                        </div>
+                                        <p>
+                                            You acknowledge and agree that the relationship between you and the Activation Host is non-exclusive and Activation Hosts may carry out Activations or otherwise promote brands which are similar to, or compete with, your brand. However, opportunities for effective or limited exclusivity exist where Brands and Activation Hosts develop long term partnerships which may involve, for example, Brands booking out Activations Spaces for extended periods.   
+                                        </p>
+                                        <div class="sub-title">
+                                            5.6 Legal agreement 
+                                        </div>
+                                        <p>
+                                            Upon receipt of a booking confirmation from Brandcrush, a legally binding agreement is formed between you and the applicable Activation Host, subject to any additional terms and conditions of the Activation Host that apply, including in particular any rules and restrictions specified in the Listing.  
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="terms-item">
+                                    <div class="title" id="section-6">
+                                        6. Service Fees 
+                                    </div>
+                                    <div class="description">
+                                        <div class="sub-title">
+                                            6.1 Fee types 
+                                        </div>
+                                        <p>
+                                            Brandcrush may charge fees and commissions to Activations Hosts (<b>Activation Host Fees</b>) and/or Brands (<b>Brand Fees</b>) (collectively, “<b>Service Fees</b>") in consideration for the use of the Brandcrush Platform. In relation to an Activation:  
+                                        </p>
+                                        <ul>
+                                            <li>
+                                                Activation Host Fees comprise a twelve and a half (12.5) per cent commission payable by the Activation Host to Brandcrush (<b>Commission</b>); and 
+                                            </li>
+                                            <li>
+                                                Brand Fees comprise a twelve and a half (12.5) per cent booking fee payable by Brands to Brandcrush (<b>Booking Fee</b>) and the fee payable to the Activation Host for the Activation (<b>Activation Fee</b>).  
+                                            </li>
+                                        </ul>
+                                        <p>
+                                            Except as otherwise specified in these Terms, Service Fees are non-refundable.  
+                                        </p>
+                                        <div class="sub-title">
+                                            6.2 Timing of payments 
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                The Brand Fees will be processed at the time that you make a request to book an Activation (<b>Activation Request</b>). Brandcrush will hold payment for a maximum of five (5) Business Days while your Activation Request is pending.  
+                                            </li>
+                                            <li>
+                                                The Booking Fee will be released to Brandcrush on acceptance of an Activation Request by the Activation Host.  
+                                            </li>
+                                            <li>
+                                                Unless Brandcrush becomes aware of an issue in relation to an Activation (including where an issue has been “flagged” by a Brand in accordance with clause 5.4), the Activation Fee will be released to the Activation Host to its nominated Bank account:  
+                                                <ul>
+                                                    <li>
+                                                        for Activations carried out on behalf of Brands by Activations Hosts, within 48 hours of receipt (or the next business day following expiry of this period) by Brandcrush of the Activation Report by the Activation Host in respect of the Activation; or  
+                                                    </li>
+                                                    <li>
+                                                        for Activations carried out by Brands, within 48 hours after completion of the Activation, or the next Business Day after expiry of this period.  
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                Where Activations are carried out on behalf of Brands by Activation Hosts, the Activation Host will forfeit any right to payment of the Activation Fee in relation to an Activation if an Activation Report has not been received by Brandcrush within 5 Business Days.  
+                                            </li>
+                                        </ul>
+                                        <div class="sub-title">
+                                            6.3Cancellations and refunds 
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                Service Fees payable by a Brand that cancels an Activation are non-refundable if the Activation is cancelled less than fifteen (15) days prior to the first day of the booked Activation (<b>Activation Date</b>).  
+                                            </li>
+                                            <li>
+                                                A Brand may be entitled to a full or partial refund of the Service Fees payable by the Brand in relation to an Activation cancelled by the Brand in accordance with the following terms:  
+                                                <ul>
+                                                    <li>
+                                                        the Brand will receive a refund of 100% of the Service Fees if the cancellation is made at least thirty (30) days prior to the first day of the applicable Activation Date; and  
+                                                    </li>
+                                                    <li>
+                                                        the Brand will receive a refund of 40% of the Service Fees (comprising 50% of the Activation Fee, the Booking Fee will remain payable to Brandcrush) if cancellation is made between fifteen (15) days and twenty nine (29) days prior to the applicable Activation Date. 
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                A Brand will be entitled to a full refund of the Service Fees payable by the Brand in relation to an Activation in the following circumstances: 
+                                                <ul>
+                                                    <li>
+                                                        the Activation is cancelled by the Activation Host; or 
+                                                    </li>
+                                                    <li>
+                                                        no Activation Report is received from the Activation Host by Brandcrush in relation to the Activation.  
+                                                    </li>
+                                                </ul> 
+                                            </li>
+                                            <li>
+                                                An Activation Host will be entitled to full or partial payment of the Activation Fee payable by the Brand if a Brand cancels an Activation in the following circumstances:  
+                                                <ul>
+                                                    <li>
+                                                        50% of the Activation Fee will be payable where the cancellation is made between fifteen (15) days and twenty nine (29) days prior to the applicable Activation Date; and
+                                                    </li>
+                                                    <li>
+                                                        100% of the Activation Fee will be payable where the cancellation is made less than fifteen (15) days prior to the applicable Activation Date.  
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <div class="sub-title">
+                                            6.4 Payment by invoice 
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                Invoice payments are only available to approved multi-national Brands and agency partners. To request approval, please email accounts@brandcrush.com. 
+                                            </li>
+                                            <li>
+                                                Unless otherwise notified by Brandcrush in writing, invoices must be paid in full on or prior to a date which is 30 days after the invoice is issued by Brandcrush. Any terms of credit offered by Brandcrush may be varied by Brandcrush in its sole discretion by notifying you in writing.  
+                                            </li>
+                                            <li>
+                                                Where Brandcrush approves a Member or Authorised Third Party (defined in clause 3.5(i) below) to pay by invoice, the Member or Authorised Third Party irrevocable authorises Brandcrush to make such inquiries as deemed necessary to investigate the credit worthiness of the Member or Authorised Third Party’s (as the case may be). 
+                                            </li>
+                                        </ul>
+                                        <div class="sub-title">
+                                            6.5 Fee updates 
+                                        </div>
+                                        <p>
+                                            Brandcrush may change the Service Fees at any time and will provide Members adequate notice of any fee changes before they become effective. 
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="terms-item">
+                                    <div class="title" id="section-7">
+                                        7. Content 
+                                    </div>
+                                    <div class="description">
+                                        <div class="sub-title">
+                                            7.1 Member and Brandcrush content 
+                                        </div>
+                                        <p>
+                                            Brandcrush may, at its sole discretion, enable Members to:  
+                                        </p>
+                                        <ul>
+                                            <li>
+                                                create, upload, post, send, receive and store content, such as text, photos, audio, video, or other materials and information on or through the Brandcrush Platform (Member Content); and  
+                                            </li>
+                                            <li>
+                                                access and view Member Content and any content that Brandcrush itself makes available on or through the Brandcrush Platform, including proprietary Brandcrush content and any content licensed or authorised for use by or through Brandcrush from a third party (Brandcrush Content). 
+                                            </li>
+                                        </ul>
+                                        <div class="sub-title">
+                                            7.2 Intellectual property rights 
+                                        </div>
+                                        <p>
+                                            The Brandcrush Platform, Brandcrush Content, and Member Content may in its entirety or in part be protected by copyright, trademark, and/or other laws of Australia and other countries. You acknowledge and agree that the Brandcrush Platform and Brandcrush Content, including all associated intellectual property rights, are the exclusive property of Brandcrush and/or its licensors or authorising third parties. You will not remove, alter or obscure any copyright, trademark, service mark or other proprietary rights notices incorporated in or accompanying the Brandcrush Platform, Brandcrush Content or Member Content. All trademarks, service marks, logos, trade names, and any other source identifiers of Brandcrush used on or in connection with the Brandcrush Platform and Brandcrush Content are trademarks or registered trademarks of Brandcrush in Australia and/or in other countries. Trademarks, service marks, logos, trade names and any other proprietary designations of third parties used on or in connection with the Brandcrush Platform, Brandcrush Content, and/or Member Content are used for identification purposes only and may be the property of their respective owners. 
+                                        </p>
+                                        <div class="sub-title">
+                                            7.3 Restrictions 
+                                        </div>
+                                        <p>
+                                            You will not use, copy, adapt, modify, prepare derivative works of, distribute, license, sell, transfer, publicly display, publicly perform, transmit, broadcast or otherwise exploit the Brandcrush Platform, Brandcrush Content or Member Content, except to the extent you are the legal owner of certain Member Content or as expressly permitted in these Terms. No licenses or rights are granted to you by implication or otherwise under any intellectual property rights owned or controlled by Brandcrush or its licensors, except for the licenses and rights expressly granted in these Terms or which may be agreed to in writing by you, Brandcrush and the legal owner of the applicable Member Content. 
+                                        </p>
+                                        <div class="sub-title">
+                                            7.4 Brandcrush licence grant 
+                                        </div>
+                                        <p>
+                                            Subject to your compliance with these Terms, Brandcrush grants you a limited, non-exclusive, non-sublicensable, revocable, non-transferable license to:  
+                                        </p>
+                                        <ul>
+                                            <li>
+                                                download and use the Application on your personal device(s); and 
+                                            </li>
+                                            <li>
+                                                access and view any Brandcrush Content and Member Content made available on or through the Brandcrush Platform and accessible to you, solely for your legitimate business purposes. 
+                                            </li>
+                                        </ul>
+                                        <div class="sub-title">
+                                            7.5 Member licence grant 
+                                        </div>
+                                        <p>
+                                            By creating, uploading, posting, sending, receiving, storing, or otherwise making available any Member Content on or through the Brandcrush Platform, you grant to Brandcrush a non-exclusive, worldwide, royalty-free, irrevocable, perpetual (or for the term of the protection), sub-licensable and transferable license to such Member Content to access, use, store, copy, modify, prepare derivative works of, distribute, publish, transmit, stream, broadcast, and otherwise exploit in any manner such Member Content to provide and/or promote the Brandcrush Platform, in any media or platform. Unless you provide specific consent, Brandcrush does not claim any ownership rights in any Member Content and nothing in these Terms will be deemed to restrict any rights that you may have to use or exploit your Member Content. 
+                                        </p>
+                                        <div class="sub-title">
+                                            7.6 Authorised Images 
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                Brandcrush may offer Activation Hosts the option of having professional photographers take photographs of their Activations or Activation Spaces, which are made available by the photographer to Activation Hosts to include in their Space Listings (Authorised Images). You are responsible for ensuring that your Activation Space and Activations are accurately represented in the Authorised Images and you will stop using the Authorised Images on or through the Brandcrush Platform if they no longer accurately represent your Space Listing, if you stop hosting the Activation featured, or if your Brandcrush Account is terminated or suspended for any reason.  
+                                            </li>
+                                            <li>
+                                                You acknowledge and agree that Brandcrush has the right to use any Authorised Images for advertising, marketing and/or any other business purposes in any media or platform, whether in relation to your Listing or otherwise, without further notice or compensation to you. Where Brandcrush is not the exclusive owner of Authorised Images, by using such Authorised Images on or through the Brandcrush Platform, you grant to Brandcrush an exclusive, worldwide, royalty-free, irrevocable, perpetual (or for the term of the protection), sub-licensable and transferable license to use such Authorised Images for advertising, marketing and/or any other business purposes in any media or platform, whether in relation to your Listing or otherwise, without further notice or compensation to you. Brandcrush in turn grants you a limited, non-exclusive, non-sublicensable, revocable, non-transferable license to use Authorised Images outside of the Brandcrush Platform solely on your social media channels in connection with your legitimate business activities.  
+                                            </li>
+                                        </ul>
+                                        <div class="sub-title">
+                                            7.7 Member content representations 
+                                        </div>
+                                        <p>
+                                            You are solely responsible for all Member Content that you make available on or through the Brandcrush Platform. Accordingly, you represent and warrant that:   
+                                        </p>
+                                        <ul>
+                                            <li>
+                                                you either are the sole and exclusive owner of all Member Content that you make available on or through the Brandcrush Platform or you have all rights, licenses, consents and releases that are necessary to grant to Brandcrush the rights in and to such Member Content, as contemplated under these Terms; and 
+                                            </li>
+                                            <li>
+                                                neither the Member Content nor your posting, uploading, publication, submission or transmittal of the Member Content or Brandcrush's use of the Member Content (or any portion thereof) will infringe, misappropriate or violate a third party's patent, copyright, trademark, trade secret, moral rights or other proprietary or intellectual property rights, or rights of publicity or privacy, or result in the violation of any applicable law or regulation. 
+                                            </li>
+                                        </ul>
+                                        <div class="sub-title">
+                                            7.8 Prohibited content 
+                                        </div>
+                                        <p>
+                                            You will not post, upload, publish, submit or transmit any Member Content that:  
+                                        </p>
+                                        <ul>
+                                            <li>
+                                                is fraudulent, false, misleading (directly or by omission or failure to update information) or deceptive; 
+                                            </li>
+                                            <li>
+                                                is defamatory, libelous, obscene, pornographic, vulgar or offensive;  
+                                            </li>
+                                            <li>
+                                                promotes discrimination, bigotry, racism, hatred, harassment or harm against any individual or group;  
+                                            </li>
+                                            <li>
+                                                is violent or threatening or promotes violence or actions that are threatening to any other person or animal;  
+                                            </li>
+                                            <li>
+                                                promotes illegal or harmful activities; or  
+                                            </li>
+                                            <li>
+                                                violates any Brandcrush policy.  
+                                            </li>
+                                        </ul>
+                                        <p>
+                                            Brandcrush may, without prior notice, remove or disable access to any Member Content that Brandcrush finds to be in violation of these Terms or Brandcrush’s then-current policies or otherwise may be harmful or objectionable to Brandcrush, its Members, third parties, or property. 
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="terms-item">
+                                    <div class="title" id="section-8">
+                                        8. Insurance
+                                    </div>
+                                    <div class="description">
+                                        <p>
+                                            Given the nature of Activations and the interface with consumers and the general public, Brandcrush considers it is in all parties’ interests to ensure both Activations Hosts and Brands have adequate insurance coverage. We expect Members will have the following insurance arrangements in place as part of their ordinary business practices.  
+                                        </p>
+                                        <div class="sub-title">
+                                            8.1 Activation Hosts  
+                                        </div>
+                                        <p>
+                                            Activation Hosts must maintain throughout the term of this Agreement:  
+                                        </p>
+                                        <ul>
+                                            <li>
+                                                commercial general liability insurance, written on an occurrence basis, on a combined single limit of AUD$5,000,000 per occurrence; and 
+                                            </li>
+                                            <li>
+                                                statutory workers' compensation insurance.  
+                                            </li>
+                                        </ul>
+                                        <div class="sub-title">
+                                            8.2 Brands 
+                                        </div>
+                                        <p>
+                                            Brands must maintain through the term of this Agreement public liability insurance (incorporating product liability insurance), written on an occurrence basis, on a combined single limit of AUD$5,000,000 per occurrence.  
+                                        </p>
+                                        <div class="sub-title">
+                                            8.3 Coverage and certificates of currency  
+                                        </div>
+                                        <p>
+                                            The primary insured (i.e. the Activation Host or the Brand, as the case may be) must ensure that the other party to the Activation (<b>Secondary Insured Party</b>) is covered by the commercial general liability insurance or public liability insurance (as the case may be) and provide the Secondary Insured Party at least thirty (30) days' prior notice of any material amendment, cancellation or termination. Copies of the certificates of currency must be provided on request to the Secondary Insured Party.   
+                                        </p>
+                                        <div class="sub-title">
+                                            8.4 Responsibility  
+                                        </div>
+                                        <p>
+                                            It is the sole responsibility of the Secondary Insured Party to review the insurance arrangements of the other party for adequacy and compliance with this clause 8. In particular, Members are encouraged to read and understand and provisions relating to exclusions and deductions in connection with all insurance policies.  
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="terms-item">
+                                    <div class="title" id="section-9">
+                                        9. Ratings and Reviews 
+                                    </div>
+                                    <div class="description">
+                                        <div class="sub-title">
+                                            9.1 Brand reviews and ratings  
+                                        </div>
+                                        <p>
+                                            Within a certain timeframe after receipt of an Activation Report, Brands can leave a public review (Review) and submit a star rating (Rating) about an Activation. Ratings or Reviews reflect the opinions of individual Members and do not reflect the opinion of Brandcrush. Ratings and Reviews are not verified by Brandcrush for accuracy and may be incorrect or misleading. 
+                                        </p>
+                                        <div class="sub-title">
+                                            9.2 Rules 
+                                        </div>
+                                        <p>
+                                            Brands must ensure its Ratings and Reviews are fair, reasonable and accurate and must not contain any offensive or defamatory language or otherwise breach Brandcrush’s House Rules and other policies.  
+                                        </p>
+                                        <p>
+                                            Brands must ensure its Ratings and Reviews are fair, reasonable and accurate and must not contain any offensive or defamatory language or otherwise breach Brandcrush’s House Rules and other policies.  
+                                        </p>
+                                        <div class="sub-title">
+                                            9.3 Manipulation 
+                                        </div>
+                                        <p>
+                                            Brands are prohibited from manipulating the Ratings and Reviews system in any manner, such as instructing a third party to write a positive or negative Review about an Activation Host. 
+                                        </p>
+                                        <div class="sub-title">
+                                            9.4 Public profile 
+                                        </div>
+                                        <p>
+                                            Ratings and Reviews are part of an Activation Host’s public profile and may appear throughout the Brandcrush Platform (for example, a Listing page) together with other relevant information such as number of bookings, number of cancellations, average response time and other information. 
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="terms-item">
+                                    <div class="title" id="section-10">
+                                        10. Taxes
+                                    </div>
+                                    <div class="description">
+                                        <div class="sub-title">
+                                            10.1 GST 
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                Expressions set out in italics in this clause 10.1 bear the same meaning as those expressions in the A New Tax System (Goods and Services Tax) Act 1999 (Cth).   
+                                            </li>
+                                            <li>
+                                                All Service Fees are GST exclusive, unless otherwise expressly stated. GST will be added as separate line items to the amount payable by the Member.  
+                                            </li>
+                                            <li>
+                                                To the extent that a party makes a taxable supply under or in connection with these Terms, except where express provision is made to the contrary, the consideration payable by a party under or in connection with these terms and conditions represents the value of the taxable supply for which payment is to be made and on which GST is to be calculated. 
+                                            </li>
+                                            <li>
+                                                If a party makes a taxable supply under or in connection with these Terms for a consideration, which, under clause 10.1(iii) represents its value, then the party liable to pay for the taxable supply must also pay at the same time and in the same manner as the value is otherwise payable, the amount of any GST payable in respect of the taxable supply. 
+                                            </li>
+                                        </ul>
+                                        <div class="sub-title">
+                                            10.2 Activation Fees 
+                                        </div>
+                                        <p>
+                                            Except for GST, Activation Hosts are solely responsible for determining their obligations to report, collect, remit or include in the Activation Fee any applicable VAT or other indirect sales taxes, income taxes or other taxes ("Taxes"). 
+                                        </p>
+                                        <div class="sub-title">
+                                            10.3 Reporting and withholding  
+                                        </div>
+                                        <p>
+                                            Tax regulations may require us to collect Tax information from Activation Hosts and/or to withhold Taxes from payouts to Activation Hosts. If an Activation Host fails to provide us with documentation that we determine to be sufficient to alleviate our obligation (if any) to withhold Taxes from payouts to you, we reserve the right to freeze all payouts and/or withhold such amounts as required by law until the matter is resolved. 
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="terms-item">
+                                    <div class="title" id="section-11">
+                                        11. Prohibited Activities 
+                                    </div>
+                                    <div class="description">
+                                        <div class="sub-title">
+                                            11.1 Compliance with laws  
+                                        </div>
+                                        <p>
+                                            You are solely responsible for compliance with any and all laws, rules, regulations, and Tax obligations that may apply to your use of the Brandcrush Platform. In connection with your use of the Brandcrush Platform, you will not and will not assist, enable or encourage others to: 
+                                        </p>
+                                        <ul>
+                                            <li>
+                                                misuse, misappropriate or otherwise use samples for a purpose other than as agreed in connection with an Activation (including by distributing samples to friends and family or people not situated in an Activation Space at the time of the Activation);
+                                            </li>
+                                            <li>
+                                                not use best endeavours to carry out an Activation to the highest possible standard (taking into account the nature and agreed parameters of the Activation and available resources);  
+                                            </li>
+                                            <li>
+                                                use the Brandcrush Platform to request, make or accept a booking independent of the Brandcrush Platform or to circumvent any Service Fees or for any other reason; 
+                                            </li>
+                                            <li>
+                                                breach or circumvent any applicable laws or regulations, agreements with third-parties, third-party rights, or our Terms, House Rules and other policies or standards; 
+                                            </li>
+                                            <li>
+                                                use the Brandcrush Platform, Brandcrush Content or Member Content for any commercial or other purposes that are not expressly permitted by these Terms or in a manner that falsely implies Brandcrush endorsement, partnership or otherwise misleads others as to your affiliation with Brandcrush; 
+                                            </li>
+                                            <li>
+                                                copy, store or otherwise access or use any information, including personally identifiable information about any other Member, contained on the Brandcrush Platform in any way that is inconsistent with Brandcrush’s Privacy Policy or these Terms or that otherwise violates the privacy rights of Members or third parties; 
+                                            </li>
+                                            <li>
+                                                use the Brandcrush Platform in connection with the distribution of unsolicited commercial messages ("spam"); 
+                                            </li>
+                                            <li>
+                                                offer, as an Activation Host, any Activation Space that you do not yourself own or have permission to make available through the Brandcrush Platform; 
+                                            </li>
+                                            <li>
+                                                unless Brandcrush explicitly permits otherwise, book any Activation if you will not be using the Activation yourself; 
+                                            </li>
+                                            <li>
+                                                contact another Member for any purpose other than asking a question related to a your own booking, Listing, or the Member's use of the Brandcrush Platform, including, but not limited to, attempting to negotiate terms or payment between Members outside of the Brandcrush Platform, recruiting or otherwise soliciting any Member to join third-party services, applications or websites, without our prior written approval; 
+                                            </li>
+                                            <li>
+                                                request, accept or make any payment for Service Fees outside of the Brandcrush Platform or. If you do so, you acknowledge and agree that you:  
+                                                <ul>
+                                                    <li>
+                                                        would be in breach of these Terms;  
+                                                    </li>
+                                                    <li>
+                                                        accept all risks and responsibility for such payment; and  
+                                                    </li>
+                                                    <li>
+                                                        hold Brandcrush harmless from any liability for such payment; 
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                discriminate against or harass anyone on the basis of race, national origin, religion, gender, gender identity, physical or mental disability, medical condition, marital status, age or sexual orientation, or otherwise engage in any violent, harmful, abusive or disruptive behavior; 
+                                            </li>
+                                            <li>
+                                                use, display, mirror or frame the Brandcrush Platform, Brandcrush Content or Member Content, or any individual element within the Brandcrush Platform, Brandcrush's name, any Brandcrush trademark, logo or other proprietary information, or the layout and design of any page or form contained on a page in the Brandcrush Platform, without Brandcrush's express written consent; 
+                                            </li>
+                                            <li>
+                                                dilute, tarnish or otherwise harm the Brandcrush brand in any way, including through unauthorised use of Brandcrush Content and Member Content, registering and/or using Brandcrush or derivative terms in domain names, trade names, trademarks or other source identifiers, or registering and/or using domains names, trade names, trademarks or other source identifiers that closely imitate or are confusingly similar to Brandcrush domains, trademarks, taglines, promotional campaigns or Brandcrush Content and Member Content; 
+                                            </li>
+                                            <li>
+                                                use any robots, spider, crawler, scraper or other automated means or processes to access, collect data or other content from or otherwise interact with the Brandcrush Platform for any purpose; 
+                                            </li>
+                                            <li>
+                                                avoid, bypass, remove, deactivate, impair, descramble, or otherwise attempt to circumvent any technological measure implemented by Brandcrush or any of Brandcrush's providers or any other third party to protect the Brandcrush Platform; 
+                                            </li>
+                                            <li>
+                                                attempt to decipher, decompile, disassemble or reverse engineer any of the software used to provide the Brandcrush Platform; 
+                                            </li>
+                                            <li>
+                                                take any action that damages or adversely affects, or could damage or adversely affect the performance or proper functioning of the Brandcrush Platform; 
+                                            </li>
+                                            <li>
+                                                export, re-export, import, or transfer the Application except as authorised by the laws of your jurisdiction, and any other applicable laws; or 
+                                            </li>
+                                            <li>
+                                                violate or infringe anyone else’s rights or otherwise cause harm to anyone. 
+                                            </li>
+                                        </ul>
+                                        <div class="sub-title">
+                                            11.2 Monitoring 
+                                        </div>
+                                        <p>
+                                            You acknowledge that Brandcrush may, but has no obligation to, monitor the access to, or use of, the Brandcrush Platform by any Member or to review, disable access to, or edit any Member Content for purposes which include to: 
+                                        </p>
+                                        <ul>
+                                            <li>
+                                                operate, secure and improve the Brandcrush Platform (including without limitation for fraud prevention, risk assessment, investigation and customer support purposes);
+                                            </li>
+                                            <li>
+                                                ensure Members’ compliance with these Terms;  
+                                            </li>
+                                            <li>
+                                                comply with applicable law or the order or requirement of a court, law enforcement or other administrative agency or governmental body;  
+                                            </li>
+                                            <li>
+                                                respond to Member Content that it determines is harmful or objectionable; or  
+                                            </li>
+                                            <li>
+                                                as otherwise set forth in these Terms. Members agree to cooperate with and assist Brandcrush in good faith, and to provide Brandcrush with such information and take such actions as may be reasonably requested by Brandcrush with respect to any investigation undertaken by Brandcrush or a representative of Brandcrush regarding the use or abuse of the Brandcrush Platform. 
+                                            </li>
+                                        </ul>
+                                        <div class="sub-title">
+                                            11.3 Notification 
+                                        </div>
+                                        <p>
+                                            If you feel that any Member you interact with, whether online or in person, is acting or has acted inappropriately, including but not limited to anyone who (i) engages in offensive, violent or sexually inappropriate behavior, (ii) you suspect of stealing from you, or (iii) engages in any other disturbing conduct, you should immediately report such person to the appropriate authorities and then to Brandcrush by contacting us with your police station and report number (if available). You agree that any report you make will not obligate us to take any action (beyond that required by law, if any). 
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="terms-item">
+                                    <div class="title" id="section-12">
+                                        12. Term, termination and suspension
+                                    </div>
+                                    <div class="description">
+                                        <div class="sub-title">
+                                            12.1 Term 
+                                        </div>
+                                        <p>
+                                            The initial terms of this Agreement is thirty (30) days, at the end of which it will automatically and continuously renew for subsequent thirty (30) day terms until such time when you or Brandcrush terminate the Agreement in accordance with this clause 12. 
+                                        </p>
+                                        <div class="sub-title">
+                                            12.2 Termination 
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                You may terminate this Agreement at any time by sending us an email. If you cancel your Brandcrush Account as an Activation Host, any confirmed booking(s) will be automatically cancelled and your Brands will receive a full refund of the Activation Fees. If you cancel your Brandcrush Account as a Brand, any confirmed booking(s) will be automatically cancelled and any refund of Service Fees will be determined in accordance with clause 6.3. 
+                                            </li>
+                                            <li>
+                                                Brandcrush may terminate this Agreement for convenience at any time by giving you thirty (30) days' notice via email to your registered email address. 
+                                            </li>
+                                        </ul>
+                                        <div class="sub-title">
+                                            12.3 Termination or suspension for cause  
+                                        </div>
+                                        <p>
+                                            Brandcrush may immediately, without notice, terminate this Agreement and/or stop providing access to the Brandcrush Platform if:  
+                                        </p>
+                                        <ul>
+                                            <li>
+                                                you have materially breached your obligations under these Terms, our House Rules or any of our policies or standards;   
+                                            </li>
+                                            <li>
+                                                you have violated applicable laws, regulations or third party rights; or 
+                                            </li>
+                                            <li>
+                                                Brandcrush believes in good faith that such action is reasonably necessary to protect the personal safety or property of Brandcrush, its Members, or third parties (for example in the case of fraudulent behavior of a Member). 
+                                            </li>
+                                        </ul>
+                                        <div class="sub-title">
+                                            12.4 Additional measures 
+                                        </div>
+                                        <p>
+                                            Brandcrush may take any step or measure in connection with your Brandcrush Account and your use of the Brandcrush Platform (including deleting or delaying Space Listings, Ratings, Reviews, or other Member Content, cancelling any pending or confirmed Activations; limiting your access to or use of the Brandcrush Platform, temporarily or permanently revoke any special status associated with your Brandcrush Account and temporarily or permanently suspend your Brandcrush Account and stop providing access to the Brandcrush Platform):  
+                                        </p>
+                                        <ul>    
+                                            <li>
+                                                in order to comply with applicable law, or the order or request of a court, law enforcement or other administrative agency or governmental body;  
+                                            </li>
+                                            <li>
+                                                if you have breached these Terms, our House Rules, our policies or standards, applicable laws, regulations, or third party rights; 
+                                            </li>
+                                            <li>
+                                                if you have provided inaccurate, fraudulent, outdated or incomplete information during the Brandcrush Account registration, Listing process or thereafter;  
+                                            </li>
+                                            <li>
+                                                if you and/or your Space Listings or Activations at any time fail to meet any applicable quality or eligibility criteria;  
+                                            </li>
+                                            <li>
+                                                if you have repeatedly received poor Ratings or Reviews or Brandcrush otherwise becomes aware of or has received complaints about your performance or conduct;  
+                                            </li>
+                                            <li>
+                                                if you have repeatedly cancelled confirmed bookings or failed to respond to booking requests without a valid reason; or  
+                                            </li>
+                                            <li>
+                                                Brandcrush believes in good faith that such action is reasonably necessary to protect the personal safety or property of Brandcrush, its Members, or third parties, or to prevent fraud or other illegal activity: 
+                                            </li>
+                                        </ul>
+                                        <p>
+                                            In case of minor breaches and where appropriate, you will be given notice of any intended measure by Brandcrush and an opportunity to resolve the issue to Brandcrush's reasonable satisfaction. 
+                                        </p>
+                                        <div class="sub-title">
+                                            12.5 Refund of Activation Fees  
+                                        </div>
+                                        <p>
+                                            If we take any of the measures described above we may refund any Activation Fees otherwise payable by Brands in full for any and all confirmed Activations that have been cancelled and you will not be entitled to any compensation for pending or confirmed bookings that are cancelled. 
+                                        </p>
+                                        <div class="sub-title">
+                                            12.6 New accounts 
+                                        </div>
+                                        <p>
+                                            When this Agreement has been terminated, you are not entitled to a restoration of your Brandcrush Account or any of your Member Content. If your access to or use of the Brandcrush Platform has been limited or your Brandcrush Account has been suspended or this Agreement has been terminated by us, you may not register a new Brandcrush Account or access and use the Brandcrush Platform through an Brandcrush Account of another Member. 
+                                        </p>
+                                        <div class="sub-title">
+                                            12.7 Survival 
+                                        </div>
+                                        <p>
+                                            If you or we terminate this Agreement, the clauses of these Terms that reasonably should survive termination of the Agreement will remain in effect. 
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="terms-item">
+                                    <div class="title" id="section-13">
+                                        13. Modification of Terms 
+                                    </div>
+                                    <div class="description">
+                                        <div class="sub-title">
+                                            13.1 Right to modify 
+                                        </div>
+                                        <p>
+                                            Brandcrush may modify these Terms at any time in accordance with this provision.  
+                                        </p>
+                                        <div class="sub-title">
+                                            13.2 Notification 
+                                        </div>
+                                        <p>
+                                            We will post the updated Terms on the Brandcrush Platform and update the “Last Updated” date at the top of these Terms. We will also provide you with notice of the modifications by email at least thirty (30) days before the date they become effective. If you disagree with the revised Terms, you may terminate this Agreement.  
+                                        </p>
+                                        <div class="sub-title">
+                                            13.3 Right to terminate  
+                                        </div>
+                                        <p>
+                                            We will inform you about your right to terminate the Agreement in the notification email. If you do not terminate your Agreement before the date the revised Terms become effective, your continued access to or use of the Brandcrush Platform will constitute acceptance of the updated Terms. 
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="terms-item">
+                                    <div class="title" id="section-14">
+                                        14. Disclaimers 
+                                    </div>
+                                    <div class="description">
+                                        <ul>
+                                            <li>
+                                                If you choose to use the Brandcrush Platform, Brandcrush Content or Member Content, you do so voluntarily and at your sole risk. The Brandcrush Platform, Brandcrush Content or Member Content is provided “as is”, without warranty of any kind, either express or implied. 
+                                            </li>
+                                            <li>
+                                                You agree that you have had whatever opportunity you deem necessary to investigate the Brandcrush Platform, laws, rules, or regulations that may be applicable to your Space Listings and/or Activations you are booking or carrying out and that you are not relying upon any statement of law or fact made by Brandcrush relating to a Listing or Activation. 
+                                            </li>
+                                            <li>
+                                                If we choose to conduct identity verification or background checks on any Member, to the extent permitted by applicable law, we disclaim warranties of any kind, either express or implied, that such checks will identify prior misconduct by a Member or guarantee that a Member will not engage in misconduct in the future. 
+                                            </li>
+                                            <li>
+                                                You agree that some Activations may carry inherent risk, and by participating or procuring a Member to engage in such Activations, you choose to assume those risks voluntarily.  
+                                            </li>
+                                            <li>
+                                                The foregoing disclaimers apply to the maximum extent permitted by law. You may have other statutory rights. However, the duration of statutorily required warranties, if any, shall be limited to the maximum extent permitted by law. 
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="terms-item">
+                                    <div class="title" id="section-15">
+                                        15. Liability 
+                                    </div>
+                                    <div class="description">
+                                        <div class="sub-title">
+                                            15.1 Exclusions  
+                                        </div>
+                                        <p>
+                                            To the maximum extent permitted by law, you:  
+                                        </p>
+                                        <ul>
+                                            <li>
+                                                acknowledge and agree that, to the maximum extent permitted by law, the entire risk arising out of your access to and use of the Brandcrush Platform Brand Content and Member Content, your publishing or booking of any Listing via the Brandcrush Platform, your participation in any Activation or any other interaction you have with other Members whether in person or online remains with you; 
+                                            </li>
+                                            <li>
+                                                agree to release and hold harmless Brandcrush from all liabilities and claims that arise in any way from any injury, death, loss or harm that occurs to any person in connection with an Activation or in any way connected to the Brandcrush Platform;  
+                                            </li>
+                                            <li>
+                                                neither Brandcrush nor any other party involved in creating, producing, or delivering the Brandcrush Platform Brandcrush Content and Member Content will be liable for any incidental, special, exemplary or consequential damages, including lost profits, loss of data or loss of goodwill, service interruption, computer damage or system failure or the cost of substitute products or services, or for any damages for personal or bodily injury or emotional distress arising out of or in connection with:  
+                                                <ul>
+                                                    <li>
+                                                        these Terms; 
+                                                    </li>
+                                                    <li>
+                                                        from the use of or inability to use the Brandcrush Platform, Brandcrush Content or Member Content;  
+                                                    </li>
+                                                    <li>
+                                                        any communications, interactions or meetings with other Members or other persons with whom you communicate, interact or meet with as a result of your use of the Brandcrush Platform; or  
+                                                    </li>
+                                                    <li>
+                                                        your publishing or booking of a Listing, including the provision or use of an Activation, whether based on warranty, contract, tort (including negligence), product liability or any other legal theory, and whether or not Brandcrush has been informed of the possibility of such damage, even if a limited remedy set forth herein is found to have failed of its essential purpose.  
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <div class="sub-title">
+                                            15.2 Cap 
+                                        </div>
+                                        <p>
+                                            Except for Brandcrush’s obligations to pay amounts to Activation Hosts pursuant to these Terms, in no event will Brandcrush’s aggregate liability arising out of or in connection with these Terms and your use of the Brandcrush Platform including, but not limited to, from your publishing or booking of any Space Listings via the Brandcrush Platform, or from the use of or inability to use the Brandcrush Platform, Brand Content or Member Content and in connection with any Activation or interactions with any other Members, exceed the following amounts:  
+                                        </p>
+                                        <ul>
+                                            <li>
+                                                if you are an Activation Host, the amounts paid by Brandcrush to you in the twelve (12) month period prior to the event giving rise to the liability or AUD$100 if no such payments have been made; or 
+                                            </li>
+                                            <li>
+                                                if you are a Brand, the amounts you have paid or owe for bookings via the Brandcrush Platform in the twelve (12) month period prior to the event giving rise to the liability.  
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="terms-item">
+                                    <div class="title" id="section-16">
+                                        16. Indemnification 
+                                    </div>
+                                    <div class="description">
+                                        <p>
+                                            You agree to release, defend (at Brandcrush’s option), indemnify, and hold Brandcrush and its affiliates and subsidiaries, including but not limited to officers, directors, employees and agents, harmless from and against any claims, liabilities, damages, losses, and expenses, including, without limitation, reasonable legal and accounting fees, arising out of or in any way connected with:  
+                                        </p>
+                                        <ul>
+                                            <li>
+                                                your breach of these Terms, the House Rules or any of our policies or standards;  
+                                            </li>
+                                            <li>
+                                                your improper use of the Brandcrush Platform; 
+                                            </li>
+                                            <li>
+                                                your interaction with any Member or any participation in, or use of, any Activation including without limitation any injuries, losses or damages (whether compensatory, direct, incidental, consequential or otherwise) of any kind arising in connection with or as a result of such interaction, participation or use; or 
+                                            </li>
+                                            <li>
+                                                your breach of any laws, regulations or third party rights. 
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="terms-item">
+                                    <div class="title" id="section-17">
+                                        17. Applicable Law and Jurisdiction 
+                                    </div>
+                                    <div class="description">
+                                        <p>
+                                            These Terms will be interpreted in accordance with the laws of the State of Victoria and the Commonwealth of Australia, without regard to conflict-of-law provisions. Judicial proceedings (other than small claims actions) must be brought within the non-exclusive jurisdiction of a state or federal court in Victoria, Australia, unless all parties to the dispute agree to some other location. You and we both consent to venue and personal jurisdiction in Victoria, Australia. 
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="terms-item">
+                                    <div class="title" id="section-18">
+                                        18. General Provisions 
+                                    </div>
+                                    <div class="description">
+                                        <div class="sub-title">
+                                            18.1 Entire Agreement 
+                                        </div>
+                                        <p>
+                                            Except as they may be supplemented by additional terms and conditions, policies, guidelines or standards, these Terms constitute the entire Agreement between Brandcrush and you pertaining to the subject matter hereof, and supersede any and all prior oral or written understandings or agreements between Brandcrush and you in relation to the access to and use of the Brandcrush Platform. 
+                                        </p>
+                                        <div class="sub-title">
+                                            18.2 No joint venture or partnership 
+                                        </div>
+                                        <p>
+                                            No joint venture, partnership, employment, or agency relationship exists between you and Brandcrush or between Brands and Activation Hosts as a result of this Agreement or your use of the Brandcrush Platform. 
+                                        </p>
+                                        <div class="sub-title">
+                                            18.3 Force majeure 
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                No party will be liable or responsible for a breach of these Terms which is caused by a force majeure event (being an act which is not within the control of the relevant party, including national emergencies, inclement weather, war and terrorism) (Force Majeure Event) if the affected party: 
+                                                <ul>
+                                                    <li>
+                                                        is unable to perform its obligations because of the Force Majeure Event;  
+                                                    </li>
+                                                    <li>
+                                                        promptly notifies Brandcrush and the Member(s) who may be affected by the Force Majeure Event;  
+                                                    </li>
+                                                    <li>
+                                                        resumes performance of its obligations under these Terms as soon as reasonably practicable.     
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                If Brandcrush is not capable of running the Brandcrush Platform as planned for any reason including a Force Majeure Event, Brandcrush reserves the right, in its absolute discretion, to cancel, terminate, modify or suspend the Brandcrush Platform.  
+                                            </li>
+                                        </ul>
+                                        <div class="sub-title">
+                                            18.4 Read down 
+                                        </div>
+                                        <p>
+                                            If any provision of these Terms is held to be invalid or unenforceable, such provision will be struck and will not affect the validity and enforceability of the remaining provisions. 
+                                        </p>
+                                        <div class="sub-title">
+                                            18.5 No waiver 
+                                        </div>
+                                        <p>
+                                            Brandcrush’s failure to enforce any right or provision in these Terms will not constitute a waiver of such right or provision unless acknowledged and agreed to by us in writing. Except as expressly set forth in these Terms, the exercise by either party of any of its remedies under these Terms will be without prejudice to its other remedies under these Terms or otherwise permitted under law. 
+                                        </p>
+                                        <div class="sub-title">
+                                            18.6 Assignment  
+                                        </div>
+                                        <p>
+                                            You may not assign, transfer or delegate this Agreement and your rights and obligations hereunder without Brandcrush's prior written consent. Brandcrush may without restriction assign, transfer or delegate this Agreement and any rights and obligations hereunder, at its sole discretion, with at least thirty (30) days prior notice.  
+                                        </p>
+                                        <div class="sub-title">
+                                            18.7 Communications 
+                                        </div>
+                                        <p>
+                                            Unless specified otherwise, any notices or other communications to Members permitted or required under this Agreement, will be provided electronically and given by Brandcrush via email, Brandcrush Platform notification, or messaging service. The date of receipt of the notice will be deemed the date on which Brandcrush transmits the notice.  
+                                        </p>
+                                        <div class="sub-title">
+                                            18.8 Queries 
+                                        </div>
+                                        <p>
+                                            If you have any questions about these Terms please email us at support@brandcrush.com 
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div id="component_footer"></div>
+        </div>
+    </body>
+    <script>
+        var offset = 16;
+        $('.index-row').on('click', function(event){
+            if(this.hash !== ""){
+                event.preventDefault();
+                var hash = this.hash;
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top - offset
+                }, 1000, function(){
+                    // window.location.hash.split('#')[0];
+                })
+            }
+        })
+    </script>
+</html>

@@ -1,0 +1,368 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>I'm a Brand</title>
+        <link rel="shortcut icon" href="/assets/images/favicon.png" >
+        <link rel="stylesheet" href="/lib/appleple-modal-video/css/modal-video.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Karla:400,700|Poppins:400,500,600,700" rel="stylesheet">
+        <link href="/lib/fontawesome-free-5.2.0-web/css/all.css" rel="stylesheet">
+        <link rel="stylesheet" href="/assets/css/mystyle.css">
+        <!-- <script defer src="/lib/js/fontawesome-5.2.0/js/all.js"></script> -->
+        <script src="/lib/js/jquery/jquery.min.js"></script>
+        <!--[if lte IE 8]>
+            <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+        <![endif]-->
+        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+        <script src="/lib/appleple-modal-video/js/jquery-modal-video.min.js"></script>
+        <script src="/lib/sweetalert2-7.26.28/dist/sweetalert2.all.min.js"></script>
+        <script src="/assets/js/script.js"></script>
+        <script src="/assets/js/auth.js"></script>
+    </head>
+    <script>
+        $(function(){
+            $("#component_nav_with_search").load("/components/component_nav_with_search.html", navbar_init);
+            $("#component_footer").load("/components/component_footer.html", subscription_init);
+            $("#component_activation_concept").load("/components/component_activation_concept.html");
+        })
+    </script>
+    <body>
+        <div id="component_nav_with_search"></div>
+        <div class="brand-page">
+            <section class="hero is-medium is-primary banner-section">
+                <div class="hero-body">
+                    <div class="banner-w">
+                        <p class="title">
+                            How it Works
+                        </p>
+                        <p class="subtitle">
+                            A Guide for Brands
+                        </p>
+                        <div class="button is-primary js-modal-btn" data-video-id="288945453"><img src="/assets/images/icons/white_play.svg" />Watch Video</div>
+                    </div>
+                </div>
+            </section>
+            <section class="activation-description-section">
+                <div class="container">
+                    <div class="activation-description-w">
+                        Brandcrush is a marketing platform that connects brands with thousands of activation spaces.
+                    </div>
+                </div>
+            </section>
+            <div id="component_activation_concept"></div>
+            <section class="why-activate-section">
+                <div class="why-activate-w cerise-bg">
+                    <div class="title">
+                        Why activate?
+                    </div>
+                    <div class="desc">
+                        "68% of consumers are more likely to buy a product after trying it"
+                    </div>
+                    <div class="sub-desc">
+                        Australia Post
+                    </div>
+                </div>
+            </section>
+            <section class="how-does-it-work-section">
+                <div class="container">
+                    <div class="how-does-it-work-w post-component">
+                        <div class="columns">
+                            <div class="column">
+                                <div class="image" style="background-image: url(/assets/images/Staticpages/iStock-826668806@2x.jpg)"></div>
+                            </div>
+                            <div class="column">
+                                <div class="post-body">
+                                    <div class="post-title">How does it work?</div>
+                                    <div class="post-desc">
+                                        <p>With no subscription fees, you can easily start discovering spaces. Narrow your search or keep it wide open to discover unique spaces to activate your brand. </p>
+                                        <p>Search everything from cafes and gyms, to pop up stores and events. If you need physical product reach, then this is the place for you. Create highly targeted campaigns at a fraction of the cost, and manage everything in one simple dashboard.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="activated-by-section">
+                <div class="container">
+                    <div class="activated-by-w">
+                        <div class="title">Activated by:</div>
+                        <div class="button-w">
+                            <div id="activation" class="tab-btn actived-btn">Activation Host</div>
+                            <div id="brand" class="tab-btn">Brand</div>
+                        </div>
+                        <div class="tab_content" id="content_activation">
+                            <hr class="has-background-primary"/>
+                            <div class="main-description">
+                                <b>The Activation Host</b> distributes samples or brand messages for your brand in their space. Save on staff and logistics costs, and activate intimately at scale.
+                            </div>
+                            <hr/>
+                            <div class="item-row">
+                                <div class="columns">
+                                    <div class="column">
+                                        <div class="item-title">Space Type</div>
+                                    </div>
+                                    <div class="column">
+                                        <div class="item-body">
+                                            <div>Physical Retail and Popups</div>
+                                            <div>Online Retail & Subscription Boxes</div>
+                                            <div>Consumer Events & Festivals</div>
+                                            <div>Trade Events & Conferences</div>
+                                            <div>PR Events</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr/>
+                            <div class="item-row">
+                                <div class="columns">
+                                    <div class="column">
+                                        <div class="item-title">Space Position</div>
+                                    </div>
+                                    <div class="column">
+                                        <div class="item-body">
+                                            <div>Gift with Purchase</div>
+                                            <div>Product Demo</div>
+                                            <div>Conter Top</div>
+                                            <div>Mini Bar</div>
+                                            <div>On the Menu</div>
+                                            <div>Goody Bag</div>
+                                            <div>Subscription Box</div>
+                                            <div>Fridge</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr/>
+                            <div class="item-row">
+                                <div class="columns">
+                                    <div class="column">
+                                        <div class="item-title">Activation Report</div>
+                                    </div>
+                                    <div class="column">
+                                        <div class="item-body">
+                                            <div>YES</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr/>
+                        </div>
+                        <div class="tab_content" id="content_brand">
+                            <hr class="has-background-primary"/>
+                            <div class="main-description">
+                                You provide staff to leverage existing foot traffic in a space.
+                            </div>
+                            <hr/>
+                            <div class="item-row">
+                                <div class="columns">
+                                    <div class="column">
+                                        <div class="item-title">Space Type</div>
+                                    </div>
+                                    <div class="column">
+                                        <div class="item-body">
+                                            <div>Physical Retail and Popups</div>
+                                            <div>Online Retail & Subscription Boxes</div>
+                                            <div>Consumer Events & Festivals</div>
+                                            <div>Trade Events & Conferences</div>
+                                            <div>PR Events</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr/>
+                            <div class="item-row">
+                                <div class="columns">
+                                    <div class="column">
+                                        <div class="item-title">Space Position</div>
+                                    </div>
+                                    <div class="column">
+                                        <div class="item-body">
+                                            <div>Booth</div>
+                                            <div>Market Stall</div>
+                                            <div>Street</div>
+                                            <div>Foyer</div>
+                                            <div>Product Demo</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr/>
+                            <div class="item-row">
+                                <div class="columns">
+                                    <div class="column">
+                                        <div class="item-title">Activation Report</div>
+                                    </div>
+                                    <div class="column">
+                                        <div class="item-body">
+                                            <div>NO</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr/>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="cost-effective-section">
+                <div class="container">
+                    <div class="cost-effective-w">
+                        <div class="columns">
+                            <div class="column">
+                                <div class="big-list-w">
+                                    <div class="big-list-item-w">
+                                        <div class="list-icon-w">
+                                            <div class="list-icon"></div>
+                                        </div>
+                                        <div class="text-w">
+                                            <div class="title">Cost effective</div>
+                                            <div class="description">Get product into the right consumer's hands for less.</div>
+                                        </div>
+                                    </div>
+                                    <div class="big-list-item-w">
+                                        <div class="list-icon-w">                                            
+                                            <div class="list-icon"></div>
+                                        </div>
+                                        <div class="text-w">
+                                            <div class="title">Highly targeted</div>
+                                            <div class="description">Smart filters allow for consumer targeting by location, category and audience demographics.</div>
+                                        </div>
+                                    </div>
+                                    <div class="big-list-item-w">
+                                        <div class="list-icon-w">
+                                            <div class="list-icon"></div>
+                                        </div>
+                                        <div class="text-w">
+                                            <div class="title">Scalable</div>
+                                            <div class="description">Allowing brands to activate across a volume of localised spaces with intimacy and scalability.</div>
+                                        </div>
+                                    </div>
+                                    <div class="big-list-item-w">
+                                        <div class="list-icon-w">
+                                            <div class="list-icon"></div>
+                                        </div>
+                                        <div class="text-w">
+                                            <div class="title">Measurable</div>
+                                            <div class="description">Activate in geographic pockets and measure sales uplift in a localised area. Plus, brands can get instant  consumer feedback via automated in-app reporting.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="image-w">
+                                    <div class="img" style="background-image: url(/assets/images/Staticpages/Stocksy_txp829abf37kJ2200_Medium_221333.jpg)"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="step-process-section">
+                <div class="container">
+                    <div class="step-process-w">
+                        <div class="title">5 step process</div>
+                        <div class="process-box">
+                            <div class="process-number">1</div>
+                            <div class="process-text">
+                                Enter your business details and brand info
+                            </div>
+                        </div>
+                        <div class="process-box">
+                            <div class="process-number">2</div>
+                            <div class="process-text">
+                                Search for activation spaces and save spaces with a ‘like’ or ‘add to campaign’
+                            </div>
+                        </div>
+                        <div class="process-box">
+                            <div class="process-number">3</div>
+                            <div class="process-text">
+                                Upload product info or message and submit your activation request 
+                            </div>
+                        </div>
+                        <div class="process-box">
+                            <div class="process-number">4</div>
+                            <div class="process-text">
+                                Download shipping information and distribute samples/merchandise
+                            </div>
+                        </div>
+                        <div class="process-box">
+                            <div class="process-number">5</div>
+                            <div class="process-text">
+                                Activation takes place. Review post campaign report and rate your Activation Host
+                            </div>
+                        </div>
+                        <a href="https://app.brandcrush.com/brand/signup"><div class="button is-primary sign-up-btn">Sign up now</div></a>
+                    </div>
+                </div>
+            </section>
+            <div class="container" style="max-width: 1030px;"><div class="custom-hr"></div></div>
+            <section class="top-insights-section">
+                <div class="container">
+                    <div class="top-insights-w">
+                        <div class="title">Top 3 insights</div>
+                        <div class="items-w">
+                            <div class="columns">
+                                <div class="column">
+                                    <div class="item-box">
+                                        <img class="item-icon" src="/assets/images/icons/icon-calendar.svg" />
+                                        <div class="item-desc">The average activation is 3 days</div>
+                                    </div>
+                                </div>
+                                <div class="column">
+                                    <div class="item-box">
+                                        <img class="item-icon" src="/assets/images/icons/icon-key.svg" />
+                                        <div class="item-desc">Most brands book 12 spaces per activation</div>
+                                    </div>
+                                </div>
+                                <div class="column">
+                                    <div class="item-box">
+                                        <img class="item-icon" src="/assets/images/icons/icon-shopping-basket.svg" />
+                                        <div class="item-desc">Test geographic pockets and measure sales uplift in nearby retailers</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="good-luck-section">
+                <div class="container">
+                    <div class="good-luck-w post-component">
+                        <div class="columns">
+                            <div class="column">
+                                <div class="image" style="background-image: url(/assets/images/Staticpages/Stocksy_txp829abf37kJ2200_Medium_2014570.jpg)"></div>
+                            </div>
+                            <div class="column">
+                                <div class="post-body">
+                                    <div class="post-title">Good luck with your next activation</div>
+                                    <div class="post-desc">
+                                        <p>Please don’t hesitate to use our Brand Concierge service via the live support button below, or you can <a class="has-text-primary" href="/FAQs">review our FAQS here</a>. </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div id="component_footer"></div>
+        </div>
+    </body>
+    <script>
+        $(document).ready(function(){
+            $('.tab_content').hide();
+            $('.tab_content:first').show();
+            $('.tab-btn').click(function(){
+                var t = $(this).attr('id');
+                if(!$(this).hasClass('actived-btn')){
+                    $('.tab-btn').removeClass('actived-btn');
+                    $(this).addClass('actived-btn');
+                    $('.tab_content').hide();
+                    $('#content_'+t).fadeIn('slow');
+                }
+            })
+            $(".js-modal-btn").modalVideo({channel:'vimeo'});
+        })
+    </script>
+</html>

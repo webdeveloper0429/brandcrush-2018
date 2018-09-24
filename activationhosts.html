@@ -1,0 +1,387 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>I'm an Activation Host</title>
+        <link rel="shortcut icon" href="/assets/images/favicon.png" >
+        <link rel="stylesheet" href="/lib/appleple-modal-video/css/modal-video.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Karla:400,700|Poppins:400,500,600,700" rel="stylesheet">
+        <link href="/lib/fontawesome-free-5.2.0-web/css/all.css" rel="stylesheet">   
+        <link rel="stylesheet" href="/assets/css/mystyle.css">
+        <!-- <script defer src="/lib/js/fontawesome-5.2.0/js/all.js"></script> -->
+        <script src="/lib/js/jquery/jquery.min.js"></script>
+        <!--[if lte IE 8]>
+            <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+        <![endif]-->
+        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+        <script src="/lib/appleple-modal-video/js/jquery-modal-video.min.js"></script>
+        <script src="/lib/sweetalert2-7.26.28/dist/sweetalert2.all.min.js"></script>
+        <script src="/assets/js/script.js"></script>
+        <script src="/assets/js/auth.js"></script>
+    </head>
+    <script>
+        $(function(){
+            $("#component_nav_with_search").load("/components/component_nav_with_search.html", navbar_init);
+            $("#component_footer").load("/components/component_footer.html", subscription_init);
+            $("#component_activation_concept").load("/components/component_activation_concept.html");
+        })
+    </script>
+    <body>
+        <div id="component_nav_with_search"></div>
+        <div class="activation-host-page">
+            <section class="hero is-medium is-primary banner-section">
+                <div class="hero-body">
+                    <div class="banner-w">
+                        <p class="title">
+                            How it Works
+                        </p>
+                        <p class="subtitle">
+                            A Guide for Activation Hosts
+                        </p>
+                        <div class="button is-primary js-modal-btn" data-video-id="288944705"><img src="/assets/images/icons/white_play.svg" />Watch Video</div>
+                    </div>
+                </div>
+            </section>
+            <section class="activation-description-section">
+                <div class="container">
+                    <div class="activation-description-w">
+                        Brandcrush is a marketing platform that connects brands with thousands of activation spaces.
+                    </div>
+                </div>
+            </section>
+            <div id="component_activation_concept"></div>
+            <section class="why-activate-section">
+                <div class="why-activate-w cerise-bg">
+                    <div class="title">
+                        Why list an activation space? 
+                    </div>
+                    <div class="desc">
+                        Monetise existing foot traffic and help your customers discover brands they’ll love. 
+                    </div>
+                </div>
+            </section>
+            <section class="how-does-it-work-section">
+                <div class="container">
+                    <div class="how-does-it-work-w post-component">
+                        <div class="columns">
+                            <div class="column">
+                                <div class="image" style="background-image: url(/assets/images/Staticpages/bill-anastas-241386-unsplash@2x.jpg)"></div>
+                            </div>
+                            <div class="column">
+                                <div class="post-body">
+                                    <div class="post-title">How does it work?</div>
+                                    <div class="post-desc">
+                                        <p>You can list a space and activate for a brand or list a space and have the brand activate themselves.</p>
+                                        <p>The types of Spaces you can list are endless, Brandcrush finds the brands so you have more time to get creative. Here’s some fun ideas to get you started:</p>
+                                        <ul>
+                                            <li>List an Activation Space &quot;On the Menu&quot; at your cafe.</li>
+                                            <li>List an Activation Space &quot;on counter tops&quot; at gyms and yoga studios.</li>
+                                            <li>List an Activation Space as &quot;Gift with Purchase&quot; with fashion retailers. </li>
+                                            <li>List an Activation Space &quot;in the mini bar&quot; at hotels in every city or country town.</li>
+                                            <li>List an Activation Space in &quot;goody bags&quot; at school fetes.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="activated-by-section">
+                <div class="container">
+                    <div class="activated-by-w">
+                        <div class="title">Activated by:</div>
+                        <div class="button-w">
+                            <div id="activation" class="tab-btn actived-btn">Activation Host</div>
+                            <div id="brand" class="tab-btn">Brand</div>
+                        </div>
+                        <div class="tab_content" id="content_activation">
+                            <hr class="has-background-primary"/>
+                            <div class="main-description">
+                                You distribute samples or brand messages for brands in your space.
+                            </div>
+                            <hr/>
+                            <div class="item-row">
+                                <div class="columns">
+                                    <div class="column">
+                                        <div class="item-title">Space Type</div>
+                                    </div>
+                                    <div class="column">
+                                        <div class="item-body">
+                                            <div>Physical Retail and Popups</div>
+                                            <div>Online Retail & Subscription Boxes</div>
+                                            <div>Consumer Events & Festivals</div>
+                                            <div>Trade Events & Conferences</div>
+                                            <div>PR Events</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr/>
+                            <div class="item-row">
+                                <div class="columns">
+                                    <div class="column">
+                                        <div class="item-title">Space Position</div>
+                                    </div>
+                                    <div class="column">
+                                        <div class="item-body">
+                                            <div>Gift with Purchase</div>
+                                            <div>Product Demo</div>
+                                            <div>Conter Top</div>
+                                            <div>Mini Bar</div>
+                                            <div>On the Menu</div>
+                                            <div>Goody Bag</div>
+                                            <div>Subscription Box</div>
+                                            <div>Fridge</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr/>
+                            <div class="item-row">
+                                <div class="columns">
+                                    <div class="column">
+                                        <div class="item-title">Activation Report</div>
+                                    </div>
+                                    <div class="column">
+                                        <div class="item-body">
+                                            <div>YES</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr/>
+                        </div>
+                        <div class="tab_content" id="content_brand">
+                            <hr class="has-background-primary"/>
+                            <div class="main-description">
+                                Brands activate with their team in your space.
+                            </div>
+                            <hr/>
+                            <div class="item-row">
+                                <div class="columns">
+                                    <div class="column">
+                                        <div class="item-title">Space Type</div>
+                                    </div>
+                                    <div class="column">
+                                        <div class="item-body">
+                                            <div>Physical Retail and Popups</div>
+                                            <div>Online Retail & Subscription Boxes</div>
+                                            <div>Consumer Events & Festivals</div>
+                                            <div>Trade Events & Conferences</div>
+                                            <div>PR Events</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr/>
+                            <div class="item-row">
+                                <div class="columns">
+                                    <div class="column">
+                                        <div class="item-title">Space Position</div>
+                                    </div>
+                                    <div class="column">
+                                        <div class="item-body">
+                                            <div>Booth</div>
+                                            <div>Market Stall</div>
+                                            <div>Street</div>
+                                            <div>Foyer</div>
+                                            <div>Product Demo</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr/>
+                            <div class="item-row">
+                                <div class="columns">
+                                    <div class="column">
+                                        <div class="item-title">Activation Report</div>
+                                    </div>
+                                    <div class="column">
+                                        <div class="item-body">
+                                            <div>NO</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr/>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="how-much-charge-section">
+                <div class="container">
+                    <div class="how-much-charge-w">
+                        <div class="title">How much should I charge?</div>
+                        <p>You can charge per day, per hour or per activation depending on the type of space you are listing.</p>
+                        <p>Charge as much or as little as you like, however most Activation Hosts are charging $0.50 to $1.50 per product reach. Spaces that distribute samples as a gift with purchase or provide a dedicated staff member can charge a premium. Note: Brandcrush take a 12.5% commission on all bookings.</p>
+                        <div class="fees-w">
+                            <div class="columns">
+                                <div class="column">
+                                    <div class="fee-item-w">
+                                        <div class="fee-sort">Fees per day</div>
+                                        <hr class="has-background-primary"/>
+                                        <div class="fee-position">Space position</div>
+                                        <div class="fee-provide">
+                                            <div>Gift with Purchase</div>
+                                            <div>Counter Top</div>
+                                            <div>Mini Bar</div>
+                                            <div>Booth</div>
+                                            <div>Market Stall</div>
+                                            <div>Fridge</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="column">
+                                    <div class="fee-item-w">
+                                        <div class="fee-sort">Fees per hour</div>
+                                        <hr class="has-background-primary"/>
+                                        <div class="fee-position">Space position</div>
+                                        <div class="fee-provide">
+                                            <div>Product Demo</div>
+                                            <div>Steet</div>
+                                            <div>Foyer</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="column">
+                                    <div class="fee-item-w">
+                                        <div class="fee-sort">Fees per activation</div>
+                                        <hr class="has-background-primary"/>
+                                        <div class="fee-position">Space position</div>
+                                        <div class="fee-provide">
+                                            <div>Goody Bag</div>
+                                            <div>Subscription Box</div>
+                                            <div>On the Menu</div>
+                                            <div>Other</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr/>
+                    </div>
+                </div>
+            </section>
+            <section class="step-process-section">
+                <div class="container">
+                    <div class="step-process-w">
+                        <div class="title">5 step process</div>
+                        <div class="process-box">
+                            <div class="process-number">1</div>
+                            <div class="process-text">
+                                Sign in for free
+                            </div>
+                        </div>
+                        <div class="process-box">
+                            <div class="process-number">2</div>
+                            <div class="process-text">
+                                Provide basic business details 
+                            </div>
+                        </div>
+                        <div class="process-box">
+                            <div class="process-number">3</div>
+                            <div class="process-text">
+                                Add photos and tell us about your space
+                            </div>
+                        </div>
+                        <div class="process-box">
+                            <div class="process-number">4</div>
+                            <div class="process-text">
+                                Provide your rate and logistical information
+                            </div>
+                        </div>
+                        <div class="process-box">
+                            <div class="process-number">5</div>
+                            <div class="process-text">
+                                Let us know how you’d like to get paid   
+                            </div>
+                        </div>
+                        <a href="https://app.brandcrush.com/host/signup"><div class="button is-primary sign-up-btn">Sign up now</div></a>
+                    </div>
+                </div>
+            </section>
+            <div class="container" style="max-width: 1030px;"><div class="custom-hr"></div></div>
+            <section class="success-tips-section">
+                <div class="container">
+                    <div class="success-tips-w">
+                        <div class="title">Tips for success</div>
+                        <div class="columns">
+                            <div class="column">
+                                <div class="tip-w">
+                                    <img class="tip-icon" src="/assets/images/icons/group.svg" />
+                                    <div class="tip-desc">
+                                        Stunning photos increase your chances of a booking
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="tip-w">
+                                    <img class="tip-icon" src="/assets/images/icons/speech-bubbles.svg" />
+                                    <div class="tip-desc">
+                                        Respond to Brands quickly to increase conversions
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="columns">
+                            <div class="column">
+                                <div class="tip-w">
+                                    <img class="tip-icon" src="/assets/images/icons/activation-space-copy.svg" />
+                                    <div class="tip-desc">
+                                        List multiple space positions to appear in more search results
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="tip-w">
+                                    <img class="tip-icon" src="/assets/images/icons/report.svg" />
+                                    <div class="tip-desc">
+                                        Complete post campaign reports immediately and get paid faster
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="good-luck-section">
+                <div class="container">
+                    <div class="good-luck-w post-component">
+                        <div class="columns">
+                            <div class="column">
+                                <div class="image" style="background-image: url(/assets/images/Staticpages/Stocksy_txp829abf37kJ2200_Medium_2014570.jpg)"></div>
+                            </div>
+                            <div class="column">
+                                <div class="post-body">
+                                    <div class="post-title">Good luck with your next activation!</div>
+                                    <div class="post-desc">
+                                        <p>Please don’t hesitate to use our Activation Host Concierge service via the live support button below, or you can <a class="has-text-primary" href="/FAQs">review our FAQS here</a>.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div id="component_footer"></div>
+        </div>
+    </body>
+    <script>
+        $(document).ready(function(){
+            $('.tab_content').hide();
+            $('.tab_content:first').show();
+            $('.tab-btn').click(function(){
+                var t = $(this).attr('id');
+                if(!$(this).hasClass('actived-btn')){
+                    $('.tab-btn').removeClass('actived-btn');
+                    $(this).addClass('actived-btn');
+                    $('.tab_content').hide();
+                    $('#content_'+t).fadeIn('slow');
+                }
+            })
+            $(".js-modal-btn").modalVideo({channel:'vimeo'});
+        })
+    </script>
+</html>
