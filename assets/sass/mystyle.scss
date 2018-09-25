@@ -33,6 +33,13 @@ $berry: #971b50;
 $primary: $cerise;
 $dark: $charcoal-grey;
 
+.button.is-primary:hover, .button.is-primary.is-hovered{
+    background-color: #f50b65 !important;
+}
+.button.is-dark:hover, .button.is-dark.is-hovered{
+    background-color: #575759 !important;
+}
+
 //change variable
 $navbar-height: 3.75rem;
 $dropdown-content-radius: 0px;
