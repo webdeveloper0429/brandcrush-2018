@@ -1,16 +1,14 @@
-
-window.onload = function(){
-
+$(document).ready(function(){
     (function (app) {
 
-        var API_URL = 'https://api.brandcrush.com'
+        var API_URL = location.href.indexOf('localhost') !== -1 ? 'http://localhost:5000' : 'https://api.brandcrush.com'
         var qp = '&inline=images(url),spacePosition(name,ratePeriod),addresses(suburb,country_stateId),addresses.countryState(name)&fields=name,rate,reachDistributionCapacity,spacePositionId';
 
         function loadSpaces() {
 
-            loadSpace('#health-wellness-sport', '?ids=738,699,688'+qp);
+            loadSpace('#health-wellness-sport', '?ids=738,699,1241'+qp);
             loadSpace('#lifestyle', '?ids=697,717,1223'+qp);
-            loadSpace('#bars-cafes', '?ids=750,1224,1226'+qp);
+            loadSpace('#bars-cafes', '?ids=750,1224,1228'+qp);
         }
 
         function loadSpace(el, queryParams) {
@@ -37,4 +35,4 @@ window.onload = function(){
     }(app = app || {}));
     var app;
     new app.loadSpaces();
-}
+});

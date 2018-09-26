@@ -103,8 +103,6 @@
                                                 <div class="label">country</div>                                             
                                                 <div class="custom_select">
                                                     <select id="cu_country">
-                                                        <option>Australia</option>
-                                                        <option>Russia Federation</option>
                                                     </select>
                                                 </div>
                                             </div>
@@ -135,65 +133,266 @@
         </div>
     </body>
     <script>
-        $('#contact_us_btn').on('click', function(){
-            if($("#cu_email").val() === ''){
-                toast({
-                    type: 'error',
-                    title: "Please insert email!"
-                });
-                return false;
-            }
-            var formData = {
-                    "fields":[
-                        {
-                            "name": "firstname",
-                            "value": $("#cu_first_name").val()
-                        },{
-                            "name": "lastname",
-                            "value": $("#cu_last_name").val()
-                        },{
-                            "name": "email",
-                            "value": $("#cu_email").val()
-                        },{
-                            "name": "mobilephone",
-                            "value": $("#cu_mobile_num").val()
-                        },{
-                            "name": "i_m_a",
-                            "value": $("#cu_i_am").val()
-                        },{
-                            "name": "country",
-                            "value": $("#cu_country").val()
-                        },{
-                            "name": "message",
-                            "value": $("#cu_message").val()
-                        }
-                    ]
-                }
-            $.ajax({
-                type: 'post',
-                url: 'https://api.hsforms.com/submissions/v3/integration/submit/4363226/3cbcacb7-8d3a-445e-a920-0abda002a4fc',
-                contentType: "application/json",
-                data: JSON.stringify(formData),
-                success: function (data) {
-                    toast({
-                        type: 'success',
-                        title: "Thanks your message has successfuly sent."
-                    });
-                    $("#cu_first_name").val("");
-                    $("#cu_last_name").val("");
-                    $("#cu_email").val("");
-                    $("#cu_mobile_num").val("");
-                    $("#cu_i_am").val("Brand");
-                    $("#cu_country").val("Australia");
-                    $("#cu_message").val("");
-                },
-                error: function (data) {
+        $(document).ready(function() {
+            $('#contact_us_btn').on('click', function(){
+                if($("#cu_email").val() === ''){
                     toast({
                         type: 'error',
-                        title: "failed to send your message!"
+                        title: "Please insert email!"
                     });
-                },
-            });
+                    return false;
+                }
+                var formData = {
+                        "fields":[
+                            {
+                                "name": "firstname",
+                                "value": $("#cu_first_name").val()
+                            },{
+                                "name": "lastname",
+                                "value": $("#cu_last_name").val()
+                            },{
+                                "name": "email",
+                                "value": $("#cu_email").val()
+                            },{
+                                "name": "mobilephone",
+                                "value": $("#cu_mobile_num").val()
+                            },{
+                                "name": "i_m_a",
+                                "value": $("#cu_i_am").val()
+                            },{
+                                "name": "country",
+                                "value": $("#cu_country").val()
+                            },{
+                                "name": "message",
+                                "value": $("#cu_message").val()
+                            }
+                        ]
+                    }
+                $.ajax({
+                    type: 'post',
+                    url: 'https://api.hsforms.com/submissions/v3/integration/submit/4363226/3cbcacb7-8d3a-445e-a920-0abda002a4fc',
+                    contentType: "application/json",
+                    data: JSON.stringify(formData),
+                    success: function (data) {
+                        toast({
+                            type: 'success',
+                            title: "Thanks your message has successfuly sent."
+                        });
+                        $("#cu_first_name").val("");
+                        $("#cu_last_name").val("");
+                        $("#cu_email").val("");
+                        $("#cu_mobile_num").val("");
+                        $("#cu_i_am").val("Brand");
+                        $("#cu_country").val("Australia");
+                        $("#cu_message").val("");
+                    },
+                    error: function (data) {
+                        toast({
+                            type: 'error',
+                            title: "failed to send your message!"
+                        });
+                    },
+                });
+            })
+            var countryArr = ["Afghanistan",
+            "Albania",
+            "Algeria",
+            "Andorra",
+            "Angola",
+            "Antigua and Barbuda",
+            "Argentina",
+            "Armenia",
+            "Australia",
+            "Austria",
+            "Azerbaijan",
+            "Bahamas",
+            "Bahrain",
+            "Bangladesh",
+            "Barbados",
+            "Belarus",
+            "Belgium",
+            "Belize",
+            "Benin",
+            "Bhutan",
+            "Bolivia",
+            "Bosnia and Herzegovina",
+            "Botswana",
+            "Brazil",
+            "Brunei",
+            "Bulgaria",
+            "Burkina Faso",
+            "Burundi",
+            "Cambodia",
+            "Cameroon",
+            "Canada",
+            "Cape Verde",
+            "Central African Republic",
+            "Chad",
+            "Chile",
+            "China",
+            "Colombi",
+            "Comoros",
+            "Congo (Brazzaville)",
+            "Congo",
+            "Costa Rica",
+            "Cote d'Ivoire",
+            "Croatia",
+            "Cuba",
+            "Cyprus",
+            "Czech Republic",
+            "Denmark",
+            "Djibouti",
+            "Dominica",
+            "Dominican Republic",
+            "East Timor (Timor Timur)",
+            "Ecuador",
+            "Egypt",
+            "El Salvador",
+            "Equatorial Guinea",
+            "Eritrea",
+            "Estonia",
+            "Ethiopia",
+            "Fiji",
+            "Finland",
+            "France",
+            "Gabon",
+            "Gambia, The",
+            "Georgia",
+            "Germany",
+            "Ghana",
+            "Greece",
+            "Grenada",
+            "Guatemala",
+            "Guinea",
+            "Guinea-Bissau",
+            "Guyana",
+            "Haiti",
+            "Honduras",
+            "Hungary",
+            "Iceland",
+            "India",
+            "Indonesia",
+            "Iran",
+            "Iraq",
+            "Ireland",
+            "Israel",
+            "Italy",
+            "Jamaica",
+            "Japan",
+            "Jordan",
+            "Kazakhstan",
+            "Kenya",
+            "Kiribati",
+            "Korea, North",
+            "Korea, South",
+            "Kuwait",
+            "Kyrgyzstan",
+            "Laos",
+            "Latvia",
+            "Lebanon",
+            "Lesotho",
+            "Liberia",
+            "Libya",
+            "Liechtenstein",
+            "Lithuania",
+            "Luxembourg",
+            "Macedonia",
+            "Madagascar",
+            "Malawi",
+            "Malaysia",
+            "Maldives",
+            "Mali",
+            "Malta",
+            "Marshall Islands",
+            "Mauritania",
+            "Mauritius",
+            "Mexico",
+            "Micronesia",
+            "Moldova",
+            "Monaco",
+            "Mongolia",
+            "Morocco",
+            "Mozambique",
+            "Myanmar",
+            "Namibia",
+            "Nauru",
+            "Nepal",
+            "Netherlands",
+            "New Zealand",
+            "Nicaragua",
+            "Niger",
+            "Nigeria",
+            "Norway",
+            "Oman",
+            "Pakistan",
+            "Palau",
+            "Panama",
+            "Papua New Guinea",
+            "Paraguay",
+            "Peru",
+            "Philippines",
+            "Poland",
+            "Portugal",
+            "Qatar",
+            "Romania",
+            "Russia",
+            "Rwanda",
+            "Saint Kitts and Nevis",
+            "Saint Lucia",
+            "Saint Vincent",
+            "Samoa",
+            "San Marino",
+            "Sao Tome and Principe",
+            "Saudi Arabia",
+            "Senegal",
+            "Serbia and Montenegro",
+            "Seychelles",
+            "Sierra Leone",
+            "Singapore",
+            "Slovakia",
+            "Slovenia",
+            "Solomon Islands",
+            "Somalia",
+            "South Africa",
+            "Spain",
+            "Sri Lanka",
+            "Sudan",
+            "Suriname",
+            "Swaziland",
+            "Sweden",
+            "Switzerland",
+            "Syria",
+            "Taiwan",
+            "Tajikistan",
+            "Tanzania",
+            "Thailand",
+            "Togo",
+            "Tonga",
+            "Trinidad and Tobago",
+            "Tunisia",
+            "Turkey",
+            "Turkmenistan",
+            "Tuvalu",
+            "Uganda",
+            "Ukraine",
+            "United Arab Emirates",
+            "United Kingdom",
+            "United States",
+            "Uruguay",
+            "Uzbekistan",
+            "Vanuatu",
+            "Vatican City",
+            "Venezuela",
+            "Vietnam",
+            "Yemen",
+            "Zambia",
+            "Zimbabwe"];
+            var countryListStr = '';
+            countryArr.map(function(country){
+                countryListStr = countryListStr + `<option>${country}</option>`
+            })
+            $("#cu_country").append(countryListStr);
         })
+
     </script>
 </html>
