@@ -1,4 +1,4 @@
-window.onload = function(){
+window.addEventListener('load', function(){
 
     function getCookie(cname) {
         var name = cname + "=";
@@ -15,7 +15,7 @@ window.onload = function(){
         }
         return "";
     }
-    
+
     var deleteCookie = function(name) {
         document.cookie = name + '=;expires=Thu, 01 Jan 1970 00:00:01 GMT;';
     };
@@ -42,7 +42,7 @@ window.onload = function(){
             };
             var fetchUser = function() {
                 currentUser= null
-                var url = API_URL+'/current-user?inline=host,brands,company,brands.brand,brands.brand.categories'
+                var url = API_URL+'/current-user?inline=host,brands,company,brands.brand,brands.brand.categories,hasSavedSpaces,unreadMessages'
                 $.ajax({
                     url: url,
                     type: 'GET',
@@ -58,9 +58,14 @@ window.onload = function(){
                     error: function () { },
                 });
             }
+            var handleLogout = function(evt) {
+                evt.preventDefault()
+                console.log("105","handleLogout","handleLogout", "");
+                deleteCookie(cookieName)
+                location.reload()
+            }
             var updateHeader = function() {
                 if(currentUser && currentUser.id){
-                    console.log("57","updateHeader", currentUser);
                     $('.navbar-item-logged-out').remove()
                     $('.navbar-item-logged-in').css('display', 'flex')
                     var profileName = currentUser.firstName
@@ -75,12 +80,12 @@ window.onload = function(){
                         $('.navbar-link-profile-name span').text(profileName)
                         $(".navbar-item-logged-in-dropdown")
                             .before(
-                            '<a class="navbar-item" href="https://app.brandcrush.com/host/list-a-space/create/new/" >List a space</a>'+
-                            '<a class="navbar-item" href="https://app.brandcrush.com/host/dashboard" >Dashboard</a>' +
-                            '<a class="navbar-item" href="https://app.brandcrush.com/host/messages" >Messages</a>' +
-                            '<div class="navbar-item navbar-item-logged-out"></div>'
+                                '<a class="navbar-item" href="https://app.brandcrush.com/host/list-a-space/create/new/" >List a space</a>'+
+                                '<a class="navbar-item" href="https://app.brandcrush.com/host/dashboard" >Dashboard</a>' +
+                                '<a class="navbar-item" href="https://app.brandcrush.com/host/messages" >Messages</a>' +
+                                '<div class="navbar-item navbar-item-logged-out"></div>'
 
-                        )
+                            )
                         $(".navbar-item-logged-in-dropdown")
                             .after(
                                 '<div class="navbar-item"></div>'
@@ -103,10 +108,12 @@ window.onload = function(){
                             }
                         }
                         $('.navbar-link-profile-name span').text(profileName)
+                        var spacesCountBadge = currentUser.hasSavedSpaces ? 'data-badge=" "' : ''
+                        var messageCountBadge = currentUser.unreadMessages > 0 ? 'data-badge="'+currentUser.unreadMessages+'"' : ''
                         $(".navbar-item-logged-in-dropdown")
                             .before(
-                                '<a class="navbar-item" href="https://app.brandcrush.com/brand/saved" >Saved</a>' +
-                                '<a class="navbar-item" href="https://app.brandcrush.com/brand/messages" >Messages</a>' +
+                                '<a class="navbar-item" href="https://app.brandcrush.com/brand/saved" ><i class="material-icons navbar-item-icon" '+spacesCountBadge+'>favorite</i> Saved</a>' +
+                                '<a class="navbar-item" href="https://app.brandcrush.com/brand/messages" ><i class="material-icons navbar-item-icon" '+messageCountBadge+'>chat_bubble</i> Messages</a>' +
                                 '<a class="navbar-item" href="https://app.brandcrush.com/brand/dashboard" >Dashboard</a>' +
                                 '<div class="navbar-item"></div>'
                             )
@@ -129,12 +136,7 @@ window.onload = function(){
                     $('.navbar-item-logged-in').hide()
                 }
             }
-            var handleLogout = function(evt) {
-                evt.preventDefault()
-                console.log("105","handleLogout","handleLogout", "");
-                deleteCookie(cookieName)
-                location.reload()
-            }
+
 
             scope.initialize();
             return scope;
@@ -145,4 +147,4 @@ window.onload = function(){
     }(app = app || {}));
     var app;
     new app.auth()
-}
+})

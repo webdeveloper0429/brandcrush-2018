@@ -141,6 +141,59 @@ $dropdown-content-radius: 0px;
         font-weight: bold;
         color: $charcoal-grey;
     }
+    &-icon{
+        margin-right:10px;
+        &[data-badge] {
+
+            position: relative;
+            white-space: nowrap;
+            margin-right: rem(10);
+
+            &:after {
+                width: 2em;
+                height: 2em;
+                top: -1em;
+                right: -1em;
+                content: attr(data-badge);
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-content: center;
+                align-items: center;
+                position: absolute;
+                top: -11px;
+                right: -10px;
+                font-family: 'Karla';
+                font-weight: 400;
+                font-size: 10px;
+                width: 21px;
+                height: 21px;
+                border-radius: 50%;
+                border: 2px solid #fff;
+                background: $cerise;
+                color: #fff;
+            }
+        }
+    }
+    &-logged-in{
+        display: none;
+        &-dropdown .navbar-dropdown{
+            left:auto;
+            right:0;
+        }
+    }
+}
+.navbar-link-profile-name span{
+    max-width: 200px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-align: left;
+    display: block;
 }
 
 .cerise-bg{
