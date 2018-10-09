@@ -1,2 +1,4 @@
 User-agent: *
 Disallow: /
+
+Sitemap: https://www.brandcrush.com/sitemap.xml
