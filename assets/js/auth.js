@@ -42,7 +42,7 @@ window.addEventListener('load', function(){
             };
             var fetchUser = function() {
                 currentUser= null
-                var url = API_URL+'/current-user?inline=host,brands,company,brands.brand,brands.brand.categories,hasSavedSpaces,unreadMessages'
+                var url = API_URL+'/current-user?inline=host,brands,company,brands.brand,hasSavedSpaces,unreadMessages'
                 $.ajax({
                     url: url,
                     type: 'GET',
@@ -103,7 +103,7 @@ window.addEventListener('load', function(){
                             var selectedBrand = currentUser.brands.find(function(brand){
                                 return brand.brandId == currentUser.userData.SelectedBrandId
                             })
-                            if(selectedBrand){
+                            if(selectedBrand && selectedBrand.brand){
                                 profileName += ' | '+selectedBrand.brand.name
                             }
                         }
