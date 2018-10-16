@@ -21,7 +21,7 @@ $(document).ready(function(){
                     template.find('.sub-title').text(val.spacePosition.name.toUpperCase());
                     template.find('.price').text('$'+val.rate + ' per '+val.spacePosition.ratePeriod + ' | ' + val.reachDistributionCapacity + ' Product Reach');
                     template.find('.names').text(val.addresses[0].suburb+(val.addresses[0].countryState ? ', '+val.addresses[0].countryState.name : ""));
-                    template.find('.view-details').attr('href', 'https://app.brandcrush.com/brand/space/'+val.id);
+                    template.find('.view-details').attr('href', 'https://brandcrush.com/brand/space/'+val.id);
 
                     $(el).append(template);            
                 });

@@ -81,9 +81,9 @@ window.addEventListener('load', function(){
                         $('.navbar-link-profile-name span').text(profileName)
                         $(".navbar-item-logged-in-dropdown")
                             .before(
-                                '<a class="navbar-item" href="https://app.brandcrush.com/host/list-a-space/create/new/" >List a space</a>'+
-                                '<a class="navbar-item" href="https://app.brandcrush.com/host/dashboard" >Dashboard</a>' +
-                                '<a class="navbar-item" href="https://app.brandcrush.com/host/messages" ><i class="material-icons navbar-item-icon" '+messageCountBadge+'>chat_bubble</i> Messages</a>' +
+                                '<a class="navbar-item" href="https://brandcrush.com/host/list-a-space/create/new/" >List a space</a>'+
+                                '<a class="navbar-item" href="https://brandcrush.com/host/dashboard" >Dashboard</a>' +
+                                '<a class="navbar-item" href="https://brandcrush.com/host/messages" ><i class="material-icons navbar-item-icon" '+messageCountBadge+'>chat_bubble</i> Messages</a>' +
                                 '<div class="navbar-item navbar-item-logged-out"></div>'
 
                             )
@@ -93,8 +93,8 @@ window.addEventListener('load', function(){
                             )
 
                         $('.navbar-item-logged-in-dropdown .navbar-dropdown').append(
-                            '<a class="navbar-item" href="https://app.brandcrush.com/host/profile" >Profile</a>'+
-                            '<a class="navbar-item" href="https://app.brandcrush.com/host/user-settings" >Manage Account Settings</a>'
+                            '<a class="navbar-item" href="https://brandcrush.com/host/profile" >Profile</a>'+
+                            '<a class="navbar-item" href="https://brandcrush.com/host/user-settings" >Manage Account Settings</a>'
                         )
                         $('.navbar-item-logged-in-dropdown .navbar-dropdown').append(
                             logout
@@ -113,9 +113,9 @@ window.addEventListener('load', function(){
                         var messageCountBadge = currentUser.unreadMessages > 0 ? 'data-badge="'+currentUser.unreadMessages+'"' : ''
                         $(".navbar-item-logged-in-dropdown")
                             .before(
-                                '<a class="navbar-item" href="https://app.brandcrush.com/brand/saved" ><i class="material-icons navbar-item-icon" '+spacesCountBadge+'>favorite</i> Saved</a>' +
-                                '<a class="navbar-item" href="https://app.brandcrush.com/brand/messages" ><i class="material-icons navbar-item-icon" '+messageCountBadge+'>chat_bubble</i> Messages</a>' +
-                                '<a class="navbar-item" href="https://app.brandcrush.com/brand/dashboard" >Dashboard</a>' +
+                                '<a class="navbar-item" href="https://brandcrush.com/brand/saved" ><i class="material-icons navbar-item-icon" '+spacesCountBadge+'>favorite</i> Saved</a>' +
+                                '<a class="navbar-item" href="https://brandcrush.com/brand/messages" ><i class="material-icons navbar-item-icon" '+messageCountBadge+'>chat_bubble</i> Messages</a>' +
+                                '<a class="navbar-item" href="https://brandcrush.com/brand/dashboard" >Dashboard</a>' +
                                 '<div class="navbar-item"></div>'
                             )
                         $(".navbar-item-logged-in-dropdown")
@@ -124,9 +124,9 @@ window.addEventListener('load', function(){
                             )
 
                         $('.navbar-item-logged-in-dropdown .navbar-dropdown').append(
-                            '<a class="navbar-item" href="https://app.brandcrush.com/brand/manage-company" >Manage Business Profile</a>'+
-                            '<a class="navbar-item" href="https://app.brandcrush.com/brand/manage-profiles" >Manage Brand Profiles</a>'+
-                            '<a class="navbar-item" href="https://app.brandcrush.com/brand/user-settings" >Manage Account Settings</a>'
+                            '<a class="navbar-item" href="https://brandcrush.com/brand/manage-company" >Manage Business Profile</a>'+
+                            '<a class="navbar-item" href="https://brandcrush.com/brand/manage-profiles" >Manage Brand Profiles</a>'+
+                            '<a class="navbar-item" href="https://brandcrush.com/brand/user-settings" >Manage Account Settings</a>'
                         )
                         $('.navbar-item-logged-in-dropdown .navbar-dropdown').append(
                             logout
