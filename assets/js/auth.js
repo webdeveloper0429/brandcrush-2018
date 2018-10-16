@@ -17,7 +17,7 @@ window.addEventListener('load', function(){
     }
 
     var deleteCookie = function(name) {
-        document.cookie = name + '=;expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+        document.cookie = name + '=;path=/;domain=brandcrush.com;expires=Thu, 01 Jan 1970 00:00:01 GMT;';
     };
 
 
@@ -77,12 +77,13 @@ window.addEventListener('load', function(){
                         if(currentUser.host && currentUser.host.name){
                             profileName += ' | '+currentUser.host.name
                         }
+                        var messageCountBadge = currentUser.unreadMessages > 0 ? 'data-badge="'+currentUser.unreadMessages+'"' : ''
                         $('.navbar-link-profile-name span').text(profileName)
                         $(".navbar-item-logged-in-dropdown")
                             .before(
                                 '<a class="navbar-item" href="https://app.brandcrush.com/host/list-a-space/create/new/" >List a space</a>'+
                                 '<a class="navbar-item" href="https://app.brandcrush.com/host/dashboard" >Dashboard</a>' +
-                                '<a class="navbar-item" href="https://app.brandcrush.com/host/messages" >Messages</a>' +
+                                '<a class="navbar-item" href="https://app.brandcrush.com/host/messages" ><i class="material-icons navbar-item-icon" '+messageCountBadge+'>chat_bubble</i> Messages</a>' +
                                 '<div class="navbar-item navbar-item-logged-out"></div>'
 
                             )
