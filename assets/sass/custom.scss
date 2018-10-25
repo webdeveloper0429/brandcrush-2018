@@ -634,6 +634,9 @@ hr{
 .activation-description-section{
     background-color: $pale-grey;
     padding: 3.75rem;
+    @media (max-width: $tablet){
+        padding: 3rem;
+    }
     .activation-description-w{
         max-width: 530px;
         font-family: Karla;
