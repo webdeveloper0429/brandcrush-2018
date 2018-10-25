@@ -169,12 +169,18 @@
     flex-direction: column;
     align-items: center;
     background-image: linear-gradient(251deg, #db0a5b, #971b50);
+    @media (max-width: $tablet) {
+        padding: 2.75rem 1rem;
+    }
     .title{
         font-family: Poppins;
         font-size: 32px;
         font-weight: bold;
         text-align: center;
         color: $white;
+        @media (max-width: $tablet) {
+            font-size: 20px;
+        }
     }
     .desc{
         font-family: Poppins;
@@ -182,6 +188,9 @@
         text-align: center;
         color: $white;
         margin: 0.25rem auto;
+        @media (max-width: $tablet) {
+            font-size: 14px;
+        }
     }
     .sub-desc{
         margin-top: 1rem;
@@ -189,6 +198,9 @@
         font-size: 20px;
         text-align: center;
         color: $white;
+        @media (max-width: $tablet) {
+            font-size: 14px;
+        }
     }
 }
 
@@ -380,6 +392,9 @@ hr{
 }
 .activation-concept-section{
     padding: 3.75rem;
+    @media (max-width: $tablet) {
+        padding: 2rem;
+    }
     .activation-concept-w{
         .item-box{
             margin: 1.5rem 1rem;
@@ -404,32 +419,50 @@ hr{
 .post-component{
     padding: 3.75rem 1rem;
     background-color: $pale-grey;
+    @media (max-width: $tablet){
+        padding: 3rem 1rem 0rem;
+    }
     .image{
         width: 90%;
         height: 400px;
         background-position: center;
         background-size: cover;
+        @media (max-width: $tablet){
+            width: 100%;
+            height: 270px;
+        }
     }
     .post-body{
         width: 90%;
         padding: 1rem 0;
+        @media (max-width: $tablet){
+            width: 100%;
+            text-align: center;
+        }
         .post-title{
             font-family: Poppins;
             font-size: 22px;
             font-weight: 600;
             color: $charcoal-grey;
             margin: 2rem 0;
+            @media (max-width: $tablet){
+                margin: 1rem 0;
+            }
         }
         .post-desc{
             font-family: Karla;
             font-size: 16px;
             color: $charcoal-grey;
+            @media (max-width: $tablet){
+                font-size: 12.5px;
+            }
             p{
                 margin: 1.25rem 0;
             }
             ul{
                 list-style: disc;
                 padding-left: 2rem;
+                text-align: left;
             }
         }
     }
@@ -441,6 +474,9 @@ hr{
     }
     .activated-by-w{
         margin-bottom: 3rem;
+        @media (max-width: $tablet){
+            margin-bottom: 1rem;
+        }
         .title{
             font-family: Poppins;
             font-size: 22px;
@@ -448,12 +484,19 @@ hr{
             color: $charcoal-grey;
             text-align: center;
             margin: 3.75rem auto;
+            @media (max-width: $tablet){
+                margin: 2.5rem auto;
+            }
         }
         .button-w{
             margin: 3.75rem auto;
             max-width: 400px;
             display: flex;
             justify-content: space-between;
+            @media (max-width: $tablet){
+                margin: 2.5rem auto;
+                max-width: 275px;
+            }
             .tab-btn{
                 width: 150px;
                 height: 34px;
@@ -467,6 +510,11 @@ hr{
                 justify-content: center;
                 color: $charcoal-grey;
                 cursor: pointer;
+                @media (max-width: $tablet){
+                    width: 130px;
+                    height: 26px;
+                    font-size: 9px;
+                }
             }
             .actived-btn{
                 border: 1px solid $cerise;
@@ -480,6 +528,11 @@ hr{
             margin: 2.5rem auto;
             text-align: center;
             max-width: 610px;
+            @media (max-width: $tablet){
+                font-size: 12.5px;
+                text-align: center;
+                margin: 2rem auto;
+            }
         }
         .item-row{
             .item-title{
@@ -489,12 +542,22 @@ hr{
                 font-size: 18px;
                 font-weight: 600;
                 color: $cerise;
+                @media (max-width: $tablet){
+                    font-size: 14px;
+                    text-align: center;
+                    margin: 1rem auto 0;
+                }
             }
             .item-body{
                 margin: 1rem 0;
                 font-family: Karla;
                 font-size: 16px;
                 color: $charcoal-grey;
+                @media (max-width: $tablet){
+                    font-size: 12.5px;
+                    text-align: center;
+                    margin: 0 auto 0;
+                }
                 div{
                     margin: 0.25rem 0;
                 }
@@ -518,6 +581,9 @@ hr{
             font-weight: 600;
             color: $charcoal-grey;
             margin: 2rem auto;
+            @media (max-width: $tablet){
+                margin: 0rem auto 2rem;
+            }
         }
         .process-box{
             border: solid 1px $charcoal-grey;
@@ -539,6 +605,10 @@ hr{
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                @media (max-width: $tablet){
+                    width: 35px;
+                    height: 35px;
+                }
             }
             .process-text{
                 font-family: Karla;
@@ -546,6 +616,9 @@ hr{
                 text-align: center;
                 color: $charcoal-grey;
                 margin: 0.25rem auto;
+                @media (max-width: $tablet){
+                    font-size: 16px;
+                }
             }
         }
         .sign-up-btn{
@@ -568,6 +641,9 @@ hr{
         text-align: center;
         color: $charcoal-grey;
         margin: 0 auto;
+        @media (max-width: $tablet){
+            font-size: 16px;
+        }
     }
 }
 .page-heading-section{
