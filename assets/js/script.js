@@ -323,3 +323,15 @@ var consumerArr=[
         answer: "If you have a registered business with existing foot traffic then Brandcrush is the place for you, simply sign up and list a space for free. "
     }
 ]
+
+
+
+$(window).on('load resize', function(){
+    var vw = $(window).width() ;
+    if(vw <969 ){
+        $("input[class='search-query']").attr("placeholder", "Where do you want to activate?")
+    }
+    else{
+        $("input[class='search-query']").attr("placeholder", "Where do you want to activate (eg. Melbourne)")
+    }
+})
