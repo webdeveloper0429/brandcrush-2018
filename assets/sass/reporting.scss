@@ -21,6 +21,10 @@
                 font-weight: 600;
                 color: $charcoal-grey;
                 margin: 4rem auto 1rem;
+                @media (max-width: $tablet){
+                    margin: 0 auto;
+                    font-size: 20px;
+                }
             }
             .step-w{
                 margin-top: 1.5rem;
@@ -32,6 +36,9 @@
                     font-family: Karla;
                     font-size: 20px;
                     color: $charcoal-grey;
+                    @media (max-width: $tablet){
+                        font-size: 16px;
+                    }
                     .step-number{
                         color: $cerise;
                         font-weight: bold;

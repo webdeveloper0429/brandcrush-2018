@@ -657,12 +657,18 @@ hr{
         justify-content: space-around;
         align-items: center;
         background-image: linear-gradient(251deg, #db0a5b, #971b50);
+        @media (max-width: $tablet){
+            padding: 3.75rem 1rem;
+        }
         .title{
             font-family: Poppins;
             font-size: 32px;
             font-weight: bold;
             text-align: center;
             color: $white;
+            @media (max-width: $tablet){
+                font-size: 24px;
+            }
         }
     }
 }

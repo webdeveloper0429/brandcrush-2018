@@ -12,10 +12,17 @@
             color: $charcoal-grey;
             max-width: 776px;
             margin: 1rem 1rem 2rem;
+            @media (max-width: $tablet) {
+                font-size: 16px;
+                margin: 0 1rem 1rem;
+            }
         }
         .contact-w{
             padding: 1rem;
             .contact-us-text-w{
+                @media (max-width: $tablet){
+                    text-align: center;
+                }
                 .title{
                     font-family: Poppins;
                     font-size: 22px;
