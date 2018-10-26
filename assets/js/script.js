@@ -124,28 +124,28 @@ var generalArr = [
         question: "What is a Pop Up activation?",
         answer: "Pop Up Activations are a short term retail offering where a brand can sell product in a dedicated Space. i.e A shoe brand selling at a gym."
     },{
-        question: "What is an Experiential Activation? ",
+        question: "What is an Experiential Activation?",
         answer: "Experiential Activations are where brands create live “sensory” experiences to connect with consumers in high traffic spaces i.e. The entrance to a store or at an event."
     },{
         question: "What is \"Product Reach\"",
         answer: "Product Reach is the number of consumers that can receive a sample or marketing message during an activation. "
     },{
-        question: "Is Brandcrush in all countries? ",
+        question: "Is Brandcrush in all countries?",
         answer: "Brandcrush is a global platform. Activations Hosts can sign up and list a space at any time and Brands are welcome to search Spaces in their local area. "
     },{
-        question: "How does Brandcrush make money? ",
+        question: "How does Brandcrush make money?",
         answer: "Brandcrush take a commission from Activation Hosts and add a service fee for Brands. There are no setup or subscription fees. "
     },{
-        question: "Who executes the activation? ",
+        question: "Who executes the activation?",
         answer: "Brands can choose to activate with their brand teams or they can request Activation Hosts to activate for them. You can search spaces by how they can be activated. By the brand or by the Activation Host. "
     },{
         question: "Who is responsible for activation merchandise & samples?",
         answer: "Brands and Activation Hosts are both responsible. Brands must ensure product or merchandise arrives 3 days prior to the activation dates and Activation Hosts must ensure that they recieve, unpack, store and or display products to the highest possible standards. Please refer to our terms & conditions for further information. "
     },{
-        question: "What happens if an Activation Host doesn't distribute samples? ",
+        question: "What happens if an Activation Host doesn't distribute samples?",
         answer: "Brands are protected as Brandcrush only makes payment to an Activation Host upon receipt of an activation report.  In this situation an alternative campaign date is generally rescheduled. "
     },{
-        question: "Is Brandcrush cutting out Activation and PR agencies? ",
+        question: "Is Brandcrush cutting out Activation and PR agencies?",
         answer: "Brandcrush work closely with all PR, Activation and Media Agencies as they use our platform as a workflow solution. "
     },{
         question: "How does Brandcrush monitor Activation Hosts & Product Reach estimates?",
@@ -161,10 +161,10 @@ var brandArr=[
         question: "How do samples get distributed?",
         answer: "Once a booking request is approved, Brands can download a CSV spreadsheet that includes a contact person, address, business name and volume of samples required per space. This CSV is then used by the Brands warehouse to distribute samples directly to the Activation Host. "
     },{
-        question: "What is the pricing structure?  ",
+        question: "What is the pricing structure? ",
         answer: "Activation Hosts set pricing based on each individual space. Most spaces cost between $0.50 and $1.50 per sample however dedicated staff and niche audiences can attract a higher rate. "
     },{
-        question: "What if we are a service based business? ",
+        question: "What if we are a service based business?",
         answer: "Brands can distribute marketing material and brochures as well as samples. Anything that adds value for consumers and Activation Hosts is a great fit. "
     },{
         question: "Can we book floor space for us to activate?",
@@ -176,7 +176,7 @@ var brandArr=[
         question: "Can we sample and sell product?",
         answer: "Yes, simply use our search functionality to find Spaces that permit selling in their activation spaces. "
     },{
-        question: "What campaign reports are provided? ",
+        question: "What campaign reports are provided?",
         answer: "Activation Hosts, that run an activation for a brand,  are required to provide a report at the end of every Activation. This Activation Report includes insights feedback from consumers as well photos of the activation. "
     },{
         question: "How much does it cost?",
@@ -192,21 +192,21 @@ var brandArr=[
         answer: "This helps us run our platform and covers admin, moderation and transaction costs."
     },{
         question: "Why was payment taken before my Activation Request was approved?",
-        answer: "Brandcrush holds payment for a maximum of 5 days while your Activation Request is pending. "
+        answer: "Brandcrush holds payment for a maximum of 5 days while your Activation Request is pending."
     },{
-        question: "Are there any set up or subscription fee? ",
+        question: "Are there any set up or subscription fee?",
         answer: "No, there are no sign up or subscription fees. Brands are only charged when an Activation Host accepts a booking."
     },{
-        question: "Is there a minimum spend? ",
+        question: "Is there a minimum spend?",
         answer: "You can spend as much or as little as you like with Brandcush, most brands book a volume of Spaces for a one or two week campaign"
     },{
-        question: "Can we pay with product only? ",
+        question: "Can we pay with product only?",
         answer: "Unfortunately no, Activation Hosts will only except monetary payment in exchange for their Space. "
     },{
-        question: "When should I send merchandise for a campaign? ",
+        question: "When should I send merchandise for a campaign?",
         answer: "Samples and materials need to arrive at the Activation Space a minimum of 3 Days prior to your Activation start date. Please include a copy of your Brandcrush booking confirmation with your product delivery for each space.  "
     },{
-        question: "Why are my Activation Requests being declined? ",
+        question: "Why are my Activation Requests being declined?",
         answer: "Activation Hosts are looking to partner with like minded brands who compliment their existing business, please contact concierge@brandcrush.com to help find suitable spaces. "
     },{
         question: "When will I know if my Activation Request is approved or declined?",
@@ -215,13 +215,13 @@ var brandArr=[
         question: "How does Brandcrush ensure Activations have been executed?",
         answer: "Brandcrush execute \"mystery shopper\" reporting across randomly selected Activation Hosts as well as receiving \"photo proof\" for every Activation."
     },{
-        question: "Why do brands value experiential and aampling activations? ",
-        answer: "Research suggests that  consumers are much more likely to buy a product after trying it. "
+        question: "Why do brands value experiential and sampling activations?",
+        answer: "Research suggests that consumers are much more likely to buy a product after trying it."
     },{
-        question: "How much of my budget should be allocated to activations? ",
-        answer: "Marketers are allocating upto 50% of their budget to experiential marketing. "
+        question: "How much of my budget should be allocated to activations?",
+        answer: "Marketers are allocating upto 50% of their budget to experiential marketing."
     },{
-        question: "Can I submit  a booking request for multiple spaces at once? ",
+        question: "Can I submit a booking request for multiple spaces at once?",
         answer: "Absolutely, you can build a national campaign in a few clicks. Simply add Spaces to a \"Campaign\", provide the booking details and submit your Activation Request. "
     },{
         question: "Can I create a long term partnership with a Space?",
@@ -233,7 +233,7 @@ var brandArr=[
         question: "What happens to our product, samples & materials if we cancel an Activation and items have already been delivered ?",
         answer: "Brands can arrange for pick up and return of product & materials at their own expense or message Activation Hosts to arrange the activation for another booking date. "
     },{
-        question: "Can I negotiate with an Activation Host? ",
+        question: "Can I negotiate with an Activation Host?",
         answer: "Activation Hosts set prices based on what the marketplace is prepared to pay. You can negotiate for longer term bookings or if you feel they are over priced via in app messaging. "
     }
 ]
@@ -243,7 +243,7 @@ var activationArr=[
         question: "What brands use Brandcrush?",
         answer: "Brandcrush connects you with like minded brands who are trying to reach your customers. You get paid to share an actvation space or to distribute their samples/mesages. "
     },{
-        question: "What does it cost to list an Activation Space? ",
+        question: "What does it cost to list an Activation Space?",
         answer: "Nothing, it's 100% free to sign up and list a space on Brandcrush. We only ever take a 12.5% commission on successful bookings so when you win, we win. "
     },{
         question: "How do I get paid?",
@@ -267,13 +267,13 @@ var activationArr=[
         question: "How long do I have to respond to a booking request?",
         answer: "Activation Hosts are encouraged to respond in 24 hours or less. A space can not be double booked while pending. Any requests pending for 5 Days or more will be automatically declined. "
     },{
-        question: "Why do I have to submit an Activation report? ",
+        question: "Why do I have to submit an Activation report?",
         answer: "For all Activations that are Activated by: Activation Host, you are required to submit an Activation Report as  \"proof of activation\". This not only provides proof but also creates a positive experience for brands who are  excited to see how you brought their product to life. "
     },{
         question: "How do I calculate \"Product Reach\"?",
         answer: "Product reach is the daily distribution capacity for your Space i.e how many samples can you successfully handout per day. "
     },{
-        question: "What happens if there are samples leftover at the end of a scheduled activation? ",
+        question: "What happens if there are samples leftover at the end of a scheduled activation?",
         answer: "Activation Hosts are required to distribute the number of samples indicated in the booking confirmation. If an extension is required then they must notify Brandcrush immediately via concierge@brandcrush.com"
     },{
         question: "How do brands measure Activation success?",
@@ -282,13 +282,13 @@ var activationArr=[
         question: "How does Brandcrush ensure Activations have been executed?",
         answer: "Brandcrush compile \"mystery shopper\" reporting across randomly selected Activation Hosts as well as receiving \"photo proof\" for every Activation."
     },{
-        question: "Can I distribute samples as soon as they arrive? ",
+        question: "Can I distribute samples as soon as they arrive?",
         answer: "You need to mark all samples as received under the Activation Booking. Activations should only take place on the specificed activation date. This allows Brands to measure the ROI of the Activation. Brandcrush will also promote consumers and mystery shoppers to visit your business during this time. "
     },{
-        question: "Are Brand reviews public? ",
+        question: "Are Brand reviews public?",
         answer: "Yes, reviews will be shown in your Space listing. If you require any assistance please contact concierge@brandcrush.com"
     },{
-        question: "Can I have a review removed from my profile? ",
+        question: "Can I have a review removed from my profile?",
         answer: "Brandcrush is a community drive marketplace and we value feedback. All users are required to treat each other with respect, honesty and transparency. If you require any an assistance please contact support@brandcrush.com "
     },{
         question: "Will my bank detail be shown publicly?",
@@ -306,13 +306,13 @@ var activationArr=[
         question: "When do I get paid?",
         answer: "For activations run by our Activation Hosts, payment will be released 24 hours (or nearest business day) once you have submitted your Activation Report. For activations run by our Brands, payment will be released within 24 hours of the activation date. Payments will be made into your preferred bank.  "
     },{
-        question: "Can I sign up to multiple Activation Marketplaces? ",
+        question: "Can I sign up to multiple Activation Marketplaces?",
         answer: "Unfortunately no, in order to avoid double bookings we require Activation Hosts to list spaces exclusively with Brandcrush."
     },{
-        question: "What is the cancellation policy? ",
+        question: "What is the cancellation policy?",
         answer: "There are no subscription fees with Brandcrush, Activation Hosts can pause or delete a listing at anytime and Brands are only charged on a booking by booking basis.  Any cancellation requests made by a Brand 30 Days prior to an Activation date will be fully refunded to the brand. Any cancellation request made under 30 days of an Activation start date, will be refundable to the brand at 50% of the activation rate.  Any cancellation request made by the Brand under 15 days of an Activation start date, will be non refundable. Brandcrush will still charge a 12.5% commission for all cancellation fees and Activation Hosts will receive the net rate as per the brand cancellation charges.  "
     },{
-        question: "Can I create a long term partnership with a Brand? ",
+        question: "Can I create a long term partnership with a Brand?",
         answer: "Yes, to increase your chances of building on going partnership please provide prompt and extensive Activation Reports. "
     }
 ]
