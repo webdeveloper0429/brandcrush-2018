@@ -34,12 +34,14 @@
     <script>
         $(function(){
             $("#component_nav_with_search").load("/components/component_nav_with_search.html", navbar_init);
+            $("#component_nav_mobile").load("/components/component_nav_mobile.html");
             $("#component_footer").load("/components/component_footer.html", subscription_init);
             $("#component_activation_concept").load("/components/component_activation_concept.html");
         })
     </script>
     <body>
         <div id="component_nav_with_search"></div>
+        <div id="component_nav_mobile"></div>
         <div class="about-brandcrush-page">
             <section class="hero is-medium is-primary banner-section">
                 <div class="hero-body">

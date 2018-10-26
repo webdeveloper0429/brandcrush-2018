@@ -48,7 +48,23 @@ function navbar_init(){
     $(".navbar-burger").click(function() {  
         // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
         $(".navbar-burger").toggleClass("is-active");
-        $(".navbar-menu").toggleClass("is-active");  
+        // $(".navbar-menu").toggleClass("is-active");  
+        $('body').toggleClass('push-toright');
+        $('.mobile_menu').toggleClass('pushright-open');
+
+        
+        //////toggle sub menu//////
+        $('.menu-to-sub').click(function(e){
+            e.preventDefault();
+            $('.menu-level-1').css('display', 'none');
+            $('.menu-level-2').css('display', 'block');
+        })
+        $('.menu-to-back').click(function(e){
+            e.preventDefault();
+            $('.menu-level-1').css('display', 'block');
+            $('.menu-level-2').css('display', 'none');
+        })
+
     });
     $(".search-btn").click(function(){
         var query = $(".search-query").val();
