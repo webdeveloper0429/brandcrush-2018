@@ -13,6 +13,10 @@
                     font-size: 32px;
                     font-weight: bold;
                     margin: 3rem;
+                    text-align: center;
+                    @media (max-width: $tablet){
+                        font-size: 24px;
+                    }
                 }
                 .subtitle{
                     font-family: Poppins;
@@ -45,6 +49,10 @@
                 font-size: 28px;
                 color: $charcoal-grey;
                 margin: 1rem auto;
+                text-align: center;
+                @media (max-width: $tablet){
+                    font-size: 20px;
+                }
             }
             .sub-title{
                 font-family: Karla;
@@ -53,6 +61,9 @@
                 color: $charcoal-grey;
                 max-width: 650px;
                 margin: 4px auto 2rem;
+                @media (max-width: $tablet){
+                    font-size: 12px;
+                }
             }
             .video-w{
                 img{
