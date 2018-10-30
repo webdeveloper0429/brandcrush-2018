@@ -1,47 +1,159 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-
-<url>
-  <loc>https://brandcrush.com/</loc>
-  <lastmod>2018-10-25T00:49:42+00:00</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://brandcrush.com/brand/search</loc>
-  <lastmod>2018-10-26T00:07:47+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://brandcrush.com/brand/search?categoryIds=1</loc>
-  <lastmod>2018-10-26T00:07:47+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://brandcrush.com/activationhosts</loc>
-  <lastmod>2018-10-19T04:19:31+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://brandcrush.com/brands</loc>
-  <lastmod>2018-10-19T04:19:18+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://brandcrush.com/host/signup</loc>
-  <lastmod>2018-10-26T00:07:47+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://brandcrush.com/FAQs</loc>
-  <lastmod>2018-10-12T00:26:51+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://brandcrush.com</loc>
+    <lastmod>2018-10-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://brandcrush.com/brands</loc>
+    <lastmod>2018-10-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://brandcrush.com/activationhosts</loc>
+    <lastmod>2018-10-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://brandcrush.com/FAQs</loc>
+    <lastmod>2018-10-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://brandcrush.com/contactus</loc>
+    <lastmod>2018-10-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.brandcrush.com/</loc>
+    <lastmod>2018-10-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://brandcrush.com/brand/search</loc>
+    <lastmod>2018-10-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://brandcrush.com/host/signup</loc>
+    <lastmod>2018-10-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://www.brandcrush.com/activationhosts</loc>
+    <lastmod>2018-10-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://brandcrush.com/brand/signup</loc>
+    <lastmod>2018-10-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://www.brandcrush.com/brands</loc>
+    <lastmod>2018-10-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://www.brandcrush.com/FAQs</loc>
+    <lastmod>2018-10-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://www.brandcrush.com/contactus</loc>
+    <lastmod>2018-10-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://www.brandcrush.com/termsofservice</loc>
+    <lastmod>2018-10-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://www.brandcrush.com/privacypolicy</loc>
+    <lastmod>2018-10-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://brandcrush.com/brand/search?categoryIds=1</loc>
+    <lastmod>2018-10-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1</priority>
+  </url>
+  <url>
+    <loc>https://brandcrush.com/brand/search?q=</loc>
+    <lastmod>2018-10-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1</priority>
+  </url>
+  <url>
+    <loc>https://brandcrush.com/brand/search?q=melbourne</loc>
+    <lastmod>2018-10-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1</priority>
+  </url>
+  <url>
+    <loc>https://brandcrush.com/brand/search?q=sydney</loc>
+    <lastmod>2018-10-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1</priority>
+  </url> 
+  <url>
+    <loc>https://brandcrush.com/brand/search?q=brisbane</loc>
+    <lastmod>2018-10-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1</priority>
+  </url>
+  <url>
+    <loc>https://brandcrush.com/brand/search?q=adelaide</loc>
+    <lastmod>2018-10-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1</priority>
+  </url>   
+  <url>
+    <loc>https://brandcrush.com/brand/search?q=perth</loc>
+    <lastmod>2018-10-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1</priority>
+  </url> 
+  <url>
+    <loc>https://brandcrush.com/blog</loc>
+    <lastmod>2018-10-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1</priority>
+  </url>  
+  <url>
+    <loc>https://brandcrush.com/blog/the-brandcrush-guide-to-effective-brand-communication-0</loc>
+    <lastmod>2018-10-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1</priority>
+  </url> 
+  <url>
+    <loc>https://brandcrush.com/blog/memorable-experience-marketing-0</loc>
+    <lastmod>2018-10-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1</priority>
+  </url>   
+  <url>
+    <loc>https://brandcrush.com/blog/how-to-list-a-space</loc>
+    <lastmod>2018-10-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1</priority>
+  </url>    
 </urlset>
