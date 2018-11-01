@@ -7,9 +7,9 @@ $(document).ready(function(){
 
         function loadSpaces() {
 
-            loadSpace('#health-wellness-sport', '?ids=1249,1278,1245'+qp);
-            loadSpace('#lifestyle', '?ids=738,1288,1264'+qp);
-            loadSpace('#bars-cafes', '?ids=1250,1248,1269'+qp);
+            loadSpace('#health-wellness-sport', '?ids=1380,1415,1459'+qp);
+            loadSpace('#lifestyle', '?ids=1314,736,1263'+qp);
+            loadSpace('#bars-cafes', '?ids=1463,1499,1250'+qp);
         }
 
         function loadSpace(el, queryParams) {
