@@ -35,43 +35,81 @@
     padding-bottom: 0.75rem;
 }
 
+body{
+    position: relative;
+    left: 0;
+    overflow-x: hidden;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
 .mobile_menu{
-    .mobile_btn{
-        height: 38px;
-        border-radius: 0;
-        font-family: Karla;
-        font-size: 14px;
-        letter-spacing: 1px;
-        text-transform: uppercase;
-        margin-bottom: 10px;
-    }
-    a.navbar-item{
-        font-family: Karla;
-        font-size: 14px;
-        color: $charcoal-grey;
-        padding: 0.625rem 0.75rem;
-    }
-    hr{
-        margin: 0.625rem 0.75rem;
-    }
-    .mobile-social-w{
-        padding: 2.5rem 1rem;
+    background-image: linear-gradient(202deg, #db0a5b, #971b50);
+    color: $white;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    position: fixed;
+    top: 0;
+    right: -260px;
+    z-index: 10;
+    width: 260px;
+    height: 100%;
+    .menu-item-w{
+        height: 40px;
+        padding: 0 12px;
         display: flex;
         align-items: center;
-        justify-content: center;
+        border-bottom: 0.5px solid #F084AB;
+        color: $white;
+        font-family: Karla;
+        font-size: 11px;
+        img{
+            height: 20px;
+            width: auto;
+        }
+    }
+    .menu-to-sub{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .mobile-social-w{
+        position: fixed;
+        bottom: 0;
+        width: 260px;
         .icons-w{
-            width: 150px;
+            margin: 0 auto 35px;
+            width: 120px;
             display: flex;
-            align-items: center;
             justify-content: space-between;
             img{
-                width: 30px;
-                height: 30px;
-                margin: 10px;
+                width: 25px;
+                height: 25px;
             }
         }
     }
 }
+
+.push{
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.pushright-open{
+    right: 0;
+}
+.push-toright{
+    left: -260px;
+    height: 100vh;
+    overflow-y: hidden;
+}
+.menu-level-2{
+    display: none;
+}
+
 
 .search-w{
     width: 400px;
@@ -96,7 +134,9 @@
         width: calc(100% - 50px);
     }
 }
-
+.navbar-burger:hover{
+    background: $white;
+}
 .navbar-item{
     font-family: Karla;
     font-size: 14px;

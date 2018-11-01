@@ -81,11 +81,13 @@
     <script>
         $(function(){
             $("#component_nav").load("/components/component_nav.html", navbar_init);
+            $("#component_nav_mobile").load("/components/component_nav_mobile.html");
             $("#component_footer").load("/components/component_footer.html", subscription_init);
         })
     </script>
     <body>
         <div id="component_nav"></div>
+        <div id="component_nav_mobile"></div>
         <div class="homepage">
             <section class="hero is-large is-primary banner-section">
                 <div class="hero-body">

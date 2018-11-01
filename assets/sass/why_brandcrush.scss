@@ -86,7 +86,7 @@
                         background-size: cover;
                         @media (max-width: $tablet){
                             height: 350px;
-                            width: 90%;
+                            width: 100%;
                         } 
                     }
                 }
@@ -95,6 +95,9 @@
                     display: flex;
                     flex-direction: column;
                     justify-content: space-around;
+                    @media (max-width: $tablet){
+                        margin: 0 !important;
+                    } 
                     .big-list-item-w{
                         display: flex;
                         align-items: center;
@@ -142,10 +145,10 @@
                 align-items: center;
                 justify-content: center;
                 .button{
-                    width: 250px;
-                    height: 40px;
+                    width: 200px;
+                    height: 32px;
                     font-family: Poppins;
-                    font-size: 20px;
+                    font-size: 18px;
                     font-weight: 600;
                 }
             }

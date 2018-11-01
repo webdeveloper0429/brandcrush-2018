@@ -80,6 +80,9 @@
                             font-weight: bold;
                             max-width: 680px;
                             text-align: center;
+                            @media (max-width: $tablet){
+                                font-size: 28px;
+                            }
                         }
                         .button{
                             width: 160px;
