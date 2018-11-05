@@ -137,6 +137,9 @@ body{
 .navbar-burger:hover{
     background: $white;
 }
+.navbar.is-white .navbar-brand>a.navbar-item:hover{
+    background: $white;
+}
 .navbar-item{
     font-family: Karla;
     font-size: 14px;
