@@ -1,8 +1,12 @@
 //custom select box in homepage
 /*the container must be positioned relative:*/
 .custom-select {
+    width: 160px;
     position: relative;
     font-family: Arial;
+    @media (max-width: $tablet) {
+        width: 110px;
+    }
 }
 .custom-select select {
     display: none; /*hide original SELECT element:*/
@@ -19,6 +23,10 @@
     top: 8px;
     right: 10px;
     color: $charcoal-grey;
+    @media (max-width: $tablet) {
+        top: 2px;
+        right: 4px;
+    }
 }
 /*point the arrow upwards when the select box is open (active):*/
 // .select-selected.select-arrow-active:after {
@@ -33,6 +41,10 @@
     padding: 8px 16px;
     border: 1px solid transparent;
     cursor: pointer;
+    @media (max-width: $tablet) {
+        padding: 0 8px;
+        font-size: 12px;
+    }
 }
 /*style items (options):*/
 .select-items {
@@ -46,6 +58,10 @@
 .select-items div{
     padding: 12px 16px;
     font-size: 14px;
+    @media (max-width: $tablet) {
+        padding: 4px 8px;
+        font-size: 11px;
+    }
 }
 /*hide the items when the select box is closed:*/
 .select-hide {
@@ -77,7 +93,7 @@
 
 .hero-body{
     @media (max-width: $tablet){
-        padding: 4rem 1rem;
+        padding: 5rem 1rem 4rem;
     }
 }
 
