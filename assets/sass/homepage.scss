@@ -80,6 +80,12 @@
             }
             .button-w{
                 margin: 15px;
+                display: flex;
+                align-items: center;
+                .select-w{
+                    border-left: 1px solid $charcoal-grey-60-p;
+                    padding: 0 1rem;
+                }
                 .button{
                     font-size: 20px;
                     font-weight: 600;

@@ -67,15 +67,23 @@ function navbar_init(){
 
     });
     $(".search-btn").click(function(){
-        var query = $(".search-query").val();
-        window.open('https://brandcrush.com/brand/search?q=' + query, '_self');
+        queryAction()
     })
     $(".search-query").on('keyup', function(e){
         if(e.keyCode == 13){
-            var query = $(".search-query").val();
-            window.open('https://brandcrush.com/brand/search?q=' + query, '_self');
+            queryAction()
         }
     })
+}
+function queryAction(){
+    var query = $(".search-query").val();
+    var selectValue = $(".custom-select select").val();
+    if(selectValue == '0'){
+        window.open('https://brandcrush.com/brand/search?q=' + query, '_self');
+    }
+    else{
+        window.open('https://brandcrush.com/brand/search?q=' + query + '&activatedByIds=' + selectValue, '_self');
+    }
 }
 
 function subscription_init(){
@@ -342,12 +350,13 @@ var consumerArr=[
 
 
 
-$(window).on('load resize', function(){
-    var vw = $(window).width() ;
-    if(vw <969 ){
-        $("input[class='search-query']").attr("placeholder", "Where do you want to activate?")
-    }
-    else{
-        $("input[class='search-query']").attr("placeholder", "Where do you want to activate (eg. Melbourne)")
-    }
-})
+// $(window).on('load resize', function(){
+//     var vw = $(window).width() ;
+//     if(vw <969 ){
+//         $("input[class='search-query']").attr("placeholder", "Where do you want to activate?")
+//     }
+//     else{
+//         $("input[class='search-query']").attr("placeholder", "Where do you want to activate (eg. Melbourne)")
+//     }
+// })
+
