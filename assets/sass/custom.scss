@@ -336,6 +336,9 @@ body{
         align-items: center;
         width: 90%;
         margin: 0 auto;
+        @media (max-width: $tablet){
+            flex-direction: column;
+        }
         .description{
             font-family: Karla;
             font-size: 16px;
@@ -343,6 +346,10 @@ body{
             color: $white;
             padding: 0 3rem;
             text-align: center;
+            @media (max-width: $tablet){
+                padding: 0 1rem;
+                margin-bottom: 1rem;
+            }
             a{
                 color: white;
                 text-decoration: underline;
