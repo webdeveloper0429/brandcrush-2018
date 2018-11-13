@@ -203,7 +203,8 @@
                 padding: 1rem;
                 .image-w{
                     .image{
-                        height: 250px;
+                        width: 100%;
+                        height: auto;
                         background-position: center;
                         background-size: cover;
                     }
