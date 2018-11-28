@@ -1,8 +1,8 @@
 $(document).ready(function(){
     (function (app) {
 
-        // var API_URL = location.href.indexOf('localhost') !== -1 ? 'http://localhost:5000' : 'https://api.brandcrush.com'
-        var API_URL = 'https://api.brandcrush.com'
+        var API_URL = location.href.indexOf('localhost') !== -1 ? 'http://localhost:5000' : 'https://api.brandcrush.com'
+        // var API_URL = 'https://api.brandcrush.com'
         var qp = '&inline=images(url),spacePosition(name,ratePeriod),addresses(suburb,country_stateId),addresses.countryState(name)&fields=name,rate,reachDistributionCapacity,spacePositionId';
 
         function loadSpaces() {
