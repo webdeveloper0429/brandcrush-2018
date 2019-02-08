@@ -38,16 +38,13 @@
         }
 
         .banner-image-wrapper{
-            @media (max-width: $desktop){
+            @media (max-width: $tablet){
                 background-image: linear-gradient(251deg, #db0a5b, #971b50);
-                background-image: url("/assets/images/Homepage/Main-Banner@2x.jpg");
+                background-image: url("/assets/images/Homepage/Main-Banner@2x-mobile.jpg");
                 background-position: center;
                 background-size: cover;
                 background-color: #db0a5b;
                 color: #fff;
-            }
-            @media (max-width: $tablet){
-                background-image: url("/assets/images/Homepage/Main-Banner@2x-mobile.jpg");
             }
             .container{
                 max-width: 820px;
@@ -139,6 +136,15 @@
                         padding: 6px 25px;
                     }
                 }
+            }
+            .mobile-select-w{
+                margin-top: 0.5rem;
+                background: #fff;
+                height: 40px;
+                border-radius: 4px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
             }
             .mobile-button-w{
                 margin-top: 0.5rem;

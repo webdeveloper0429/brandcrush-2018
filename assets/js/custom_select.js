@@ -19,20 +19,22 @@ $(document).ready(function(){
             c.innerHTML = selElmnt.options[j].innerHTML;
             c.addEventListener("click", function(e) {
                 /*when an item is clicked, update the original select box,
-                and the selected item:*/
-                var y, i, k, s, h;
-                s = this.parentNode.parentNode.getElementsByTagName("select")[0];
-                h = this.parentNode.previousSibling;
-                for (i = 0; i < s.length; i++) {
-                    if (s.options[i].innerHTML == this.innerHTML) {
-                        s.selectedIndex = i;
-                        h.innerHTML = this.innerHTML;
-                        y = this.parentNode.getElementsByClassName("same-as-selected");
-                        for (k = 0; k < y.length; k++) {
-                            y[k].removeAttribute("class");
+                and the selected item: but this will change all custom select*/              
+                var all_custom_select = document.getElementsByClassName("custom-select");
+                for (var index = 0; index < all_custom_select.length; index++) {
+                    const origin_select = all_custom_select[index].getElementsByTagName("select")[0];
+                    const selected = all_custom_select[index].getElementsByClassName("select-selected")[0];
+                    for (var i = 0; i < origin_select.length; i++) {
+                        if (origin_select.options[i].innerHTML == this.innerHTML.trim()) {
+                            origin_select.selectedIndex = i;
+                            selected.innerHTML = this.innerHTML.trim();
+                            const y = this.parentNode.getElementsByClassName("same-as-selected");
+                            for (var k = 0; k < y.length; k++) {
+                                y[k].removeAttribute("class");
+                            }
+                            this.setAttribute("class", "same-as-selected");
+                            break;
                         }
-                        this.setAttribute("class", "same-as-selected");
-                        break;
                     }
                 }
                 // h.click();
@@ -92,19 +94,21 @@ $(document).ready(function(){
     })
     $(".activation-spaces-modal .item-w").on('click', function(){
         $(".activation-spaces-modal").toggleClass("is-active");
-        const origin_select = $(".custom-select select")[0];
-        const selected = $(".custom-select .select-selected")[0];
-        for (var i = 0; i < origin_select.length; i++) {
-            if (origin_select.options[i].innerHTML == this.innerHTML.trim()) {
-                origin_select.selectedIndex = i;
-                selected.innerHTML = this.innerHTML.trim();
-                const y = this.parentNode.getElementsByClassName("same-as-selected");
-                for (k = 0; k < y.length; k++) {
-                    y[k].removeAttribute("class");
+        var all_custom_select = document.getElementsByClassName("custom-select");
+        for (var index = 0; index < all_custom_select.length; index++) {
+            const origin_select = all_custom_select[index].getElementsByTagName("select")[0];
+            const selected = all_custom_select[index].getElementsByClassName("select-selected")[0];
+            for (var i = 0; i < origin_select.length; i++) {
+                if (origin_select.options[i].innerHTML == this.innerHTML.trim()) {
+                    origin_select.selectedIndex = i;
+                    selected.innerHTML = this.innerHTML.trim();
+                    const y = this.parentNode.getElementsByClassName("same-as-selected");
+                    for (var k = 0; k < y.length; k++) {
+                        y[k].removeAttribute("class");
+                    }
+                    break;
                 }
-                break;
             }
         }
-
     })
 })

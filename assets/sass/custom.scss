@@ -5,7 +5,7 @@
     position: relative;
     font-family: Arial;
     @media (max-width: $tablet) {
-        width: 170px;
+        width: 100%;
     }
 }
 .custom-select select {
@@ -24,8 +24,8 @@
     right: 10px;
     color: $charcoal-grey;
     @media (max-width: $tablet) {
-        top: 2px;
-        right: 4px;
+        top: 11px;
+        right: 10px;
     }
 }
 /*point the arrow upwards when the select box is open (active):*/
@@ -41,8 +41,9 @@
     padding: 8px 16px;
     border: 1px solid transparent;
     cursor: pointer;
+    border-radius: 4px;
     @media (max-width: $tablet) {
-        padding: 0 8px;
+        padding: 10px 8px;
         font-size: 12px;
     }
 }
@@ -50,10 +51,11 @@
 .select-items {
     position: absolute;
     background-color: $white;
-    top: 100%;
+    top: 90%;
     left: 0;
     right: 0;
     z-index: 99;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
     #see-all-btn{
         color: #db095b;
     }
@@ -62,7 +64,7 @@
     padding: 12px 16px;
     font-size: 14px;
     @media (max-width: $tablet) {
-        padding: 4px 8px;
+        padding: 8px 8px;
         font-size: 11px;
     }
 }
