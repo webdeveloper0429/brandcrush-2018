@@ -1,36 +1,26 @@
 .reporting-page{
     .watch-video-section{
         padding: 3rem 1rem;
-        .container{
-            max-width: 820px;
-        }
         .watch-video-w{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            .video-w{
-                img{
-                    width: 100%;
-                    height: auto;
-                }
-            }
             .title{
                 font-family: Poppins;
                 font-size: 22px;
                 font-weight: 600;
+                line-height: 28px;
                 color: $charcoal-grey;
-                margin: 4rem auto 1rem;
+                margin: 4rem 0 1rem;
+                max-width: 300px;
                 @media (max-width: $tablet){
                     margin: 0 auto;
-                    font-size: 20px;
+                    font-size: 20px;                    
+                    max-width: 100%;
+                    text-align: center;
                 }
             }
             .step-w{
-                margin-top: 1.5rem;
+                margin-top: 2rem;
                 display: flex;
                 flex-direction: column;
-                align-items: center;
                 .step{
                     margin-bottom: 2rem;
                     font-family: Karla;
