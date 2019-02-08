@@ -77,13 +77,14 @@ function navbar_init(){
 }
 function queryAction(){
     var query = $(".search-query").val();
-    var selectValue = $(".custom-select select").val();
-    if(selectValue == '0'){
-        window.open('https://brandcrush.com/brand/search?q=' + query, '_self');
-    }
-    else{
-        window.open('https://brandcrush.com/brand/search?q=' + query + '&activatedByIds=' + selectValue, '_self');
-    }
+    var typeQuery = $(".custom-select select").val();
+    window.open('https://brandcrush.com/brand/search?q=' + query + '&' + typeQuery, '_self');
+    // if(selectValue == '0'){
+    //     window.open('https://brandcrush.com/brand/search?q=' + query, '_self');
+    // }
+    // else{
+    //     window.open('https://brandcrush.com/brand/search?q=' + query + '&activatedByIds=' + selectValue, '_self');
+    // }
 }
 
 function subscription_init(){

@@ -224,8 +224,15 @@
     .logos-section{
         .container{
             max-width: 1000px;
+            .title-w{
+                font-family: Karla;
+                font-weight: bold;
+                font-size: 14px;
+                text-align: center;
+                padding-top: 1rem;
+            }
             .logos-w{
-                height: 130px;
+                height: 100px;
                 display: flex;
                 align-items: center;
                 justify-content: space-around;
