@@ -12,7 +12,7 @@ $(document).ready(function(){
         /*for each element, create a new DIV that will contain the option list:*/
         b = document.createElement("DIV");
         b.setAttribute("class", "select-items select-hide");
-        for (j = 1; j < selElmnt.length; j++) {
+        for (j = 1; j < Math.min(selElmnt.length, 6); j++) {
             /*for each option in the original select element,
             create a new DIV that will act as an option item:*/
             c = document.createElement("DIV");
@@ -24,21 +24,29 @@ $(document).ready(function(){
                 s = this.parentNode.parentNode.getElementsByTagName("select")[0];
                 h = this.parentNode.previousSibling;
                 for (i = 0; i < s.length; i++) {
-                if (s.options[i].innerHTML == this.innerHTML) {
-                    s.selectedIndex = i;
-                    h.innerHTML = this.innerHTML;
-                    y = this.parentNode.getElementsByClassName("same-as-selected");
-                    for (k = 0; k < y.length; k++) {
-                        y[k].removeAttribute("class");
+                    if (s.options[i].innerHTML == this.innerHTML) {
+                        s.selectedIndex = i;
+                        h.innerHTML = this.innerHTML;
+                        y = this.parentNode.getElementsByClassName("same-as-selected");
+                        for (k = 0; k < y.length; k++) {
+                            y[k].removeAttribute("class");
+                        }
+                        this.setAttribute("class", "same-as-selected");
+                        break;
                     }
-                    this.setAttribute("class", "same-as-selected");
-                    break;
                 }
-                }
-                h.click();
+                // h.click();
             });
             b.appendChild(c);
         }
+        //append modal open button
+        const see_all = document.createElement("DIV");
+        see_all.innerHTML = 'See all activation spaces';
+        see_all.setAttribute("id", "see-all-btn");
+        see_all.addEventListener("click", function(e) {
+            document.getElementsByClassName("activation-spaces-modal")[0].classList.toggle("is-active")
+        });        
+        b.appendChild(see_all);
         x[i].appendChild(b);
         a.addEventListener("click", function(e) {
             /*when the select box is clicked, close any other select boxes,
@@ -71,4 +79,32 @@ $(document).ready(function(){
     /*if the user clicks anywhere outside the select box,
     then close all select boxes:*/
     document.addEventListener("click", closeAllSelect);
+
+
+
+
+    //event for modal
+    $(".activation-spaces-modal .close-btn").on('click', function(){
+        $(".activation-spaces-modal").toggleClass("is-active");
+    })
+    $(".activation-spaces-modal .modal-background").on('click', function(){
+        $(".activation-spaces-modal").toggleClass("is-active");
+    })
+    $(".activation-spaces-modal .item-w").on('click', function(){
+        $(".activation-spaces-modal").toggleClass("is-active");
+        const origin_select = $(".custom-select select")[0];
+        const selected = $(".custom-select .select-selected")[0];
+        for (var i = 0; i < origin_select.length; i++) {
+            if (origin_select.options[i].innerHTML == this.innerHTML.trim()) {
+                origin_select.selectedIndex = i;
+                selected.innerHTML = this.innerHTML.trim();
+                const y = this.parentNode.getElementsByClassName("same-as-selected");
+                for (k = 0; k < y.length; k++) {
+                    y[k].removeAttribute("class");
+                }
+                break;
+            }
+        }
+
+    })
 })

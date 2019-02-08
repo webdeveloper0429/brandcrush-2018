@@ -1,11 +1,11 @@
 //custom select box in homepage
 /*the container must be positioned relative:*/
 .custom-select {
-    width: 160px;
+    width: 240px;
     position: relative;
     font-family: Arial;
     @media (max-width: $tablet) {
-        width: 110px;
+        width: 170px;
     }
 }
 .custom-select select {
@@ -54,6 +54,9 @@
     left: 0;
     right: 0;
     z-index: 99;
+    #see-all-btn{
+        color: #db095b;
+    }
 }
 .select-items div{
     padding: 12px 16px;
