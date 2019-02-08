@@ -92,6 +92,12 @@
 
 
 .hero-body{
+    @media (max-width: $fullhd){
+        padding: 16rem 1.5rem 16rem;
+    }
+    @media (max-width: $widescreen){
+        padding: 10rem 1.5rem 10rem;
+    }
     @media (max-width: $tablet){
         padding: 7rem 1rem 4rem;
     }
