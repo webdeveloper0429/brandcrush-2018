@@ -1,13 +1,13 @@
-﻿const cookie_popup_dom = `  <div class="cookie-popup-section">
-                                <div class="cookie-popup-w">
-                                    <div class="description">
-                                        Brandcrush use cookies to ensure you get the best experience on our website. <a href="/termsofservice">Learn more here</a>.
-                                    </div>
-                                    <div class="button-w">
-                                        <div class="button is-dark" id="allow_cookie_btn">Got it!</div> 
-                                    </div>
-                                </div>
-                            </div>`
+﻿const cookie_popup_dom =  ' <div class="cookie-popup-section">'
+                        +       '<div class="cookie-popup-w">'
+                        +           '<div class="description">'
+                        +                'Brandcrush use cookies to ensure you get the best experience on our website. <a href="/termsofservice">Learn more here</a>.'
+                        +           '</div>'
+                        +           '<div class="button-w">'
+                        +                '<div class="button is-dark" id="allow_cookie_btn">Got it!</div>'
+                        +           '</div>'
+                        +        '</div>'
+                        +    '</div>';
 
 $(document).ready(function() {
     if(!localStorage.getItem("brandcrush_cookie")){
