@@ -95,20 +95,6 @@
     src: url('../fonts/Poppins/Poppins-Regular.ttf'); 
 }
 
-
-.hero-body{
-    padding: 16rem 1rem 16rem !important;
-    @media (max-width: $fullhd){
-        padding: 14rem 1rem 14rem !important;
-    }
-    @media (max-width: $widescreen){
-        padding: 10rem 1rem 10rem !important;
-    }
-    @media (max-width: $tablet){
-        padding: 7rem 1rem 4rem !important;
-    }
-}
-
 .navbar.is-spaced .navbar-dropdown, .navbar-dropdown.is-boxed{
     border: none;
     border-radius: 0;
