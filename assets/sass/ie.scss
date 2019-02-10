@@ -1,0 +1,31 @@
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    /* IE10+ CSS styles go here */
+    
+    .video-container{
+        display: none;
+    }
+    .homepage .hero-body{
+        padding: 18rem 1rem 18rem !important;
+    }
+    .homepage .banner-image-wrapper{
+        background-image: url("/assets/images/Homepage/Main-Banner@2x.jpg") !important;
+    }
+    .modal{
+        justify-content: flex-start;
+    }
+}
+
+@supports (-ms-ime-align:auto) {
+    /* IE Edge 12+ CSS styles go here */ 
+    
+    .video-container{
+        display: none;
+    }
+    .homepage .hero-body{
+        padding: 18rem 1rem 18rem !important;
+    }
+    .homepage .banner-image-wrapper{
+        background-image: url("/assets/images/Homepage/Main-Banner@2x.jpg") !important;
+    }
+}

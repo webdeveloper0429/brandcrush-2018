@@ -36,6 +36,7 @@ $dark: $charcoal-grey;
 //change variable
 $navbar-height: 3.75rem;
 $dropdown-content-radius: 0px;
+$modal-background-background-color: rgba(0, 0, 0, 0.5);
 
 @import "../../lib/css/bulma-0.7.1/bulma.sass";
 
@@ -52,4 +53,6 @@ $dropdown-content-radius: 0px;
 @import "./blog_article.scss";
 @import "./contact_us.scss";
 @import "./terms.scss";
+
+@import "./ie.scss";
 

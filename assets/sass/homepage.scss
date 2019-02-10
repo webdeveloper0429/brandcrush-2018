@@ -1,117 +1,250 @@
-.homepage{
-    .banner-section{
-        // background-image: linear-gradient(251deg, #db0a5b, #971b50);
-        background-image: url("/assets/images/Homepage/Main-Banner@2x.jpg");
-        background-position: center;
-        background-size: cover;
+.homepage{    
+    .hero-body{
+        padding: 13rem 1rem 13rem !important;
+        @media (max-width: $fullhd){
+            // padding: 12rem 1rem 12rem !important;
+        }
+        @media (max-width: $widescreen){
+            padding: 10rem 1rem 10rem !important;
+        }
         @media (max-width: $tablet){
+            padding: 7rem 1rem 4rem !important;
+        }
+    }
+    .banner-section{
+        position: relative;
+        video {
+            display: block;
+        }
+        .video-container{
+            position: absolute;
+            top: 0; right: 0; bottom: 0; left: 0;
+            overflow: hidden;          
+            #video-bg{
+                // position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                // -webkit-filter: blur(5px);
+                // -moz-filter: blur(5px);
+                // -o-filter: blur(5px);
+                // -ms-filter: blur(5px);
+                // filter: blur(5px);
+            }
+            /* 1. No object-fit support: */
+            @media (min-aspect-ratio: 16/9) {
+                #video-bg { height: 300%; top: -100%; }
+            }
+            @media (max-aspect-ratio: 16/9) {
+                #video-bg { width: 300%; left: -100%; }
+            }
+            /* 2. If supporting object-fit, overriding (1): */
+            @supports (object-fit: cover) {
+                #video-bg {
+                top: 0; left: 0;
+                width: 100%; height: 100%;
+                object-fit: cover;
+                }
+            }
+        }
+
+        .banner-image-wrapper{
             background-image: url("/assets/images/Homepage/Main-Banner@2x-mobile.jpg");
-        }
-        .container{
-            max-width: 820px;
-        }
-        .title{
-            font-family: Poppins;
-            font-size: 32px;
-            font-weight: bold;
-            font-style: normal;
-            font-stretch: normal;
-            line-height: 1.13;
-            letter-spacing: normal;
-            color: $white;
-            margin-bottom: 20px;
+            background-position: center;
+            background-size: cover;
+            background-color: #db0a5b;
+            color: #fff;
             @media (max-width: $tablet){
-                font-size: 17px;
-                text-align: center;
-                margin: 0 auto 18px;
+                // background-image: linear-gradient(251deg, #db0a5b, #971b50);
             }
-        }
-        .sub-title{
-            font-family: Poppins;
-            font-size: 18px;
-            font-weight: 500;
-            color: $white;
-            margin-bottom: 40px;
-            @media (max-width: $tablet){
-                font-size: 13px;
-                text-align: center;
-                margin: 0 auto 30px;
+            .container{
+                max-width: 820px;
             }
-        }
-        .search-wrapper{
-            background: $white;
-            height: 70px;
-            border-radius: 4px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            @media (max-width: $tablet) {
-                height: 40px;
-			}
-            .input-w{
-                display: flex;
-                align-items: center;
-                width: calc(100% - 120px);
-                height: 70px;
-                @media (max-width: $tablet) {
-                    width: 100%;
-                }
-                img{
-                    width: 56px;
-                    height: 56px;
-                    object-fit: contain;
-                    margin: 7px 5px;
-                    @media (max-width: $tablet) {
-                        width: 35px;
-                        height: 35px;
-                    }
-                }
-                input{
-                    width: 80%;
-                    border: none;
-                    outline: none;
-                    font-family: Karla;
-                    font-size: 16px;
-                    // color: rgba(64, 64, 65, 0.8);
-                    @media (max-width: $tablet) {
-                        width: calc(100% - 80px);
-                        font-size: 12px;
-                    }
-                }
-                .select-w{
-                    border-left: 1px solid $charcoal-grey-60-p;
-                    padding: 0 1rem;                    
-                    @media (max-width: $tablet) {
-                        padding: 0 0.25rem;
-                    }
-                }
-            }
-            .button-w{
-                margin: 15px;
-                display: flex;
-                align-items: center;
-                .button{
-                    font-size: 20px;
-                    font-weight: 600;
-                    padding: 6px 25px;
-                }
-            }
-        }
-        .mobile-button-w{
-            margin-top: 0.5rem;
-            .button{
-                height: 40px;
+            .title{
                 font-family: Poppins;
-                font-size: 16px;
-                font-weight: 600;
+                font-size: 32px;
+                font-weight: bold;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1.13;
+                letter-spacing: normal;
+                color: $white;
+                margin-bottom: 20px;
+                text-align: center;
+                @media (max-width: $tablet){
+                    font-size: 17px;
+                    text-align: center;
+                    margin: 0 auto 18px;
+                }
+            }
+            .sub-title{
+                font-family: Poppins;
+                font-size: 18px;
+                font-weight: 500;
+                color: $white;
+                margin-bottom: 40px;
+                text-align: center;
+                @media (max-width: $tablet){
+                    font-size: 13px;
+                    text-align: center;
+                    margin: 0 auto 30px;
+                }
+            }
+            .search-wrapper{
+                background: $white;
+                height: 70px;
+                border-radius: 4px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                @media (max-width: $tablet) {
+                    height: 40px;
+                }
+                .input-w{
+                    display: flex;
+                    align-items: center;
+                    width: calc(100% - 120px);
+                    height: 70px;
+                    @media (max-width: $tablet) {
+                        width: 100%;
+                    }
+                    img{
+                        width: 56px;
+                        height: 56px;
+                        object-fit: contain;
+                        margin: 7px 5px;
+                        @media (max-width: $tablet) {
+                            width: 35px;
+                            height: 35px;
+                        }
+                    }
+                    input{
+                        width: 80%;
+                        border: none;
+                        outline: none;
+                        font-family: Karla;
+                        font-size: 16px;
+                        // color: rgba(64, 64, 65, 0.8);
+                        @media (max-width: $tablet) {
+                            width: calc(100% - 80px);
+                            font-size: 12px;
+                        }
+                    }
+                    .select-w{
+                        border-left: 1px solid $charcoal-grey-60-p;
+                        @media (max-width: $tablet) {
+                            padding: 0 0.25rem;
+                        }
+                    }
+                }
+                .button-w{
+                    margin: 15px;
+                    display: flex;
+                    align-items: center;
+                    .button{
+                        font-size: 20px;
+                        font-weight: 600;
+                        padding: 6px 25px;
+                    }
+                }
+            }
+            .mobile-select-w{
+                margin-top: 0.5rem;
+                background: #fff;
+                height: 40px;
+                border-radius: 4px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+            .mobile-button-w{
+                margin-top: 0.5rem;
+                .button{
+                    height: 40px;
+                    font-family: Poppins;
+                    font-size: 16px;
+                    font-weight: 600;
+                }
             }
         }
     }
-    .brand-images-section{
+
+    .activation-spaces-modal{
+        .modal-content{
+            width: 550px;
+            height: 370px;
+            background: $white;
+            padding: 1rem;
+            border-radius: 5px;
+            @media (max-width: $tablet) {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                max-height: 100%;
+                border-radius: 0;
+                .column{
+                    padding: 0 0.75rem;
+                }
+            }
+            .action-w{
+                display: flex;
+                justify-content: flex-end;
+                .close-btn{
+                    width: 2rem;
+                    height: 2rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 1rem;
+                    cursor: pointer;
+                    &:hover{
+                        background: $pale-grey;
+                    }
+                }
+            }
+            .title-w{
+                font-family: Poppins;
+                font-weight: bold;
+                font-size: 32px;
+                text-align: center;
+                color: $charcoal-grey;
+                @media (max-width: $tablet) {
+                    font-size: 20px;
+                    margin: 1rem auto;
+                }
+            }
+            .content-w{
+                padding: 1rem;
+                .item-w{
+                    font-family: Karla;
+                    font-size: 16px;
+                    padding: 0.4rem ;
+                    cursor: pointer;
+                    &:hover{
+                        background: $pale-grey;
+                    }
+                    @media (max-width: $tablet) {
+                        text-align: center;
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+
+    .logos-section{
         .container{
-            max-width: 700px;
-            .brands-w{
-                height: 110px;
+            max-width: 1000px;
+            .title-w{
+                font-family: Karla;
+                font-weight: bold;
+                font-size: 14px;
+                text-align: center;
+                padding-top: 1rem;
+            }
+            .logos-w{
+                height: 100px;
                 display: flex;
                 align-items: center;
                 justify-content: space-around;

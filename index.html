@@ -100,42 +100,148 @@
         <div id="component_nav"></div>
         <div id="component_nav_mobile"></div>
         <div class="homepage">
-            <section class="hero is-large is-primary banner-section">
-                <div class="hero-body">
-                    <div class="container">
-                        <p class="title">
-                            Reach targeted consumers through trusted Activation Hosts
-                        </p>
-                        <p class="sub-title">
-                            Brand experiences & sampling at scale
-                        </p>
-                        <div class="search-wrapper">
-                            <div class="input-w">
-                                <img class="search-btn" src="/assets/images/icons/off.svg" width="56" height="56" alt="Brandcrush Activation agency Melbourne"/>
-                                <input class="search-query" type="text" placeholder="Search by location" />
-                                <div class="select-w">
-                                    <div class="custom-select">
-                                        <select>
-                                            <option value='0'>Activated by</option>
-                                            <option value='1'>Activation Host</option>
-                                            <option value='2'>Brand</option>
-                                            <option value='1,2'>I don't mind</option>
-                                        </select>
+            <section class="banner-section">
+                <div class="video-container is-hidden-mobile">
+                    <video autoplay loop id="video-bg" muted plays-inline>
+                        <source src="/assets/images/Brandcrush_VideoMontage_PINK_Compressed.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="hero is-large banner-image-wrapper">
+                    <div class="hero-body">
+                        <div class="container">
+                            <p class="title">
+                                Discover and book spaces for activations
+                            </p>
+                            <p class="sub-title">
+                                Connect with consumers in the real world
+                            </p>
+                            <div class="search-wrapper">
+                                <div class="input-w">
+                                    <img class="search-btn" src="/assets/images/icons/off.svg" width="56" height="56" alt="Brandcrush Activation agency Melbourne"/>
+                                    <input class="search-query" type="text" placeholder="Search by location" />
+                                    <div class="select-w is-hidden-mobile">
+                                        <div class="custom-select">
+                                            <select>
+                                                <option value="0">What’s your activation?</option>
+                                                <option value="spacePositionIds=18,5,11,3,4,13,8">Product sampling</option>
+                                                <option value="spacePositionIds=10,15,9,7,16">Experiential</option>
+                                                <option value="spaceTypeIds=4">Events & festivals</option>
+                                                <option value="spacePositionIds=10,15,9,7,16">Pop ups</option>
+                                                <option value="spacePositionIds=15">On the menu collaboration</option>
+                                                <option value="spacePositionIds=5">Gift with purchase</option>
+                                                <option value="spacePositionIds=11">Counter top display</option>
+                                                <option value="spacePositionIds=4">Chilled sample placement</option>
+                                                <option value="spacePositionIds=3">Goody bag sampling</option>
+                                                <option value="spaceTypeIds=3">Online box sampling</option>
+                                                <option value="spacePositionIds=7">Street activations</option>
+                                                <option value="spacePositionIds=10">Floor space & foyers</option>
+                                            </select>
+                                        </div>
                                     </div>
                                 </div>
+                                <div class="button-w is-hidden-mobile">
+                                    <div class="button is-primary search-btn">Search</div>
+                                </div>
                             </div>
-                            <div class="button-w is-hidden-mobile">
-                                <div class="button is-primary search-btn">Search</div>
+                            <div class="mobile-select-w is-hidden-tablet">
+                                <div class="custom-select">
+                                    <select>
+                                        <option value="0">What’s your activation?</option>
+                                        <option value="spacePositionIds=18,5,11,3,4,13,8">Product sampling</option>
+                                        <option value="spacePositionIds=10,15,9,7,16">Experiential</option>
+                                        <option value="spaceTypeIds=4">Events & festivals</option>
+                                        <option value="spacePositionIds=10,15,9,7,16">Pop ups</option>
+                                        <option value="spacePositionIds=15">On the menu collaboration</option>
+                                        <option value="spacePositionIds=5">Gift with purchase</option>
+                                        <option value="spacePositionIds=11">Counter top display</option>
+                                        <option value="spacePositionIds=4">Chilled sample placement</option>
+                                        <option value="spacePositionIds=3">Goody bag sampling</option>
+                                        <option value="spaceTypeIds=3">Online box sampling</option>
+                                        <option value="spacePositionIds=7">Street activations</option>
+                                        <option value="spacePositionIds=10">Floor space & foyers</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="mobile-button-w is-hidden-tablet">                            
+                                <div class="button is-primary search-btn is-fullwidth">Search</div>
                             </div>
                         </div>
-                        <div class="mobile-button-w is-hidden-tablet">                            
-                            <div class="button is-primary search-btn is-fullwidth">Search</div>
+                    </div>
+                </div>
+            </section>            
+            <div class="modal activation-spaces-modal">
+                <div class="modal-background"></div>
+                <div class="modal-content">
+                    <div class="action-w">
+                        <div class="close-btn">
+                            <i class="fas fa-times"></i>
                         </div>
+                    </div>
+                    <div class="title-w">
+                        Activation Spaces
+                    </div>
+                    <div class="content-w">
+                        <div class="columns">
+                            <div class="column">
+                                <div class="item-w">
+                                    Product sampling 
+                                </div>
+                                <div class="item-w">
+                                    Experiential 
+                                </div>
+                                <div class="item-w">
+                                    Events & festivals 
+                                </div>
+                                <div class="item-w">
+                                    Pop ups 
+                                </div>
+                                <div class="item-w">
+                                    On the menu collaboration 
+                                </div>
+                                <div class="item-w">
+                                    Gift with purchase 
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="item-w">
+                                    Counter top display 
+                                </div>
+                                <div class="item-w">
+                                    Chilled sample placement 
+                                </div>
+                                <div class="item-w">
+                                    Goody bag sampling 
+                                </div>
+                                <div class="item-w">
+                                    Online box sampling 
+                                </div>
+                                <div class="item-w">
+                                    Street activations 
+                                </div>
+                                <div class="item-w">
+                                    Floor space & foyers 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="logos-section is-hidden-mobile">
+                <div class="container">
+                    <div class="title-w">
+                        TRUSTED BY
+                    </div>
+                    <div class="logos-w">
+                        <img src="/assets/images/logos/BondiSands.png" width="85" height="60" />
+                        <img src="/assets/images/logos/Bega_Cheese_logo.png" width="70" height="44" />
+                        <img src="/assets/images/logos/Logo-TOMOrganic.png" width="80" height="40" />
+                        <img src="/assets/images/logos/CalifiaFarms.png" width="60" height="60" />
+                        <img src="/assets/images/logos/4Bx8N_QW copy.png" width="65" height="54" />
+                        <img src="/assets/images/logos/the-bar-counter.png" width="94" height="35" />
                     </div>
                 </div>
             </section>
             <section class="activation-spaces-section">
-
                 <div id="card-template" class="hidden">
                         <div class="column is-one-third">
                                 <a class="view-details" href="https://brandcrush.com/brand/search">
