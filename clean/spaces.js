@@ -7,7 +7,7 @@ $(document).ready(function(){
 
         function loadSpaces() {
 
-            loadSpace('#health-wellness', '?ids=1625,1576,1477'+qp);
+            loadSpace('#health-wellness', '?ids=2089,1576,1477'+qp);
             loadSpace('#lifestyle', '?ids=1901,1956,730'+qp);
             loadSpace('#bars-cafes', '?ids=1706,1250,1340'+qp);
         }

@@ -76,6 +76,8 @@ function navbar_init(){
     })
 }
 function queryAction(){
+	$('#video-bg').trigger('pause');
+	
     var query = $(".search-query").val();
     var typeQuery = $(".custom-select select").val();
     window.open('https://brandcrush.com/brand/search?q=' + query + '&' + typeQuery, '_self');
