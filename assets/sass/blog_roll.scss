@@ -211,6 +211,11 @@
                         background-position: center;
                         background-size: cover;
                     }
+                    .image:before {
+                        content: "";
+                        display: block;
+                        padding-top: 100%;
+                    }
                 } 
             }            
             .follow-link-w{
