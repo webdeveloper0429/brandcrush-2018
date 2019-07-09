@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="Contact Us" content="Feel free to contact us to discover how an activation marketplace like Brandcrush can help you.">
         <title>Contact Us</title>
         <link rel="shortcut icon" href="/assets/images/favicon.png" >
         <link rel="stylesheet" href="/lib/appleple-modal-video/css/modal-video.min.css">
@@ -19,6 +20,16 @@
         <script src="/lib/sweetalert2-7.26.28/dist/sweetalert2.all.min.js"></script>
         <script src="/assets/js/script.js"></script>
         <script src="/assets/js/auth.js"></script>
+		<!--[if lte IE 8]>
+<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+<![endif]-->
+<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+<script>
+hbspt.forms.create({
+   portalId: "4363226",
+   formId: "3cbcacb7-8d3a-445e-a920-0abda002a4fc"
+});
+</script>
         <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127158336-1"></script>
 <script>

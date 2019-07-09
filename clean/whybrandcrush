@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="Why Brandcrush?" content="Discover why Brandcrush is the right activation marketplace for you! View the features and benefits you can optimise as an activation host or as a brand. ">
         <title>Why Brandcrush</title>
         <link rel="shortcut icon" href="/assets/images/favicon.png" >
         <link rel="stylesheet" href="/lib/appleple-modal-video/css/modal-video.min.css">
@@ -281,7 +282,7 @@
                                 <div class="post-body">
                                     <div class="post-title">We're here to help!</div>
                                     <div class="post-desc">
-                                        <p>Please don’t hesitate to use our Concierge service via the live support button below, or you can <a class="has-text-primary" href="#">review our FAQS here</a>. </p>
+                                        <p>Please don’t hesitate to use our Concierge service via the live support button below, or you can <a class="has-text-primary" href="/FAQs">review our FAQS here</a>. </p>
                                     </div>
                                 </div>
                             </div>

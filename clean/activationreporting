@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="Activation Reporting" content="Read our steps for success in developing your activation reporting. This will enable you, as an activation host, to enhance your connection with a brand and its activation in your space/s.">
         <title>Activation Reporting</title>
         <link rel="shortcut icon" href="/assets/images/favicon.png" >
         <link rel="stylesheet" href="/lib/appleple-modal-video/css/modal-video.min.css">
@@ -113,39 +114,36 @@
                         <!-- <div class="video-w">
                             <img src="/assets/images/video_control.png" />
                         </div> -->
-                        <div class="title">
-                            5 Steps to the perfect activation report
-                        </div>
-                        <div class="step-w">
-                            <div class="step">
-                                <span class="step-number">STEP 1:</span>
-                                <span class="description">
-                                    Use icons to indicate buying intent from your customers
-                                </span>
+                        <div class="columns">
+                            <div class="column is-two-fifths">
+                                <div class="step-descrition-w">
+                                    <div class="title">
+                                        3 Steps to the perfect activation report 
+                                    </div>
+                                    <div class="step-w">
+                                        <div class="step">
+                                            <span class="step-number">STEP 1:</span>
+                                            <span class="description">
+                                                Take a minimum of 4  great, high quality photos of the activation that are insta worthy! Brands want to see people experiencing their brand.
+                                            </span>
+                                        </div>
+                                        <div class="step">
+                                            <span class="step-number">STEP 2:</span>
+                                            <span class="description">
+                                                Ask your members/customers for some feedback on the brand/product.</span>
+                                        </div>
+                                        <div class="step">
+                                            <span class="step-number">STEP 3:</span>
+                                            <span class="description">
+                                                Upload photos, type in the feedback and submit your report within 72 hours at the end of the activation . If you haven’t already, enter your banking details to ensure you get paid.</span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="step">
-                                <span class="step-number">STEP 2:</span>
-                                <span class="description">
-                                    Provide anecdotal insights in 500 characters or less
-                                </span>
-                            </div>
-                            <div class="step">
-                                <span class="step-number">STEP 3:</span>
-                                <span class="description">
-                                    Upload photos of the activation in progress
-                                </span>
-                            </div>
-                            <div class="step">
-                                <span class="step-number">STEP 4:</span>
-                                <span class="description">
-                                    Submit within 72 hours of the end of the activation
-                                </span>
-                            </div>
-                            <div class="step">
-                                <span class="step-number">STEP 5:</span>
-                                <span class="description">
-                                    Enter your banking details to ensure you get paid
-                                </span>
+                            <div class="column is-three-fifths">
+                                <div class="explain-img-w">
+                                    <img src="/assets/images/ChiaCoReport_Mockup_GIF.gif" />
+                                </div>
                             </div>
                         </div>
                     </div>
