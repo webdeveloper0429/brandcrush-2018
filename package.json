@@ -7,8 +7,9 @@
     "lib": "lib"
   },
   "scripts": {
-    "start": "npm run build-css",
-    "dev": "npm run watch-css",
+    "start": "npm run build-lib-css && npm run build-css",
+    "dev": "npm run build-lib-css && npm run watch-css",
+    "build-lib-css": "node-sass-chokidar ./assets/sass/bulma-lib.scss -o ./assets/css/ --output-style=compressed",
     "build-css": "node-sass-chokidar ./assets/sass/mystyle.scss -o ./assets/css/ --output-style=compressed",
     "watch-css": "node-sass-chokidar ./assets/sass/mystyle.scss -o ./assets/css/ --watch --output-style=compressed",
     "test": "echo \"Error: no test specified\" && exit 1"

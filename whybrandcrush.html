@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="/lib/appleple-modal-video/css/modal-video.min.css">
         <link href="https://fonts.googleapis.com/css?family=Karla:400,700|Poppins:400,500,600,700|Material+Icons" rel="stylesheet">
         <link href="/lib/fontawesome-free-5.2.0-web/css/all.css" rel="stylesheet">
+        <link rel="stylesheet" href="/assets/css/bulma-lib.css">
         <link rel="stylesheet" href="/assets/css/mystyle.css">
         <!-- <script defer src="/lib/js/fontawesome-5.2.0/js/all.js"></script> -->
         <script src="/lib/js/jquery/jquery.min.js"></script>
@@ -82,18 +83,18 @@
     </head>
     <script>
         $(function(){
-            $("#component_nav_with_search").load("/components/component_nav_with_search.html", navbar_init);
+            $("#component_nav").load("/components/component_nav.html", navbar_init);
             $("#component_nav_mobile").load("/components/component_nav_mobile.html");
             $("#component_footer").load("/components/component_footer.html", subscription_init);
             $("#component_activation_concept").load("/components/component_activation_concept.html");
         })
     </script>
-    <body>
+    <body class="has-navbar-fixed-top">
         <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K9Z5P37"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-        <div id="component_nav_with_search"></div>
+        <div id="component_nav"></div>
         <div id="component_nav_mobile"></div>
         <div class="why-brandcrush-page">
             <section class="hero is-medium is-primary banner-section">
