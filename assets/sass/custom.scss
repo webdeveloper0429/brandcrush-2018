@@ -84,7 +84,11 @@
     background-color: #575759 !important;
 }
 
-
+.child-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 @font-face { 
     font-family: Karla; 

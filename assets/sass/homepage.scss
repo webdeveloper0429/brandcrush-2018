@@ -233,6 +233,43 @@
         }
     }
 
+    .category-section{        
+        padding: 3rem 1rem;
+        @media (max-width: $tablet) {
+            padding: 1rem;
+        }
+        .description{
+            padding: 2rem 0;
+            margin: auto;
+            max-width: 822px;
+            font-family: Karla;
+            font-size: 20px;
+            line-height: 1.4;
+            text-align: center;
+            color: $charcoal-grey;
+            @media (max-width: $tablet) {
+                font-size: 16px;
+            }
+        }
+        .category-card{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .category-title{
+                margin: 1rem auto;
+                font-family: Poppins;
+                font-size: 22px;
+                font-weight: 600;
+                line-height: 1.27;
+                text-align: center;
+                color: $charcoal-grey;
+            }
+            .learn-more{
+                margin: 0 auto 1rem;
+            }
+        }
+    }
+
     .logos-section{
         .container{
             max-width: 1000px;
@@ -248,149 +285,6 @@
                 display: flex;
                 align-items: center;
                 justify-content: space-around;
-            }
-        }
-    }
-    .activation-spaces-section{
-        background: $pale-grey;
-        padding: 1rem;
-        .activations-unit{
-            margin: 3rem 0 4rem;
-            @media (max-width: $tablet){
-                margin: 1rem 0 2rem;
-            }
-            .desc{
-                font-family: Karla;
-                font-size: 11px;
-                font-weight: bold;
-                color: $charcoal-grey-60-p;
-                margin: .25rem 3rem 0;
-                text-transform: uppercase;
-                @media (max-width: $tablet){
-                    font-size: 9px;
-                    text-align: center;
-                }
-            }
-            .sort{
-                font-family: Poppins;
-                font-size: 32px;
-                font-weight: bold;
-                color: $charcoal-grey;
-                margin: 0 3rem .25rem;
-                @media (max-width: $tablet){
-                    font-size: 20px;
-                    text-align: center;
-                }
-            }
-            .cards-w{
-                margin: 1.5rem 0;
-                .card-box{
-                    border-radius: 4px;
-                    background-color: #ffffff;
-                    box-shadow: 0 4px 8px 0 rgba(64, 64, 65, 0.2);
-                    .card-img{
-                        border-top-left-radius: 4px;
-                        border-top-right-radius: 4px;
-                        width: 100%;
-                        height: 180px;
-                        background-position: center;
-                        background-size: cover;
-                    }
-                    .main{
-                        padding: 0.625rem 1.25rem;
-                        .title-w{
-                            display: flex;
-                            align-items: center;
-                            justify-content: space-between;
-                            .title{
-                                font-family: Poppins;
-                                font-size: 22px;
-                                font-weight: 600;
-                                color: $charcoal-grey;
-                                margin: 0;
-                                white-space: nowrap;
-                                overflow: hidden;
-                                text-overflow: ellipsis;
-                                line-height: 1.625rem;
-                            }
-                        }
-                        .sub-title{
-                            font-family: Karla;
-                            font-size: 14px;
-                            font-weight: bold;
-                            letter-spacing: 0.4px;
-                            color: $charcoal-grey-60-p;
-                        }
-                        .description{
-                            height: 50px;
-                            font-family: Karla;
-                            font-size: 16px;
-                            color: $charcoal-grey;
-                            margin: 15px 0;
-                            .price,.names{
-                                white-space: nowrap;
-                                overflow: hidden;
-                                text-overflow: ellipsis;
-                            }
-                        }
-                        .action-w{
-                            display: flex;
-                            justify-content: space-between;
-                            margin-bottom: .5rem;
-                            .to-detail{
-                                display: flex;
-                                align-items: center;
-                                .text{
-                                    font-family: Karla;
-                                    font-size: 16px;
-                                    font-weight: bold;
-                                    color: $charcoal-grey;
-                                }
-                                .text::after{
-                                    content: "";
-                                    display: block;
-                                    float: right;
-                                    background: url(../images/right_arrow.png) no-repeat;
-                                    background-position: center;
-                                    background-size: cover;
-                                    width: 25px;
-                                    height: 25px;
-                                    margin-left: 1rem;                                    
-                                    transition: all 0.5s ease;
-                                }
-                                .text:hover:after{
-                                    margin-left: 2rem;
-                                }
-                            }
-                            .button{
-                                height: 35px;
-                                font-family: Karla;
-                                font-size: 14px;
-                                // font-weight: 600;
-                            }
-                        }
-                    }
-                }
-            }
-            .show-all-action{
-                margin: 2rem 3rem;
-                font-family: Karla;
-                font-size: 16px;
-                color: $cerise;                
-                @media (max-width: $tablet){
-                    font-size: 13px;
-                    margin: 1rem 0.25rem;
-                }
-            }
-            .show-all-action:after{
-                content: "\f054";
-                font-weight: 900;
-                font-family: "Font Awesome 5 Free";
-                margin-left: 1rem;
-                transition: all 0.5s ease;
-            }
-            .show-all-action:hover:after{
-                margin-left: 2rem;
             }
         }
     }
