@@ -316,6 +316,56 @@
             }
         }
     }
+
+    .portfolio-section{
+        background: $pale-grey;
+        padding: 3.75rem 1rem;
+        @media(max-width: $tablet){
+            .reverse-order{
+                flex-direction: column-reverse;
+                display: flex;
+            }
+        }
+        .container{
+            max-width: 1020px;
+        }
+        .portfolio-w{
+            padding: 2.5rem 0;
+            .image-w{
+                height: 340px;
+                .image{
+                    height: 100%;
+                    width: auto;
+                    background-position: center;
+                    background-size: cover;
+                }
+            }
+            .description-w{
+                padding: 0 2rem;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                @media(max-width: $tablet){
+                    padding: 0;
+                    justify-content: center !important;
+                }
+                .description{
+                    max-width: 360px;
+                    font-family: Karla;
+                    font-size: 20px;
+                    line-height: 1.4;
+                    color: $charcoal-grey;
+                }
+            }
+        }
+    }
+
+    .how-it-works-section{
+        background-image: linear-gradient(to bottom, white, white 40%, $pale-grey 40%, $pale-grey);
+	    background-size: cover;
+    	background-repeat: no-repeat;
+    }
+
     .set-up-listing-section{
         background: $pale-grey;
         padding: 2rem 1rem;
