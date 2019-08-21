@@ -270,6 +270,38 @@
         }
     }
 
+    .case-studies-section{
+        padding: 3rem 1rem;
+        background: $pale-grey;
+        .container{
+            max-width: 1024px;
+            .title-w{
+                margin: 2rem auto 0.625rem;
+            }
+            .description-w{
+                max-width: 720px;
+                margin: 0 auto 1.75rem;
+            }
+            .tiles-w{
+                padding: 2rem 0;
+                img{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+            .button-w{
+                padding: 3rem 0 4.5rem;
+                .button{
+                    font-family: Karla;
+                    font-size: 18px;
+                    font-weight: bold;
+                    line-height: 1.22;
+                    padding: 0 2rem;
+                }
+            }
+        }
+    }
+
     .logos-section{
         .container{
             max-width: 1000px;
