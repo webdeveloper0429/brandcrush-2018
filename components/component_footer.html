@@ -45,7 +45,7 @@
             </div>
             <div class="social-w">
                 <div class="copyright-w">
-                    <span class="copyright-text">© Brandcrush Pty Ltd 2018 | </span>
+                    <span class="copyright-text">© Brandcrush Pty Ltd <span id="current_year"></span> | </span>
                     <a class="terms-text" href="/termsofservice">Terms of Service</a> & <a class="terms-text" href="/privacypolicy">Privacy Policy</a>
                 </div>
                 <div class="icons-w">
@@ -57,3 +57,8 @@
         </div>
     </div>
 </section>
+<script>
+    $(document).ready(function() {
+        document.querySelector("#current_year").innerHTML = new Date().getFullYear();
+    })
+</script>
