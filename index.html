@@ -408,6 +408,56 @@
                 </div>
             </section>
 
+            <section class="how-it-works-section">
+                <div class="container">
+                    <div class="section-title title-w">
+                        How It Works
+                    </div>
+                    <div class="section-description description-w">
+                        Connecting brands with customers via a network of everyday businesses and events.
+                    </div>
+                    <div class="video-w overlay">
+                        <div class="js-modal-btn" data-video-id="288950419"><img src="/assets/images/icons/large-video-play-icon.svg" /></div>
+                    </div>
+                    <div class="cards-block">
+                        <div class="columns is-multiline">
+                            <div class="column">
+                                <div class="card-w">
+                                    <div class="image-w">
+                                        <img src="/assets/images/icons/how-it-works-brand.svg" />
+                                    </div>
+                                    <div class="card-title-w">
+                                        Brands
+                                    </div>
+                                    <div class="card-description-w">
+                                        Connecting brands with customers via a network of everyday businesses and events.
+                                    </div>                                    
+                                    <a href="/brands" target="_self">
+                                        <div class="link-arrow learn-more">How it works for Brands</div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="card-w">
+                                    <div class="image-w">
+                                        <img src="/assets/images/icons/how-it-works-business.svg" />
+                                    </div>
+                                    <div class="card-title-w">
+                                        Businesses
+                                    </div>
+                                    <div class="card-description-w">
+                                        Earn more while delighting your customers with brand experiences.
+                                    </div>                                    
+                                    <a href="/activationhosts" target="_self">
+                                        <div class="link-arrow learn-more">How it works for Activation Hosts</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             <section class="set-up-listing-section">
                 <div class="container">
                     <div class="set-up-listing-w">
@@ -453,4 +503,9 @@
             <div id="component_footer"></div>
         </div>
     </body>
+    <script>
+        $(document).ready(function(){
+            $(".js-modal-btn").modalVideo({channel:'vimeo'});
+        })
+    </script>
 </html>
