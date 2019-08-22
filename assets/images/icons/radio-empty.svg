@@ -1,0 +1,20 @@
+<svg width="40" height="40" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <rect rx="10" height="20" width="20" id="b"/>
+  <filter filterUnits="objectBoundingBox" y="-35%" x="-55%" height="210%" width="210%" id="a">
+   <feGaussianBlur stdDeviation="3"/>
+  </filter>
+ </defs>
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <g id="svg_1" fill-rule="evenodd" fill="none">
+   <use id="svg_2" x="10" y="10" xlink:href="#b" filter="url(#a)" fill="#000"/>
+   <rect id="svg_3" rx="9" stroke-width="2" stroke-linejoin="square" stroke="#DB0A5B" fill="#FFF" y="11" x="11" height="18" width="18"/>
+   <circle id="svg_4" fill="#DB0A5B" r="4" cy="20" cx="20"/>
+  </g>
+ </g>
+</svg>

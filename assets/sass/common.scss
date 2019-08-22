@@ -25,6 +25,75 @@
     justify-content: center;
 }
 
+//custom radio start
+.custom-radio {
+    display: block;
+    position: relative;
+    padding: 4px 20px 4px 30px;
+    margin-bottom: 8px;
+    font-family: Karla;
+    font-size: 11px;
+    line-height: 1.09;
+    color: $charcoal-grey;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+  
+  /* Hide the browser's default radio button */
+.custom-radio input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+  
+  /* Create a custom radio button */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    border: 1px $charcoal-grey solid;
+    border-radius: 50%;
+}
+  
+  /* On mouse-over, add a grey background color */
+.custom-radio:hover input ~ .checkmark {
+    border-color: $cerise;
+}
+  
+  /* When the radio button is checked, add a blue background */
+.custom-radio input:checked ~ .checkmark {
+    border: 2px $cerise solid;  
+    box-shadow: 1px 3px 5px 3px rgba($color: $cerise, $alpha: 0.2);  
+}
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+  
+  /* Show the indicator (dot/circle) when checked */
+.custom-radio input:checked ~ .checkmark:after {
+    display: block;
+}
+  
+  /* Style the indicator (dot/circle) */
+.custom-radio .checkmark:after {
+    top: 4px;
+    left: 4px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: $cerise;
+}
+// custom radio end
+
 .cerise-bg{
     padding: 3.75rem 1rem;
     display: flex;
@@ -121,13 +190,27 @@
         align-items: center;
         .desc{
             margin: 1rem;
-            max-width: 400px;
+            max-width: 470px;
             text-align: center;
             font-family: Karla;
             font-size: 16px;
+            font-weight: bold;
+            line-height: 1.5;
             color: $charcoal-grey;
             @media (max-width: $tablet){
                 font-size: 12px;
+            }
+        }
+        .radio-w{
+            width: 100%;
+            max-width: 500px;
+            margin-bottom: 1rem;
+            display: flex;
+            justify-content: space-around;
+            @media (max-width: $tablet){
+                font-size: 12px;
+                flex-direction: column;
+                width: 200px;
             }
         }
         .input-w{
