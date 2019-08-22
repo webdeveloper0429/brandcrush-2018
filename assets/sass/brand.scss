@@ -69,6 +69,54 @@
         }
     }
 
+    .brands-choose-section{
+        padding: 3rem 1rem;
+        .brands-choose-w{
+            .section-title{
+                padding: 1rem 0 2.5rem;
+            }
+            .cards-w{
+                .card-w{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    .image-w{
+                        width: 100%;
+                        padding-bottom: 1.25rem;
+                        .image{
+                            width: 100%;
+                            height: 270px;
+                        }
+                    }
+                    .title-w{
+                        font-family: Poppins;
+                        font-size: 22px;
+                        font-weight: 600;
+                        line-height: 1.27;
+                        text-align: center;
+                        color: $charcoal-grey;
+                        padding: 0.75rem 0;
+                        @media (max-width: $tablet) {
+                            font-size: 18px;
+                        }
+                    }
+                    .desc-w{
+                        font-family: Karla;
+                        font-size: 20px;
+                        line-height: 1.4;
+                        text-align: center;
+                        color: $charcoal-grey;
+                        max-width: 370px;
+                        padding-bottom: 1rem;
+                        @media (max-width: $tablet) {
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
     .why-activate-section{
         .why-activate-w{
             .desc{
