@@ -438,149 +438,13 @@
         }
     }
 
-    .set-up-listing-section{
+    .new-product-launch-section{
         background: $pale-grey;
         padding: 2rem 1rem;
         @media (max-width: $tablet){
-            padding: 0 1rem 3rem;
-        }
-        .set-up-listing-w{
-            padding: 3.75rem 2.5rem;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            border-radius: 4px;
-            background: url("/assets/images/Homepage/homepagebanner1.jpg") no-repeat;
-            background-position: right;
-            background-size: cover;
-            background-color: #eeeef0;
-            box-shadow: 0 4px 8px 0 rgba(64, 64, 65, 0.2);
-            @media (max-width: $tablet){
-                background: $cerise;
-                padding: 2rem;
-            }
-            .title{
-                max-width: 550px;
-                font-family: Poppins;
-                font-size: 25px;
-                font-weight: 600;
-                color: $charcoal-grey;
-                margin-bottom: 20px;
-                @media (max-width: $tablet) {
-                    color: $white;
-                    font-size: 20px;
-                }
-            }
-            .sub-title{
-                max-width: 550px;
-                font-family: Karla;
-                font-size: 18px;
-                color: $charcoal-grey;
-                @media (max-width: $tablet) {
-                    color: $white;
-                    font-size: 14px;
-                }
-            }
-            .button{
-                width: 180px;
-                height: 40px;
-                font-family: Poppins;
-                font-size: 20px;
-                font-weight: 600;
-                margin-top: 3.25rem;
-                @media (max-width: $tablet){
-                    margin-top: 2rem;
-                    font-size: 16px;
-                    height: 2rem;
-                }
-            }
-        }
-    }
-    .crushed-on-section{
-        padding: 1rem 1rem 3rem;
-        background-color: $pale-grey;
-        @media (max-width: $tablet){
-            background-color: $white;
-        }
-        .section-desc{
-            font-family: Karla;
-            font-size: 9px;
-            text-align: center;
-            font-weight: bold;
-            color: $charcoal-grey-60-p;
-            margin: 1.5rem 3rem 0;
-            text-transform: uppercase;
-        }
-        .section-title{
-            margin: 2rem;
-            font-family: Poppins;
-            font-size: 32px;
-            font-weight: bold;
-            color: $charcoal-grey;
-            @media (max-width: $tablet){
-                margin: 0.5rem 0 1.5rem;
-                font-size: 20px;
-                text-align: center;
-            }
-        }
-        .cards-w{
-            .card-box{
-                .card-img{
-                    width: 100%;
-                    height: 260px;
-                    border-radius: 4px;
-                    box-shadow: 0 4px 8px 0 rgba(64, 64, 65, 0.2);
-                    background-position: center;
-                    background-size: cover;
-                }
-                .card-title{
-                    margin-top: 1rem;
-                    padding-right: 2rem;
-                    font-family: Karla;
-                    font-size: 20px;
-                    font-weight: bold;
-                    color: $charcoal-grey;
-                    white-space: nowrap;
-                    overflow: hidden;
-                    text-overflow: ellipsis;
-                }
-                .description{
-                    margin: 0.5rem 0;
-                    padding-right: 3rem;
-                    font-family: Karla;
-                    font-size: 16px;
-                    color: $charcoal-grey;
-                    height: 75px;
-                    overflow: hidden;
-                    text-overflow: ellipsis;
-                }
-                .action-w{
-                    font-family: Karla;
-                    font-size: 16px;
-                    color: $cerise;
-                    display: flex;
-                    align-items: center;
-                }
-                .action-w:after{
-                    content: "\f054";
-                    font-family: "Font Awesome 5 Free";
-                    font-weight: bold;
-                    margin-left: 1rem;
-                    transition: all 0.5s ease;
-                }
-                .action-w:hover:after{
-                    margin-left: 2rem;
-                }
-            }
-        }
-    }
-    .scalable-activations-section{
-        background: $pale-grey;
-        padding: 2rem 1rem 7rem;
-        @media (max-width: $tablet){
             padding: 2rem 1rem 3rem;
         }
-        .scalable-activations-w{
+        .new-product-launch-w{
             height: 350px;
             padding: 100px 0;
             display: flex;
@@ -593,19 +457,23 @@
                 padding: 3.75rem 0;
             }
             .title{
+                max-width: 700px;
                 margin: 0;
+                padding: 0 1rem;
+                font-size: 28px;
+                font-weight: normal;
+                line-height: 1.29;
                 @media (max-width: $tablet) {
                     font-size: 20px;
-                    line-height: 1.3;
                 }
             }
             .button{
-                width: 180px;
-                height: 40px;
-                font-family: Poppins;
-                font-size: 20px;
+                padding: 1rem 2rem;
+                font-family: Karla;
+                font-size: 18px;
+                font-weight: bold;
+                line-height: 1.22;
                 @media (max-width: $tablet) {
-                    height: 32px;
                     font-size: 16px;
                 }
             }
