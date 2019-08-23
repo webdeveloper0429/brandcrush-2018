@@ -637,7 +637,113 @@
     }
 }
 
+.category-section{        
+    padding: 3rem 1rem;
+    @media (max-width: $tablet) {
+        padding: 1rem;
+    }
+    .description{
+        padding: 2rem 0;
+        margin: auto;
+        max-width: 822px;
+        font-family: Karla;
+        font-size: 20px;
+        line-height: 1.4;
+        text-align: center;
+        color: $charcoal-grey;
+        @media (max-width: $tablet) {
+            font-size: 16px;
+        }
+    }
+    .category-card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .category-title{
+            margin: 1rem auto;
+            font-family: Poppins;
+            font-size: 22px;
+            font-weight: 600;
+            line-height: 1.27;
+            text-align: center;
+            color: $charcoal-grey;
+        }
+        .learn-more{
+            margin: 0 auto 1rem;
+        }
+    }
+}
 
+.case-studies-section{
+    padding: 3rem 1rem;
+    background: $pale-grey;
+    .container{
+        max-width: 1024px;
+        .title-w{
+            margin: 2rem auto 0.625rem;
+        }
+        .description-w{
+            max-width: 720px;
+            margin: 0 auto 1.75rem;
+        }
+        .tiles-w{
+            padding: 2rem 0;
+            .tile{
+                height: 340px;
+                width: 100%;
+                position: relative;
+                overflow: hidden;
+                &:hover{
+                    .overlay-w{
+                        bottom: 0;
+                    }
+                }
+                .image-w{
+                    width: 100%;
+                    height: 100%;
+                    background-position: center;
+                    background-size: cover;
+                }
+                .overlay-w{
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    bottom: -340px;
+                    left: 0;
+                    background-image: linear-gradient(307deg, #db0a5b, #971b50);
+                    padding: 5rem 1rem;
+                    transition: all 0.5s ease;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-around;
+                    .desc-w{
+                        font-family: Poppins;
+                        font-size: 22px;
+                        font-weight: 600;
+                        line-height: 1.27;
+                        text-align: center;
+                        color: $white;
+                        max-width: 320px;
+                    }
+                    .learn-more{
+                        color: $white;
+                    }
+                }
+            }
+        }
+        .button-w{
+            padding: 3rem 0 4.5rem;
+            .button{
+                font-family: Karla;
+                font-size: 18px;
+                font-weight: bold;
+                line-height: 1.22;
+                padding: 0 2rem;
+            }
+        }
+    }
+}
 
 .portfolio-section{
     background: $pale-grey;

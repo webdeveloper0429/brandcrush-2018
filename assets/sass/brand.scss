@@ -238,4 +238,41 @@
             }
         }
     }
+
+    .case-studies-section{
+        background: $white;
+    }
+
+    .signup-contact-section{
+        padding: 2rem 1rem;
+        background: $pale-grey;
+        .signup-contact-w{
+            .block-w{
+                padding: 2rem 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .heading-w{
+                    max-width: 436px;
+                    padding: 1rem 0;
+                    font-family: Poppins;
+                    font-size: 22px;
+                    font-weight: 600;
+                    line-height: 1.27;
+                    text-align: center;
+                    color: $charcoal-grey;
+                }
+                .button-w{
+                    padding: 1rem 0;
+                    .button{
+                        font-family: Karla;
+                        font-size: 18px;
+                        font-weight: bold;
+                        line-height: 1.22;
+                        width: 200px;
+                    }
+                }
+            }
+        }
+    }
 }
