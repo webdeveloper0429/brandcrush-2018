@@ -356,45 +356,12 @@
         }
     }
 
-    .portfolio-section{
-        background: $pale-grey;
-        padding: 3.75rem 1rem;
-        @media(max-width: $tablet){
-            .reverse-order{
-                flex-direction: column-reverse;
-                display: flex;
-            }
-        }
-        .container{
-            max-width: 1020px;
-        }
-        .portfolio-w{
-            padding: 2.5rem 0;
-            .image-w{
-                height: 340px;
-                .image{
-                    height: 100%;
-                    width: auto;
-                    background-position: center;
-                    background-size: cover;
-                }
-            }
-            .description-w{
-                padding: 0 2rem;
-                height: 100%;
-                display: flex;
-                align-items: center;
-                @media(max-width: $tablet){
-                    padding: 0;
-                    justify-content: center !important;
-                }
-                .description{
-                    max-width: 360px;
-                    font-family: Karla;
-                    font-size: 20px;
-                    line-height: 1.4;
-                    color: $charcoal-grey;
-                }
+    .homepage-portfolio{
+        padding: 3.75rem;
+        .description-w{            
+            padding: 0 2rem;
+            .description{
+                max-width: 360px;
             }
         }
     }
