@@ -683,7 +683,7 @@
             margin: 0 auto 1.75rem;
         }
         .tiles-w{
-            padding: 2rem 0;
+            padding: 1rem 0;
             .tile{
                 height: 340px;
                 width: 100%;
@@ -729,7 +729,7 @@
             }
         }
         .button-w{
-            padding: 3rem 0 4.5rem;
+            padding: 3rem 0 4rem;
             .button{
                 font-family: Karla;
                 font-size: 18px;
@@ -802,6 +802,45 @@
                         padding: 0 2.5rem;
                     }
                 }
+            }
+        }
+    }
+}
+
+.brands-hosts-section{
+    background: $pale-grey;
+    padding: 5rem 1rem 5rem;
+    .block-w{
+        padding: 2rem 1rem;
+        background: $white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-shadow:0 8px 16px 0 rgba(64,64,65,0.2);
+        transition: all 0.25s ease;
+        &:hover{
+            -webkit-transform: translateY(-2px);
+            transform: translateY(-2px);
+            box-shadow:0 8px 16px 5px rgba(64,64,65,0.2);
+        }
+        .image-w{
+            padding: 1rem;
+        }
+        .section-title{
+            margin-bottom: 1.5rem;
+        }
+        .section-description{
+            height: 6rem;
+            max-width: 436px;
+        }
+        .button-w{
+            margin: 2rem auto;
+            .button{
+                width: 310px;
+                font-family: Karla;
+                font-size: 18px;
+                font-weight: bold;
+                line-height: 1.22;
             }
         }
     }
