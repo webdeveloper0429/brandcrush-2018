@@ -2,11 +2,7 @@
 .link-arrow{
     font-family: Karla;
     font-size: 16px;
-    color: $cerise;                
-    @media (max-width: $tablet){
-        font-size: 13px;
-        margin: 1rem 0.25rem;
-    }
+    color: $cerise;
 }
 .link-arrow:after{
     content: "\f054";

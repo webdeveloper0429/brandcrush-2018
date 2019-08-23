@@ -16,4 +16,101 @@
             }
         }
     }
+    .category-main-section{
+        padding: 3rem 1rem;
+        background: $pale-grey;
+        .category-main-w{
+            .section-title{
+                font-size: 32px;
+                font-weight: bold;
+                line-height: 1.19;
+                margin: 1rem;
+            }
+            .section-description{
+                padding: 0.5rem;
+                margin: auto;
+                max-width: 820px;
+            }
+            .icons-block{
+                padding: 2rem 0;
+                margin: auto;
+                max-width: 600px;
+                @media (max-width: $tablet){
+                    padding: 1rem 0;
+                    .column{
+                        padding: 0 0.75rem;
+                    }
+                }
+                .icon-w{
+                    display: flex;
+                    align-items: center;
+                    img{
+                        width: 60px;
+                        height: 60px;
+                    }
+                    span{
+                        font-family: karla;
+                        font-size: 16px;
+                        line-height: 1.5;
+                        color: $charcoal-grey;
+                    }
+                }
+            }
+            .category-list-block{
+                padding: 2rem 0 1rem;
+                .category-item{
+                    display: flex;
+                    flex-direction: column;
+                    .image-w{
+                        width: 100%;
+                        padding-bottom: 15px;
+                        .image{
+                            width: 100%;
+                            height: 210px;
+                            background-position: center;
+                            background-size: cover;
+                            border-radius: 5px;
+                        }
+                    }
+                    .name-w{
+                        padding-bottom: 5px;
+                        font-family: Karla;
+                        font-size: 20px;
+                        font-weight: bold;
+                        line-height: 1.4;
+                        color: $charcoal-grey
+                    }
+                    .tag-w{
+                        padding-bottom: 15px;
+                        opacity: 0.6;
+                        font-family: Karla;
+                        font-size: 12px;
+                        font-weight: bold;
+                        line-height: 1;
+                        color: $charcoal-grey
+                    }
+                    .desc-w{
+                        padding-bottom: 3px;
+                        font-family: Karla;
+                        font-size: 12px;
+                        line-height: 1.33;
+                        color: $charcoal-grey;
+                    }
+                    .price-w{
+                        font-family: Karla;
+                        font-size: 12px;
+                        line-height: 1.33;
+                        color: $charcoal-grey;
+                        span{
+                            font-size: 14px;
+                            font-weight: bold;
+                        }
+                    }
+                    .link-w{
+                        padding: 1rem 0;
+                    }
+                }
+            }
+        }
+    }
 }
