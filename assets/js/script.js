@@ -44,6 +44,10 @@ const toast = swal.mixin({
     timer: 3000
 });
 
+function aosRefresh(){
+    AOS.refresh();
+}
+
 function navbar_init(){
     $(".navbar-burger").click(function() {  
         // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"

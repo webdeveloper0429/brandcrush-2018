@@ -96,7 +96,7 @@
             $("#component_nav_mobile").load("/components/component_nav_mobile.html");
             $("#component_footer").load("/components/component_footer.html", subscription_init);
             $("#component_category").load("/components/component_category.html");
-            $("#component_case_studies").load("/components/component_case_studies.html");
+            $("#component_case_studies").load("/components/component_case_studies.html", aosRefresh);
         })
     </script>
     <body class="has-navbar-fixed-top">
@@ -237,7 +237,7 @@
 
             <div id="component_category"></div>
 
-            <div id="component_case_studies" data-aos="fade-up"></div>
+            <div id="component_case_studies"></div>
 
             <section class="logos-section is-hidden-mobile">
                 <div class="container">
@@ -260,7 +260,7 @@
                     <div class="portfolio-w">
                         <div class="columns">
                             <div class="column">
-                                <div class="image-w">
+                                <div class="image-w" data-aos="fade-up">
                                     <div class="image" style="background-image: url(/assets/images/Homepage/portfolio-1.jpg)"></div>
                                 </div>
                             </div>
@@ -287,7 +287,7 @@
                                 </div>
                             </div>
                             <div class="column">
-                                <div class="image-w">
+                                <div class="image-w" data-aos="fade-up">
                                     <div class="image" style="background-image: url(/assets/images/Homepage/portfolio-2.jpg)"></div>
                                 </div>
                             </div>
