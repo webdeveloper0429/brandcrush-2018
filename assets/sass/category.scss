@@ -1,0 +1,19 @@
+.category-page{
+    .banner-section{
+        padding: 1.5rem 1rem;
+        background: #971b50;
+        .container{
+            max-width: 740px;
+        }
+        .banner-w{
+            .category-name{
+                font-family: Karla;
+                font-size: 16px;
+                font-weight: bold;
+                line-height: 1;
+                color: $white;
+                text-align: center;
+            }
+        }
+    }
+}
