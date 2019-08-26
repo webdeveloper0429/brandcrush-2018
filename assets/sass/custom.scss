@@ -7,11 +7,18 @@
     src: url('../fonts/Poppins/Poppins-Regular.ttf'); 
 }
 
+a:focus {
+    outline: none !important;
+}
+
 .button.is-primary:hover, .button.is-primary.is-hovered{
     background-color: #f50b65 !important;
 }
 .button.is-dark:hover, .button.is-dark.is-hovered{
     background-color: #575759 !important;
+}
+.button.is-primary.is-inverted.is-outlined:hover, .button.is-primary.is-inverted.is-outlined:focus{
+    background-color: #fff !important;
 }
 
 .navbar.is-white{

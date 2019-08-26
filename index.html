@@ -10,10 +10,11 @@
 
         <link rel="shortcut icon" href="/assets/images/favicon.png" >
         <link rel="stylesheet" href="/lib/appleple-modal-video/css/modal-video.min.css">
-        <link rel="stylesheet" href="/lib/aos-2.3.4/dist/aos.css">
+        <link rel="stylesheet" href="/lib/aos-2.3.4/dist/aos.css">        
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
         <link href="https://fonts.googleapis.com/css?family=Karla:400,700|Poppins:400,500,600,700|Material+Icons" rel="stylesheet">
         <link href="/lib/fontawesome-free-5.2.0-web/css/all.css" rel="stylesheet">
-        <link rel="stylesheet" href="/assets/css/bulma-lib.css">
         <link rel="stylesheet" href="/assets/css/bulma-lib.css">
         <link rel="stylesheet" href="/assets/css/mystyle.css">
         <link rel="stylesheet" href="/assets/css/custom.css">
@@ -25,6 +26,7 @@
         <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
         <script src="/lib/appleple-modal-video/js/jquery-modal-video.min.js"></script>
         <script src="/lib/aos-2.3.4/dist/aos.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
         <script src="/lib/sweetalert2-7.26.28/dist/sweetalert2.all.min.js"></script>
         <script src="/assets/js/script.js"></script>
         <script src="/assets/js/auth.js"></script>
@@ -107,6 +109,82 @@
         <div id="component_nav"></div>
         <div id="component_nav_mobile"></div>
         <div class="homepage">
+            <section class="banner-section">
+                <div class="banner-w">
+                    <div class="columns is-multiline">
+                        <div class="column is-full-tablet is-two-thirds-desktop">
+                            <div class="hero is-large is-primary">
+                                <div class="hero-body">
+                                    <div class="title-block">
+                                        <div class="homepage-title">
+                                            Real world engagement.
+                                            connecting brands with consumers through a network of trusted businesses
+                                        </div>
+                                        <div class="button-w">
+                                            <a href="/brands">
+                                                <div class="button is-dark">I'm a Brand</div>
+                                            </a>
+                                            <a href="/activationhosts">
+                                                <div class="button is-primary is-outlined is-inverted ">I'm a Business</div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column is-full-tablet is-one-third-desktop">
+                            <div class="slider-block-w">
+                                <div class="slider-block">
+                                    <div class="image-slider-w">
+                                        <div class="slider-item">
+                                            <div class="image-w">
+                                                <div class="image" style="background-image: url(/assets/images/Homepage/banner-image.jpg)"></div>
+                                            </div>
+                                        </div>
+                                        <div class="slider-item">
+                                            <div class="image-w">
+                                                <div class="image" style="background-image: url(/assets/images/source/image-01.jpg)"></div>
+                                            </div>
+                                        </div>
+                                        <div class="slider-item">
+                                            <div class="image-w">
+                                                <div class="image" style="background-image: url(/assets/images/source/image-02.jpg)"></div>
+                                            </div>
+                                        </div>
+                                        <div class="slider-item">
+                                            <div class="image-w">
+                                                <div class="image" style="background-image: url(/assets/images/source/image-03.jpg)"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text-slider-w">
+                                        <div class="text-item">
+                                            <a class="link-w">
+                                                <div class="link-arrow">Green & Black: Gift Sampling Activation</div>
+                                            </a>
+                                        </div>
+                                        <div class="text-item">
+                                            <a class="link-w">
+                                                <div class="link-arrow">Brands & Agencies : Grow Brands</div>
+                                            </a>
+                                        </div>
+                                        <div class="text-item">
+                                            <a class="link-w">
+                                                <div class="link-arrow">Activation Hosts : Host Brands</div>
+                                            </a>
+                                        </div>
+                                        <div class="text-item">
+                                            <a class="link-w">
+                                                <div class="link-arrow">Temp Text : Need Real</div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
             <div id="component_category"></div>
 
@@ -245,6 +323,28 @@
     <script>
         $(document).ready(function(){
             $(".js-modal-btn").modalVideo({channel:'vimeo'});
+            $(window).on('load resize', function(){
+                const wHeight = $('.image-slider-w').height();
+                $('.image-slider-w .image').height(wHeight);
+            })
+            $('.image-slider-w').slick({
+                arrows: false,
+                dots: true,
+                infinite: true,
+                speed: 500,
+                autoplay: true,
+                autoplaySpeed: 3000,
+                asNavFor: '.text-slider-w'
+            });
+            $('.text-slider-w').slick({
+                arrows: false,
+                dots: false,
+                infinite: true,
+                speed: 500,
+                fade: true,
+                cssEase: 'linear',
+                asNavFor: '.image-slider-w'
+            });
         })
     </script>
 </html>
