@@ -8,18 +8,12 @@
             padding: 7rem 1rem 4rem !important;
         }
         @media (max-width: $tablet){
-            padding: 5rem 1rem 3rem !important;
+            padding: 3.75rem 1rem 3rem !important;
         }
     }
 
     .banner-section{
         .banner-w{
-            @media (max-width: $tablet){
-                .column{
-                    padding-top: 0;
-                    padding-bottom: 0;
-                }
-            }
             .title-block{
                 display: flex;
                 flex-direction: column;
@@ -31,7 +25,7 @@
                     padding: 0 3rem;
                 }
                 @media (max-width: $tablet){
-                    padding: 0 2rem;
+                    padding: 0 0rem;
                 }
                 .homepage-title{
                     font-family: Poppins;
@@ -42,13 +36,14 @@
                     max-width: 510px;
                     margin-bottom: 2.5rem;
                     @media (max-width: $tablet){
-                        font-size: 22px;
+                        font-size: 26px;
+                        line-height: 1.23;
                     }
                 }
                 .button-w{
                     .button{
-                        margin-right: 1rem;
-                        margin-bottom: 1rem;
+                        margin-right: 10px;
+                        margin-bottom: 10px;
                         width: 180px;
                         font-family: Karla;
                         font-size: 18px;
@@ -56,7 +51,8 @@
                         line-height: 1.22;
                         border-width: 2px;
                         @media (max-width: $tablet){
-                            font-size: 14px;
+                            width: 100%;
+                            font-size: 15px;
                         }
                     }
                 }
