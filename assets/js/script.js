@@ -44,8 +44,14 @@ const toast = swal.mixin({
     timer: 3000
 });
 
-function aosRefresh(){
+function case_studies_init(){
     AOS.refresh();
+    $('.category-slider-w').slick({
+        centerMode: true,
+        arrows: false,
+        centerPadding: '20px',
+
+    })
 }
 
 function navbar_init(){
