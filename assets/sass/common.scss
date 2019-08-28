@@ -884,12 +884,19 @@
                 }
                 .button-w{
                     margin: 1rem 0;
+                    @media(max-width: $tablet){
+                        width: 100%;
+                        margin: 0;
+                    }
                     .button{
                         font-family: Karla;
                         font-size: 18px;
                         font-weight: bold;
                         line-height: 1.22;
                         padding: 0 2.5rem;
+                        @media(max-width: $tablet){
+                            width: 100%;
+                        }
                     }
                 }
             }
