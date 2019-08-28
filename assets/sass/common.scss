@@ -32,7 +32,7 @@
     display: block;
     position: relative;
     padding: 4px 20px 4px 30px;
-    margin-bottom: 8px;
+    margin-bottom: 16px;
     font-family: Karla;
     font-size: 11px;
     line-height: 1.09;
@@ -200,7 +200,7 @@
             line-height: 1.5;
             color: $charcoal-grey;
             @media (max-width: $tablet){
-                font-size: 12px;
+                font-size: 13px;
             }
         }
         .radio-w{
@@ -210,9 +210,9 @@
             display: flex;
             justify-content: space-around;
             @media (max-width: $tablet){
-                font-size: 12px;
-                flex-direction: column;
-                width: 200px;
+                font-size: 11px;
+                flex-wrap: wrap;
+                justify-content: flex-start;
             }
         }
         .input-w{
@@ -243,6 +243,10 @@
                 font-family: Poppins;
                 font-size: 20px;
                 font-weight: 600;
+                @media (max-width: $tablet){
+                    font-size: 15px;
+                    height: 32px;
+                }
             }
         }
     }
@@ -832,8 +836,14 @@
     }
     .portfolio-w{
         padding: 2.5rem 0;
+        @media (max-width: $tablet){
+            padding: 1rem 0;
+        }
         .image-w{
             height: 340px;
+            @media (max-width: $tablet){
+                height: 190px;
+            }
             .image{
                 height: 100%;
                 width: auto;
@@ -868,6 +878,9 @@
                     font-size: 20px;
                     line-height: 1.4;
                     color: $charcoal-grey;
+                    @media(max-width: $tablet){
+                        font-size: 13px;
+                    }
                 }
                 .button-w{
                     margin: 1rem 0;
@@ -887,6 +900,9 @@
 .brands-hosts-section{
     background: $pale-grey;
     padding: 5rem 1rem 5rem;
+    @media (max-width: $tablet){
+        padding: 2rem 1rem;
+    }
     .block-w{
         padding: 2rem 1rem;
         background: $white;
@@ -905,19 +921,34 @@
         }
         .section-title{
             margin-bottom: 1.5rem;
+            @media (max-width: $tablet){
+                margin-bottom: 10px;
+            }
         }
         .section-description{
             height: 6rem;
             max-width: 436px;
+            @media (max-width: $tablet){
+                height: inherit;
+                margin-bottom: 20px;
+            }
         }
         .button-w{
             margin: 2rem auto;
+            @media (max-width: $tablet){
+                margin: 0;
+                width: 100%;
+            }
             .button{
                 width: 310px;
                 font-family: Karla;
                 font-size: 18px;
                 font-weight: bold;
                 line-height: 1.22;
+                @media (max-width: $tablet){
+                    width: 100%;
+                    font-size: 15px;
+                }
             }
         }
     }
