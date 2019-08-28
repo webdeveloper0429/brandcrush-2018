@@ -194,15 +194,24 @@
         background-image: linear-gradient(to bottom, white, white 50%, $pale-grey 50%, $pale-grey);
 	    background-size: cover;
         background-repeat: no-repeat;
+        @media (max-width: $tablet) {
+            padding: 1rem;
+        }
         .container{
             max-width: 1020px;
         }
         .video-explain-w{
             .title-w{
                 padding: 3rem 0 0.75rem;
+                @media (max-width: $tablet) {
+                    padding: 1rem 0 0.5rem;
+                }
             }
             .description-w{
                 padding: 1.5rem 0;
+                @media (max-width: $tablet) {
+                    padding: 0.5rem;
+                }
             }
             .video-w{
                 max-width: 820px;
@@ -215,11 +224,18 @@
                 align-items: center;
                 justify-content: center;
                 z-index: 1;
+                @media (max-width: $tablet) {
+                    height: 160px;
+                }
                 .js-modal-btn{
                     z-index: 1;
                     cursor: pointer;
                     width: 120px;
                     height: 120px;
+                    @media (max-width: $tablet) {
+                        width: 40px;
+                        height: 40px;
+                    }
                 }
             }
             .overlay{
@@ -246,6 +262,9 @@
                     text-align: center;
                     color: #19a2b8;
                     margin-bottom: -4rem;
+                    @media (max-width: $tablet) {
+                        font-size: 80px;
+                    }
                 }
                 .card-title-w{
                     padding-bottom: 0.75rem;
@@ -256,6 +275,9 @@
                     text-align: center;
                     color: $charcoal-grey;
                     max-width: 700px;
+                    @media (max-width: $tablet) {
+                        font-size: 14px;
+                    }
                 }
                 .card-description-w{
                     max-width: 350px;
@@ -265,6 +287,9 @@
                     line-height: 1.4;
                     text-align: center;
                     color: $charcoal-grey;
+                    @media (max-width: $tablet) {
+                        font-size: 13px;
+                    }
                 }
             }
         }
@@ -277,12 +302,18 @@
     .signup-contact-section{
         padding: 2rem 1rem;
         background: $pale-grey;
+        @media (max-width: $tablet){
+            padding: 1rem;
+        }
         .signup-contact-w{
             .block-w{
                 padding: 2rem 0;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                @media (max-width: $tablet){
+                    padding: 0rem;
+                }
                 .heading-w{
                     max-width: 436px;
                     padding: 1rem 0;
@@ -292,15 +323,24 @@
                     line-height: 1.27;
                     text-align: center;
                     color: $charcoal-grey;
+                    @media (max-width: $tablet){
+                        font-size: 14px;
+                    }
                 }
                 .button-w{
                     padding: 1rem 0;
+                    @media (max-width: $tablet){
+                        width: 100%;
+                    }
                     .button{
                         font-family: Karla;
                         font-size: 18px;
                         font-weight: bold;
                         line-height: 1.22;
                         width: 200px;
+                        @media (max-width: $tablet){
+                            width: 100%;
+                        }
                     }
                 }
             }

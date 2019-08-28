@@ -50,7 +50,6 @@ function case_studies_init(){
         centerMode: true,
         arrows: false,
         centerPadding: '20px',
-
     })
 }
 

@@ -807,6 +807,7 @@
             padding: 3rem 0 4rem;
             @media (max-width: $tablet){
                 padding: 2rem 0 2rem;
+                width: 100%;
             }
             .button{
                 font-family: Karla;
@@ -816,6 +817,7 @@
                 padding: 0 2rem;
                 @media (max-width: $tablet){
                     font-size: 15px;
+                    width: 100%;
                 }
             }
         }
@@ -871,6 +873,10 @@
                     line-height: 1.27;
                     color: $charcoal-grey;
                     margin: 1rem 0;
+                    @media(max-width: $tablet){
+                        font-size: 14px;
+                        margin: 0 0 0.5rem;
+                    }
                 }
                 .description{
                     margin: 1rem 0;
@@ -879,6 +885,7 @@
                     line-height: 1.4;
                     color: $charcoal-grey;
                     @media(max-width: $tablet){
+                        margin: 0 0 0.5rem;
                         font-size: 13px;
                     }
                 }
