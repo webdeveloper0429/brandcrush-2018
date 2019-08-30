@@ -10,6 +10,13 @@
                         +    '</div>';
 
 $(document).ready(function() {
+
+    AOS.init({
+        offset: 50,
+        duration: 1500,
+        once: true
+    });
+    
     if(!localStorage.getItem("brandcrush_cookie")){
         $("body").append(cookie_popup_dom);
         $("#allow_cookie_btn").click(function(){
