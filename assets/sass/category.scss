@@ -9,10 +9,15 @@
             .category-name{
                 font-family: Karla;
                 font-size: 16px;
-                font-weight: bold;
                 line-height: 1;
                 color: $white;
                 text-align: center;
+                &:hover{
+                    font-weight: bold;
+                }
+            }
+            .category-name.active{
+                font-weight: bold;
             }
         }
     }

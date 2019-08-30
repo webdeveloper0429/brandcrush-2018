@@ -115,7 +115,7 @@
                     }
                     .title-w{
                         font-family: Poppins;
-                        font-size: 22px;
+                        font-size: 20px;
                         font-weight: 600;
                         line-height: 1.27;
                         text-align: center;
@@ -127,7 +127,7 @@
                     }
                     .desc-w{
                         font-family: Karla;
-                        font-size: 20px;
+                        font-size: 16px;
                         line-height: 1.4;
                         text-align: center;
                         color: $charcoal-grey;
@@ -145,7 +145,7 @@
 
     .signup-free-section{
         background: $pale-grey;
-        padding: 2rem 1rem;
+        padding: 2rem 0;
         @media (max-width: $tablet){
             padding: 1rem;
         }
@@ -155,7 +155,6 @@
             flex-direction: column;
             align-items: center;
             justify-content: space-between;
-            border-radius: 4px;
             @media (max-width: $tablet){
                 padding: 2rem 1rem;
             }
