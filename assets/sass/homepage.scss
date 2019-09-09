@@ -1,11 +1,11 @@
 .homepage{    
     .hero-body{
-        padding: 13rem 1rem 13rem !important;
+        padding: 16rem 8rem 13rem !important;
         @media (max-width: $widescreen){
-            padding: 10rem 1rem 10rem !important;
+            padding: 12rem 4rem 10rem !important;
         }
         @media (max-width: $desktop){
-            padding: 7rem 1rem 4rem !important;
+            padding: 8rem 2rem 4rem !important;
         }
         @media (max-width: $tablet){
             padding: 3.75rem 1rem 3rem !important;
@@ -13,124 +13,171 @@
     }
 
     .banner-section{
-        .banner-w{
-            display: flex;
-            .banner-image-w{
+        position: relative;
+        video {
+            display: block;
+        }
+        .video-container{
+            position: absolute;
+            top: 0; right: 0; bottom: 0; left: 0;
+            overflow: hidden;          
+            #video-bg{
+                top: 0;
+                left: 0;
                 width: 100%;
-                max-width: 860px;
-                flex: none;
-                background-image: linear-gradient(234deg, #db0a5b, #971b50);
-                @media (max-width: $tablet){
-                    background-image: url(/assets/images/Homepage/CoverImage.jpg);
-                    background-position: center;
-                    background-size: cover;
+                height: 100%;
+                filter: brightness(0.6);
+            }
+            /* 1. No object-fit support: */
+            @media (min-aspect-ratio: 16/9) {
+                #video-bg { height: 300%; top: -100%; }
+            }
+            @media (max-aspect-ratio: 16/9) {
+                #video-bg { width: 300%; left: -100%; }
+            }
+            /* 2. If supporting object-fit, overriding (1): */
+            @supports (object-fit: cover) {
+                #video-bg {
+                top: 0; left: 0;
+                width: 100%; height: 100%;
+                object-fit: cover;
                 }
-                .title-block{
+            }
+        }
+
+        .banner-image-wrapper{
+            background-image: url("/assets/images/Homepage/CoverImage.jpg");
+            background-position: center;
+            background-size: cover;
+            background-color: #db0a5b;
+            color: #fff;
+            @media (max-width: $tablet){
+                // background-image: linear-gradient(251deg, #db0a5b, #971b50);
+            }
+            .container{
+                width: inherit;
+            }
+            .title{
+                font-family: Poppins;
+                font-size: 38px;
+                font-weight: bold;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1.05;
+                letter-spacing: normal;
+                color: $white;
+                margin-bottom: 20px;
+                @media (max-width: $tablet){
+                    font-size: 17px;
+                    text-align: center;
+                    margin: 0 auto 18px;
+                }
+            }
+            .sub-title{
+                font-family: Karla;
+                font-size: 20px;
+                line-height: 1.4;
+                color: $white;
+                margin-bottom: 50px;
+                max-width: 510px;
+                @media (max-width: $tablet){
+                    font-size: 13px;
+                    text-align: center;
+                    margin: 0 auto 30px;
+                }
+            }
+            .button-w{
+                @media (max-width: $tablet){
                     display: flex;
-                    flex-direction: column;
-                    padding: 0 7rem;
-                    @media (max-width: $widescreen){
-                        padding: 0 4rem;
-                    }
-                    @media (max-width: $desktop){
-                        padding: 0 3rem;
-                    }
+                    justify-content: space-around;
+                }
+                .button{
+                    font-size: 18px;
+                    font-weight: bold;
+                    line-height: 1.22;
+                    width: 180px;
+                    margin-right: 20px;
                     @media (max-width: $tablet){
-                        padding: 0 0rem;
-                    }
-                    .homepage-title{
-                        font-family: Poppins;
-                        font-size: 32px;
-                        font-weight: bold;
-                        line-height: 1.25;
-                        color: $white;
-                        max-width: 510px;
-                        margin-bottom: 2.5rem;
-                        @media (max-width: $tablet){
-                            font-size: 26px;
-                            line-height: 1.23;
-                        }
-                    }
-                    .button-w{
-                        .button{
-                            margin-right: 10px;
-                            margin-bottom: 10px;
-                            width: 180px;
-                            font-family: Karla;
-                            font-size: 18px;
-                            font-weight: bold;
-                            line-height: 1.22;
-                            border-width: 2px;
-                            @media (max-width: $tablet){
-                                width: 100%;
-                                font-size: 15px;
-                            }
-                        }
+                        font-size: 13px;
+                        width: 150px;
+                        margin: 0;
                     }
                 }
             }
-            .slider-block-w{
-                flex: 1;
+        }
+    }
+
+    .activation-spaces-section{
+        padding: 4rem 1rem;
+        background: $pale-grey;
+        .activation-spaces-w{
+            .section-title{
+                margin-bottom: 10px;
+            }
+            .section-description{
+                max-width: 620px;
+                margin: auto;
+            }
+            .activation-slider-w{
+                margin-top: 40px;
+                padding: 0 10px;
                 position: relative;
-                .slider-block{
+                .prev-w{
                     position: absolute;
-                    width: calc(100% + 150px);
+                    left: 5px;
                     height: 100%;
-                    top: 0;
-                    left: -150px;
-                    padding: 2rem 1rem 3rem;
-                    @media (max-width: $desktop){
-                        position: relative;
-                        width: 100%;
-                        top: 0;
-                        left: 0;
-                        padding: 0;
-                    }
-                    .image-slider-w{
-                        background-color: $white;
-                        width: 100%;
-                        height: 100%;
-                        margin-bottom: 0;
-                        @media (max-width: $desktop){
-                            height: 500px;
+                    z-index: 100;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .next-w{
+                    position: absolute;
+                    right: 5px;
+                    height: 100%;
+                    z-index: 100;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .icon-btn{
+                    width: 32px;
+                    height: 32px;
+                    border-radius: 20px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background: $white;
+                    border: 2px solid #19a2b8;
+                    color: #19a2b8;
+                    cursor: pointer;
+                    margin-bottom: 50px;
+                }
+                .activation-slider{
+                    .activation-item{
+                        padding: 10px;
+                        outline: none;
+                        .image-w{
+                            width: 100%;
+                            height: 210px;
+                            background-position: center;
+                            background-size: cover;
+                            border-radius: 5px;
                         }
-                        .slick-dots{
-                            bottom: 10px;
-                            text-align: right;
-                            padding: 0 10px;
+                        .item-title{
+                            margin-top: 15px;
+                            font-size: 20px;
+                            font-family: Karla;
+                            font-weight: bold;
+                            line-height: 1.4;
+                            color: $charcoal-grey;
                         }
-                        .slick-dots li button:before{
-                            font-size: 1rem;
-                            opacity: 1;
-                            color: white;
-                        }
-                        .slick-dots li.slick-active button:before{
-                            color: $cerise;
-                        }
-                        .slider-item{
-                            position: relative;
-                            .image-w{
-                                .image{
-                                    background-position: center;
-                                    background-size: cover;
-                                }
-                            }
-                            .link-w{
-                                position: absolute;
-                                bottom: -20px;
-                                text-align: right;
-                            }
-                        }
-                    }
-                    .text-slider-w{
-                        padding: 0.5rem;
-                        .text-item{
-                            text-align: right;
-                            .link-w{
-                                .link-arrow{
-                                    font-weight: bold;
-                                }
-                            }
+                        .item-tag{
+                            font-size: 12px;
+                            font-family: Karla;
+                            font-weight: bold;
+                            opacity: 0.6;
+                            color: $charcoal-grey;
                         }
                     }
                 }
