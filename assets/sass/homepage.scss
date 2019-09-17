@@ -185,21 +185,6 @@
         }
     }
 
-    .logos-section{
-        .container{
-            max-width: 1000px;
-            .title-w{
-                padding-top: 2rem;
-            }
-            .logos-w{
-                height: 110px;
-                display: flex;
-                align-items: center;
-                justify-content: space-around;
-            }
-        }
-    }
-
     .homepage-portfolio{
         padding: 3.75rem;
         @media (max-width: $tablet){

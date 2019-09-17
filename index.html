@@ -100,6 +100,7 @@
             $("#component_category").load("/components/component_category.html");
             $("#component_case_studies").load("/components/component_case_studies.html", case_studies_init);
             $("#component_brands_hosts").load("/components/component_brands_hosts.html");
+            $("#component_logos").load("/components/component_logos.html");
         })
     </script>
     <body class="has-navbar-fixed-top">
@@ -298,21 +299,7 @@
                 </div>
             </section>
 
-            <section class="logos-section is-hidden-mobile">
-                <div class="container">
-                    <div class="section-title title-w">
-                        Trusted By
-                    </div>
-                    <div class="logos-w">
-                        <img src="/assets/images/logos/BondiSands.png" width="85" height="60" />
-                        <img src="/assets/images/logos/Bega_Cheese_logo.png" width="70" height="44" />
-                        <img src="/assets/images/logos/Logo-TOMOrganic.png" width="80" height="40" />
-                        <img src="/assets/images/logos/CalifiaFarms.png" width="60" height="60" />
-                        <img src="/assets/images/logos/4Bx8N_QW copy.png" width="65" height="54" />
-                        <img src="/assets/images/logos/the-bar-counter.png" width="94" height="35" />
-                    </div>
-                </div>
-            </section>
+            <div id="component_logos"></div>
 
             <section class="portfolio-section homepage-portfolio">
                 <div class="container">

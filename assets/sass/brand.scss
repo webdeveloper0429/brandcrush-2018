@@ -115,7 +115,7 @@
                     }
                     .title-w{
                         font-family: Poppins;
-                        font-size: 20px;
+                        font-size: 18px;
                         font-weight: 600;
                         line-height: 1.27;
                         text-align: center;
@@ -131,7 +131,7 @@
                         line-height: 1.4;
                         text-align: center;
                         color: $charcoal-grey;
-                        max-width: 370px;
+                        max-width: 280px;
                         padding-bottom: 1rem;
                         @media (max-width: $tablet) {
                             text-align: left;
@@ -144,8 +144,6 @@
     }
 
     .signup-free-section{
-        background: $pale-grey;
-        padding: 2rem 0;
         @media (max-width: $tablet){
             padding: 1rem;
         }
