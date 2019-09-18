@@ -251,6 +251,7 @@
         }
     }
 }
+
 .footer-section{
     padding: 0 5rem;
     @media (max-width: $tablet) {
@@ -598,6 +599,7 @@
         }
     }
 }
+
 .page-heading-section{
     .page-heading-w{
         padding: 5rem 1rem;
@@ -984,6 +986,55 @@
                 @media (max-width: $tablet){
                     width: 100%;
                     font-size: 15px;
+                }
+            }
+        }
+    }
+}
+
+
+.signup-contact-section{
+    padding: 2rem 1rem;
+    background: $pale-grey;
+    @media (max-width: $tablet){
+        padding: 1rem;
+    }
+    .signup-contact-w{
+        .block-w{
+            padding: 2rem 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            @media (max-width: $tablet){
+                padding: 0rem;
+            }
+            .heading-w{
+                max-width: 436px;
+                padding: 1rem 0;
+                font-family: Poppins;
+                font-size: 22px;
+                font-weight: 600;
+                line-height: 1.27;
+                text-align: center;
+                color: $charcoal-grey;
+                @media (max-width: $tablet){
+                    font-size: 14px;
+                }
+            }
+            .button-w{
+                padding: 1rem 0;
+                @media (max-width: $tablet){
+                    width: 100%;
+                }
+                .button{
+                    font-family: Karla;
+                    font-size: 18px;
+                    font-weight: bold;
+                    line-height: 1.22;
+                    width: 200px;
+                    @media (max-width: $tablet){
+                        width: 100%;
+                    }
                 }
             }
         }
