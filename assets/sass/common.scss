@@ -645,9 +645,26 @@
 }
 
 .category-section{        
-    padding: 3rem 1rem;
+    padding: 3.5rem 1rem;
     @media (max-width: $tablet) {
         padding: 1rem;
+    }
+    .section-title{
+        margin-bottom: 30px;
+    }
+    .description{
+        padding: 2rem 0;
+        margin: auto;
+        max-width: 822px;
+        font-family: Karla;
+        font-size: 20px;
+        line-height: 1.4;
+        text-align: center;
+        color: $charcoal-grey;
+        @media (max-width: $tablet) {
+            padding: 1.5rem 0 0.5rem;
+            font-size: 13px;
+        }
     }
     .category-card{
         display: flex;
