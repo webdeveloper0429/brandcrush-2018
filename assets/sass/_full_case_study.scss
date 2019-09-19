@@ -198,4 +198,12 @@
             }
         }
     }
+    
+    .case-studies-section{
+        background: $pale-grey;
+        .block-w{
+            max-width: 800px;
+            margin: auto;
+        }
+    }
 }
