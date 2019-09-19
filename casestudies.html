@@ -29,7 +29,6 @@
         <script src="/lib/sweetalert2-7.26.28/dist/sweetalert2.all.min.js"></script>
         <script src="/assets/js/script.js"></script>
         <script src="/assets/js/auth.js"></script>
-        <script src="/assets/js/spaces.js"></script>
         <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127158336-1"></script>
 <script>
@@ -108,7 +107,55 @@
         <div id="component_nav_mobile"></div>
         <div class="case-studies-page">
             <section class="banner-section">
-            </section>
+                <div class="banner-w">
+                    <div class="hero is-large is-primary banner-image-w">
+                        <div class="hero-body">
+                            <div class="title-block">
+                                <div class="homepage-title">
+                                    Case studies
+                                </div>
+                                <div class="desc-w">
+                                    See how brands are engaging and inspiring customers through Brandcrush's network of Activation Hosts.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-block-w is-hidden-touch">
+                        <div class="slider-block">
+                            <div class="image-slider-w">
+                                <div class="slider-item">
+                                    <div class="image" style="background-image: url(/assets/images/Homepage/banner-image.jpg)">
+                                        <div class="content">
+                                            Green & Blacks: Gift Sampling Activation
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slider-item">
+                                    <div class="image" style="background-image: url(/assets/images/source/image-01.jpg)">
+                                        <div class="content">
+                                            Pciky picky peanutes
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slider-item">
+                                    <div class="image" style="background-image: url(/assets/images/source/image-02.jpg)">
+                                        <div class="content">
+                                            Lorem Ipsum dolors sampling
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slider-item">
+                                    <div class="image" style="background-image: url(/assets/images/source/image-03.jpg)">
+                                        <div class="content">
+                                            See how brands are engaging
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>        
 
             <div id="component_logos"></div>
 
@@ -119,44 +166,55 @@
         $(document).ready(function(){
             $(".js-modal-btn").modalVideo({channel:'vimeo'});
             $(window).on('load resize', function(){
-                const wHeight = $('.image-slider-w').height();
-                $('.image-slider-w .image').height(wHeight);
-            })
-            $('.activation-slider').slick({
+                const height = $('.image-slider-w').height();
+                $('.image-slider-w .image').height(height);
+            });
+            $('.image-slider-w').slick({
                 arrows: false,
                 dots: false,
                 infinite: true,
-                speed: 500,
+                speed: 1000,
+                fade: true,
+                cssEase: 'linear',
                 autoplay: true,
-                autoplaySpeed: 2000,
-                slidesToShow: 4,
-                responsive: [
-                    {
-                        breakpoint: 1024,
-                        settings: {
-                            slidesToShow: 3,
-                        }
-                    },
-                    {
-                        breakpoint: 768,
-                        settings: {
-                            slidesToShow: 2,
-                        }
-                    },
-                    {
-                        breakpoint: 480,
-                        settings: {
-                            slidesToShow: 1,
-                        }
-                    }
-                ]
+                autoplaySpeed: 3000,
             });
-            $('.prev-icon').click(function(){
-                $('.activation-slider').slick('slickPrev')
-            })
-            $('.next-icon').click(function(){
-                $('.activation-slider').slick('slickNext')
-            })
+
+            // $('.activation-slider').slick({
+            //     arrows: false,
+            //     dots: false,
+            //     infinite: true,
+            //     speed: 500,
+            //     autoplay: true,
+            //     autoplaySpeed: 2000,
+            //     slidesToShow: 4,
+            //     responsive: [
+            //         {
+            //             breakpoint: 1024,
+            //             settings: {
+            //                 slidesToShow: 3,
+            //             }
+            //         },
+            //         {
+            //             breakpoint: 768,
+            //             settings: {
+            //                 slidesToShow: 2,
+            //             }
+            //         },
+            //         {
+            //             breakpoint: 480,
+            //             settings: {
+            //                 slidesToShow: 1,
+            //             }
+            //         }
+            //     ]
+            // });
+            // $('.prev-icon').click(function(){
+            //     $('.activation-slider').slick('slickPrev')
+            // })
+            // $('.next-icon').click(function(){
+            //     $('.activation-slider').slick('slickNext')
+            // })
         })
     </script>
 </html>

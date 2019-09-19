@@ -1,3 +1,120 @@
 .case-studies-page{
-    
+    .hero-body{
+        padding: 13rem 1rem 13rem !important;
+        @media (max-width: $widescreen){
+            padding: 10rem 1rem 10rem !important;
+        }
+        @media (max-width: $desktop){
+            padding: 7rem 1rem 4rem !important;
+        }
+        @media (max-width: $tablet){
+            padding: 3.75rem 1rem 3rem !important;
+        }
+    }
+
+    .banner-section{
+        .banner-w{
+            display: flex;
+            .banner-image-w{
+                width: 100%;
+                max-width: 640px;
+                flex: none;
+                background-image: linear-gradient(234deg, #db0a5b, #971b50);
+                @media (max-width: $tablet){
+                    background-image: url(/assets/images/Homepage/CoverImage.jpg);
+                    background-position: center;
+                    background-size: cover;
+                }
+                .title-block{
+                    display: flex;
+                    flex-direction: column;
+                    padding: 0 100px;
+                    @media (max-width: $widescreen){
+                        padding: 0 4rem;
+                    }
+                    @media (max-width: $desktop){
+                        padding: 0 3rem;
+                    }
+                    @media (max-width: $tablet){
+                        padding: 0 0rem;
+                    }
+                    .homepage-title{
+                        font-family: Poppins;
+                        font-size: 32px;
+                        font-weight: bold;
+                        line-height: 1.25;
+                        color: $white;
+                        max-width: 510px;
+                        margin-bottom: 2.5rem;
+                        @media (max-width: $tablet){
+                            font-size: 26px;
+                            line-height: 1.23;
+                        }
+                    }
+                    .desc-w{
+                        font-family: Poppins;
+                        font-size: 22px;
+                        font-weight: 600;
+                        line-height: 1.27;
+                        color: $white;
+                        max-width: 345px;
+                        @media (max-width: $tablet){
+                            font-size: 16px;                            
+                        }
+                    }
+                }
+            }
+            .slider-block-w{
+                flex: 1;
+                position: relative;
+                .slider-block{
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 100%;
+                    height: 100%;                    
+                    .image-slider-w{
+                        background-color: $white;
+                        width: 100%;
+                        height: 100%;
+                        margin-bottom: 0;
+                        @media (max-width: $desktop){
+                            height: 500px;
+                        }
+                        .slick-dots{
+                            bottom: 10px;
+                            text-align: right;
+                            padding: 0 10px;
+                        }
+                        .slick-dots li button:before{
+                            font-size: 1rem;
+                            opacity: 1;
+                            color: white;
+                        }
+                        .slick-dots li.slick-active button:before{
+                            color: $cerise;
+                        }
+                        .slider-item{
+                            .image{
+                                background-position: center;
+                                background-size: cover;
+                                display: flex;
+                                align-items: flex-end;
+                                justify-content: flex-end;
+                                .content{
+                                    margin: 1rem;
+                                    font-family: Karla;
+                                    font-size: 16px;
+                                    font-weight: bold;
+                                    text-align: right;
+                                    color: $white;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
 }

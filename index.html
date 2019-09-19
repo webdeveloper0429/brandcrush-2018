@@ -365,10 +365,6 @@
     <script>
         $(document).ready(function(){
             $(".js-modal-btn").modalVideo({channel:'vimeo'});
-            $(window).on('load resize', function(){
-                const wHeight = $('.image-slider-w').height();
-                $('.image-slider-w .image').height(wHeight);
-            })
             $('.activation-slider').slick({
                 arrows: false,
                 dots: false,
