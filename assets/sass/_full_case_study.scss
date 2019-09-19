@@ -157,4 +157,45 @@
             }
         }
     }
+
+    .full-case-main-section{
+        background: $pale-grey;
+        padding: 2rem 1rem;
+        .container{
+            max-width: 1060px;
+        }
+        .full-case-main-section-w{
+            .picture-w{                
+                padding: 1rem 0 4rem;
+                .image-w{
+                    width: 100%;
+                    .image{
+                        width: 100%;
+                        height: 500px;
+                        background-position: center;
+                        background-size: cover;
+                    }
+                }
+            }
+            .content-w{
+                max-width: 610px;
+                margin: auto;
+                .title{
+                    font-family: Poppins;
+                    font-size: 22px;
+                    font-weight: 600;
+                    line-height: 1.27;
+                    color: $charcoal-grey;
+                    margin-bottom: 1.25rem;
+                }
+                p{
+                    font-family: Karla;
+                    font-size: 20px;
+                    line-height: 1.4;
+                    color: $charcoal-grey;
+                    margin-bottom: 2rem;
+                }
+            }
+        }
+    }
 }
