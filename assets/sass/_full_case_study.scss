@@ -81,6 +81,15 @@
                         color: $charcoal-grey-60-p;
                         text-transform: uppercase;
                         margin-bottom: 5px;
+                        display: flex;
+                        .tooltip{
+                            text-transform: initial;
+                        }
+                        img{
+                            width: 14px;
+                            height: 14px;
+                            margin-left: 5px;
+                        }
                     }
                     .summary-content{
                         font-family: Poppins;
