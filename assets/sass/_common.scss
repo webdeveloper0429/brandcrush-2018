@@ -741,14 +741,14 @@
 }
 
 .case-studies-section{
-    padding: 3rem 1rem;
+    padding: 40px 1rem;
     @media (max-width: $tablet){
         padding: 1rem;
     }
     .container{
         max-width: 1024px;
         .title-w{
-            margin: 2rem auto 0.625rem;
+            margin: 30px auto 10px;
             @media (max-width: $tablet){
                 margin: 1.5rem auto 0.5rem;
             }
@@ -778,7 +778,7 @@
             }
         }
         .tiles-w{
-            padding: 1rem 0;
+            padding: 10px 0;
             .tile{
                 height: 340px;
                 width: 100%;
@@ -825,7 +825,7 @@
             }
         }
         .button-w{
-            padding: 3rem 0 4rem;
+            padding: 60px 0;
             @media (max-width: $tablet){
                 padding: 2rem 0 2rem;
                 width: 100%;
