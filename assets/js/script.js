@@ -58,7 +58,7 @@ function case_studies_init(){
         arrows: false,
         slidesToShow: 2,
         centerPadding: '20px',
-    })
+    });
 }
 
 function navbar_init(){

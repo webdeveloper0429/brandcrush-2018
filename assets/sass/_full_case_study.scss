@@ -67,11 +67,18 @@
                 padding-top: 20px;
                 max-width: 600px;
                 margin: auto;
+                @media (max-width: $tablet){
+                    padding: 10px 0 20px; 
+                }
                 .summary-item{
                     padding: 20px 0;
                     display: flex;
                     flex-direction: column;
                     align-items: center;
+                    @media (max-width: $tablet){
+                        flex-direction: row;
+                        padding: 0;
+                    }
                     .summary-tag{
                         font-family: Karla;
                         font-size: 11px;
@@ -80,8 +87,12 @@
                         letter-spacing: 1px;
                         color: $charcoal-grey-60-p;
                         text-transform: uppercase;
-                        margin-bottom: 5px;
+                        margin: 0 0 5px;
                         display: flex;
+                        @media (max-width: $tablet){
+                            margin: 5px 0 0;
+                            width: 50%;
+                        }
                         .tooltip{
                             text-transform: initial;
                         }
@@ -105,7 +116,10 @@
     
     .review-section{
         background: $pale-grey;
-        padding: 2rem 1rem 2rem;
+        padding: 30px 1rem;
+        @media (max-width: $tablet){
+            padding: 20px 1rem;
+        }
         .review-section-w{
             .review-w{
                 .quote-w{
@@ -117,6 +131,7 @@
                     margin-bottom: -70px;
                     @media (max-width: $tablet) {
                         font-size: 80px;
+                        margin-bottom: -60px;
                     }
                 }
                 .review-slider-w{
@@ -175,22 +190,30 @@
             max-width: 1060px;
         }
         .full-case-main-section-w{
-            .picture-w{                
+            .picture-w{
                 padding: 0 0 70px;
+                @media (max-width: $tablet) {
+                    padding: 0 0 40px;
+                }
                 .image-w{
                     width: 100%;
-                    padding: 3px;
                     .image{
                         width: 100%;
                         height: 500px;
                         background-position: center;
                         background-size: cover;
+                        @media (max-width: $tablet) {
+                            height: 200px;
+                        }
                     }
                 }
             }
             .content-w{
                 max-width: 610px;
                 margin: 0 auto 70px;
+                @media (max-width: $tablet) {
+                    margin: 0 auto 40px;
+                }
                 .title{
                     font-family: Poppins;
                     font-size: 22px;
@@ -198,6 +221,10 @@
                     line-height: 1.27;
                     color: $charcoal-grey;
                     margin-bottom: 20px;
+                    @media (max-width: $tablet) {
+                        font-size: 14px;
+                        margin-bottom: 5px;
+                    }
                 }
                 p{
                     font-family: Karla;
@@ -205,6 +232,10 @@
                     line-height: 1.4;
                     color: $charcoal-grey;
                     margin-bottom: 40px;
+                    @media (max-width: $tablet) {
+                        font-size: 13px;
+                        margin-bottom: 20px;
+                    }
                 }
             }
         }

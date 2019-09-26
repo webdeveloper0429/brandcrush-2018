@@ -295,7 +295,24 @@
                     </div>
                     <div class="section-description description-w">
                     </div>
-                    <div class="tiles-w">
+                    <div class="category-slider-w is-hidden-tablet">
+                        <div class="category-slider-item">
+                            <div class="tile">
+                                <div class="image-w" style="background-image: url(/assets/images/Homepage/case_studies/hbo.jpg)" ></div>
+                            </div>
+                        </div>
+                        <div class="category-slider-item">
+                            <div class="tile">
+                                <div class="image-w" style="background-image: url(/assets/images/Homepage/case_studies/picky-picky-peanuts.jpg)" ></div>
+                            </div>
+                        </div>
+                        <div class="category-slider-item">
+                            <div class="tile">
+                                <div class="image-w" style="background-image: url(/assets/images/Homepage/case_studies/green-blacks.jpg)" ></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tiles-w is-hidden-mobile">
                         <div class="block-w">
                             <div class="columns is-multiline">
                                 <div class="column">
@@ -364,6 +381,12 @@
                 autoplay: true,
                 autoplaySpeed: 5000,
             });
-        })
+        });
+        $('.category-slider-w').slick({
+            centerMode: true,
+            arrows: false,
+            slidesToShow: 2,
+            centerPadding: '20px',
+        });
     </script>
 </html>
