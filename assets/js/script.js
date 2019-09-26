@@ -56,6 +56,7 @@ function case_studies_init(){
     $('.category-slider-w').slick({
         centerMode: true,
         arrows: false,
+        slidesToShow: 2,
         centerPadding: '20px',
     })
 }
