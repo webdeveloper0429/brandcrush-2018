@@ -25,96 +25,148 @@
     .category-main-section{
         padding: 40px 1rem;
         background: $pale-grey;
+        @media (max-width: $tablet){
+            padding: 20px 1rem;
+        }
         .category-main-w{
             .section-title{
                 font-size: 32px;
                 font-weight: bold;
                 line-height: 1.19;
                 padding: 10px 0;
+                @media (max-width: $tablet){
+                    font-size: 24px;
+                    line-height: 1.33;
+                    text-align: left;
+                }
             }
             .section-description{
                 padding: 10px 0;
                 margin: auto;
                 max-width: 820px;
+                @media (max-width: $tablet){
+                    font-size: 13px;
+                    line-height: 1.33;
+                    text-align: left;
+                }
             }
             .icons-block{
                 padding: 30px 0;
                 display: flex;
                 justify-content: center;
                 @media (max-width: $tablet){
-                    padding: 1rem 0;
-                    .column{
-                        padding: 0 0.75rem;
-                    }
+                    padding: 10px 0;
+                    flex-wrap: wrap;
+                    justify-content: flex-start;
                 }
                 .icon-w{
                     display: flex;
                     align-items: center;
                     margin: 0 25px;
+                    @media (max-width: $tablet){
+                        margin: 0 25px 0 0;
+                        height: 50px;
+                    }
                     img{
                         margin-right: 10px;
+                        @media (max-width: $tablet){
+                            margin-right: 5px;
+                            width: 30px;
+                            height: auto;
+                        }
                     }
                     span{
                         font-family: karla;
                         font-size: 16px;
                         line-height: 1.5;
                         color: $charcoal-grey;
+                        @media (max-width: $tablet){
+                            font-size: 13px;
+                        }
                     }
                 }
             }
             .category-list-block{
-                padding: 2rem 0 1rem;
-                .category-item{
-                    display: flex;
-                    flex-direction: column;
-                    .image-w{
+                padding: 30px 0 1rem;
+                @media (max-width: $tablet){
+                    padding: 10px 0 1rem;
+                }
+            }
+            .category-item{
+                display: flex;
+                flex-direction: column;
+                @media (max-width: $tablet){
+                    padding: 0 7px;
+                }
+                .image-w{
+                    width: 100%;
+                    padding-bottom: 15px;
+                    @media (max-width: $tablet){
+                        padding-bottom: 10px;
+                    }
+                    .image{
                         width: 100%;
-                        padding-bottom: 15px;
-                        .image{
-                            width: 100%;
-                            height: 210px;
-                            background-position: center;
-                            background-size: cover;
-                            border-radius: 5px;
+                        height: 210px;
+                        background-position: center;
+                        background-size: cover;
+                        border-radius: 5px;
+                        @media (max-width: $tablet){
+                            width: 180px;
+                            height: 130px;
                         }
                     }
-                    .name-w{
-                        padding-bottom: 5px;
-                        font-family: Karla;
-                        font-size: 20px;
+                }
+                .name-w{
+                    padding-bottom: 5px;
+                    font-family: Karla;
+                    font-size: 20px;
+                    font-weight: bold;
+                    line-height: 1.4;
+                    color: $charcoal-grey;
+                    @media (max-width: $tablet){
+                        font-size: 15px;
+                        padding-bottom: 0px;
+                    }
+                }
+                .tag-w{
+                    padding-bottom: 15px;
+                    opacity: 0.6;
+                    font-family: Karla;
+                    font-size: 12px;
+                    font-weight: bold;
+                    line-height: 1;
+                    color: $charcoal-grey;
+                    @media (max-width: $tablet){
+                        font-size: 10px;
+                        padding-bottom: 10px;
+                    }
+                }
+                .desc-w{
+                    padding-bottom: 3px;
+                    font-family: Karla;
+                    font-size: 12px;
+                    line-height: 1.33;
+                    color: $charcoal-grey;
+                    @media (max-width: $tablet){
+                        font-size: 10px;
+                        padding-bottom: 0px;
+                    }
+                }
+                .price-w{
+                    font-family: Karla;
+                    font-size: 12px;
+                    line-height: 1.33;
+                    color: $charcoal-grey;
+                    @media (max-width: $tablet){
+                        font-size: 10px;
+                    }
+                    span{
+                        font-size: 14px;
                         font-weight: bold;
-                        line-height: 1.4;
-                        color: $charcoal-grey
                     }
-                    .tag-w{
-                        padding-bottom: 15px;
-                        opacity: 0.6;
-                        font-family: Karla;
-                        font-size: 12px;
-                        font-weight: bold;
-                        line-height: 1;
-                        color: $charcoal-grey
-                    }
-                    .desc-w{
-                        padding-bottom: 3px;
-                        font-family: Karla;
-                        font-size: 12px;
-                        line-height: 1.33;
-                        color: $charcoal-grey;
-                    }
-                    .price-w{
-                        font-family: Karla;
-                        font-size: 12px;
-                        line-height: 1.33;
-                        color: $charcoal-grey;
-                        span{
-                            font-size: 14px;
-                            font-weight: bold;
-                        }
-                    }
-                    .link-w{
-                        padding: 1rem 0 2rem;
-                    }
+                }
+                .link-w{
+                    padding: 1rem 0 2rem;
                 }
             }
         }
@@ -122,13 +174,13 @@
     
     .signup-free-section{
         .signup-free-w{
-            padding: 70px 0;
+            padding: 70px 1rem;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: space-between;
             @media (max-width: $tablet){
-                padding: 3.75rem 0;
+                padding: 30px 1rem;
             }
             .title{
                 max-width: 860px;
@@ -139,7 +191,8 @@
                 line-height: 1.29;
                 margin-bottom: 1.75rem;
                 @media (max-width: $tablet) {
-                    font-size: 20px;
+                    font-size: 14px;
+                    line-height: 1.43;
                 }
             }
             .button{
