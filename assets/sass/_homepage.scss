@@ -267,6 +267,8 @@
             }
             .cards-block{
                 padding: 1rem 0;
+                max-width: 900px;
+                margin: auto;
                 .card-w{
                     padding: 1rem 0;
                     display: flex;
@@ -316,7 +318,6 @@
 
     .new-product-launch-section{
         background: $pale-grey;
-        padding: 2rem 0;
         @media (max-width: $tablet){
             padding: 1rem;
         }

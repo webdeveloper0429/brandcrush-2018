@@ -720,12 +720,12 @@
 
 .logos-section{
     .container{
-        max-width: 1000px;
+        max-width: 1030px;
         .logos-w{
             height: 140px;
             display: flex;
             align-items: center;
-            justify-content: space-around;
+            justify-content: space-between;
             .logo-title{
                 font-family: Karla;
                 font-size: 15px;
@@ -862,7 +862,7 @@
         }
     }
     .container{
-        max-width: 1020px;
+        max-width: 1030px;
     }
     .portfolio-w{
         padding: 2.5rem 0;
@@ -946,7 +946,7 @@
         padding: 2rem 1rem;
     }
     .block-w{
-        padding: 2rem 1rem;
+        padding: 3rem 1rem;
         background: $white;
         display: flex;
         flex-direction: column;
@@ -960,9 +960,14 @@
         }
         .image-w{
             padding: 1rem;
+            img{
+                height: 170px;
+                width: auto;
+            }
         }
         .section-title{
-            margin-bottom: 1.5rem;
+            margin-top: 1rem;
+            margin-bottom: 10px;
             @media (max-width: $tablet){
                 margin-bottom: 10px;
             }
@@ -976,7 +981,7 @@
             }
         }
         .button-w{
-            margin: 2rem auto;
+            margin: 2rem auto 1rem;
             @media (max-width: $tablet){
                 margin: 0;
                 width: 100%;
