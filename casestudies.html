@@ -106,7 +106,7 @@
         <div id="component_nav"></div>
         <div id="component_nav_mobile"></div>
         <div class="case-studies-page">
-            <section class="banner-section">
+            <section class="banner-section is-hidden-mobile">
                 <div class="banner-w">
                     <div class="hero is-large is-primary banner-image-w">
                         <div class="hero-body">
@@ -155,7 +155,20 @@
                         </div>
                     </div>
                 </div>
-            </section>        
+            </section>
+            
+            <section class="banner-mobile-section is-hidden-tablet">
+                <div class="image-banner">
+                    <div class="title-w">
+                        Case Studies
+                    </div>
+                </div>
+                <div class="color-banner">
+                    <div class="desc-w">
+                        See how brands are engaging and inspiring customers through Brandcrush's network of Activation Hosts.
+                    </div>
+                </div>
+            </section>
 
             <div id="component_logos"></div>
 
@@ -517,12 +530,8 @@
                         breakpoint: 768,
                         settings: {
                             slidesToShow: 2,
-                        }
-                    },
-                    {
-                        breakpoint: 480,
-                        settings: {
-                            slidesToShow: 1,
+                            centerMode: true,
+                            centerPadding: '20px',
                         }
                     }
                 ]
