@@ -16,8 +16,7 @@
         .banner-w{
             display: flex;
             .banner-image-w{
-                width: 100%;
-                max-width: 640px;
+                width: 50%;
                 flex: none;
                 background-image: linear-gradient(234deg, #db0a5b, #971b50);
                 @media (max-width: $tablet){
@@ -26,9 +25,8 @@
                     background-size: cover;
                 }
                 .title-block{
-                    display: flex;
-                    flex-direction: column;
-                    padding: 0 100px;
+                    width: 520px;
+                    float: right;
                     @media (max-width: $widescreen){
                         padding: 0 4rem;
                     }
@@ -126,6 +124,7 @@
         .case-main-w{
             .case-block{
                 padding-top: 30px;
+                padding-bottom: 10px;
                 .slider-block{
                     margin: 30px auto;
                     padding: 0 10px;
@@ -162,7 +161,7 @@
                     }
                     .slider-w{
                         .item{
-                            padding: 15px;
+                            padding: 0 15px;
                             outline: none;
                             .image-w{
                                 width: 100%;
