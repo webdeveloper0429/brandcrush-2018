@@ -216,13 +216,13 @@
         }
         .how-it-works-w{
             .title-w{
-                padding: 3rem 0 0.75rem;
+                padding: 20px 0 10px;
                 @media (max-width: $tablet){
                     padding: 1rem;
                 }
             }
             .description-w{
-                padding: 1.5rem 0;
+                margin-bottom: 30px;
                 @media (max-width: $tablet){
                     padding: 0rem;
                 }
@@ -233,7 +233,7 @@
                 background-image: url(/assets/images/video-bg.jpg);
                 background-position: center;
                 background-size: cover;
-                margin: 1rem auto;
+                margin: auto;
                 display: flex;
                 align-items: center;
                 justify-content: center;
