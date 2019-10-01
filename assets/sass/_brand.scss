@@ -32,7 +32,7 @@
                     font-size: 18px;
                     font-weight: bold;
                     @media (max-width: $tablet){
-                        width: 100%;
+                        width: 220px;
                         font-size: 15px;
                     }
                     img{
@@ -74,9 +74,10 @@
                     font-size: 18px;
                     font-weight: bold;
                     line-height: 1.22;
-                    @media (max-width: $tablet) {
-                        width: 100%;
-                    }
+                }
+                .link-arrow{
+                    text-align: center;
+                    color: $white;
                 }
             }
         }
@@ -114,6 +115,9 @@
                             height: 270px;
                             background-position: center;
                             background-size: cover;
+                            @media (max-width: $tablet) {
+                                height: 188px;
+                            }
                         }
                     }
                     .title-w{

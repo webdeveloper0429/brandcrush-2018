@@ -54,10 +54,8 @@ const toast = swal.mixin({
 function case_studies_init(){
     AOS.refresh();
     $('.category-slider-w').slick({
-        centerMode: true,
         arrows: false,
-        slidesToShow: 2,
-        centerPadding: '20px',
+        variableWidth: true,
     });
 }
 
