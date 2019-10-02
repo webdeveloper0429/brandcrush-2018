@@ -123,7 +123,8 @@
                         Earn more from your foot traffic. Get paid to collaborate with cool brands and give your customers brand experiences they’ll love.
                     </div>
                     <a href="/app" class="button-w">
-                        <div class="button is-dark">Get Started</div>
+                        <div class="button is-dark is-hidden-mobile">Get Started</div>
+                        <div class="link-arrow is-hidden-tablet">Get started</div>
                     </a>
                 </div>
             </section>
@@ -260,7 +261,48 @@
                         <div class="section-title">
                             How it works
                         </div>
-                        <div class="columns">
+                        <div class="how-works-slider-w is-hidden-tablet">
+                            <div class="block-w">
+                                <div class="number-w">
+                                    <div class="num">1</div>
+                                </div>
+                                <div class="content-w">
+                                    <div class="title-w">
+                                        List your activation <br/>spaces
+                                    </div>
+                                    <div class="description-w">
+                                        Sign up for free and let brands know how they can activate in your business. List multiple spaces, the more spaces, the more chances to get bookings.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="block-w">
+                                <div class="number-w">
+                                    <div class="num">2</div>
+                                </div>
+                                <div class="content-w">
+                                    <div class="title-w">
+                                        Approve or decline <br/>activation requests 
+                                    </div>
+                                    <div class="description-w">
+                                        Review the activation request to see if the brand and activation is the right fit for your business and your customers.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="block-w">
+                                <div class="number-w">
+                                    <div class="num">3</div>
+                                </div>
+                                <div class="content-w">
+                                    <div class="title-w">
+                                        Host the activation <br/>and get paid!
+                                    </div>
+                                    <div class="description-w">
+                                        On activation day, you’ll either host brand teams or run the activation with your staff - dependant on the space that has been booked.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="columns is-hidden-mobile">
                             <div class="column">
                                 <div class="block-w">
                                     <div class="number-w">
@@ -329,7 +371,7 @@
 
             <div id="component_logos"></div>
             
-            <div style="padding: 0 1rem;">
+            <div style="padding: 0 1rem;" class="is-hidden-mobile">
                 <div class="container" style="max-width: 1030px;">
                     <div class="custom-hr"></div>
                 </div>
@@ -344,18 +386,11 @@
     </body>    
     <script>
         $(document).ready(function(){
-            $('.tab_content').hide();
-            $('.tab_content:first').show();
-            $('.tab-btn').click(function(){
-                var t = $(this).attr('id');
-                if(!$(this).hasClass('actived-btn')){
-                    $('.tab-btn').removeClass('actived-btn');
-                    $(this).addClass('actived-btn');
-                    $('.tab_content').hide();
-                    $('#content_'+t).fadeIn('slow');
-                }
-            })
             $(".js-modal-btn").modalVideo({channel:'vimeo'});
+            $('.how-works-slider-w').slick({
+                arrows: false,
+                variableWidth: true,
+            });
         })
     </script>
 </html>

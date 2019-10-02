@@ -849,6 +849,7 @@
     background: $pale-grey;
     padding: 2rem 1rem;
     @media(max-width: $tablet){
+        padding: 1rem;
         .reverse-order{
             flex-direction: column-reverse;
             display: flex;
@@ -914,7 +915,6 @@
                     margin: 1rem 0;
                     @media(max-width: $tablet){
                         width: 100%;
-                        margin: 0;
                         text-align: center;
                     }
                     .button{
