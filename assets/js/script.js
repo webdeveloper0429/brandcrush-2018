@@ -23,27 +23,17 @@ $(document).ready(function() {
             $(".cookie-popup-section").remove();
             localStorage.setItem("brandcrush_cookie", "true");
         });
+    }
 
-    }
-    if($('.crushed-on-section').length) {
-        $.getJSON( "/blog/top3.json", function( data ) {
-            var items = [];
-            $.each( data.posts, function( key, val ) {
-    const item = '<div class="column is-one-third"><div class="card-box">'
-        +'<a href="'+val.link+'"><div class="card-img" style="background-image: url('+val.image+')"></div></a>'
-        +'<div class="card-title">'+val.title+'</div>'
-        +'<div class="description">'+val.summary+'</div>'
-        +'<a class="action-w" href="'+val.link+'">Read More</a>'
-        +'</div></div>';
-            items.push(item);
-            });
-        
-            $(".crushed-on-section .cards-w .columns").html(items.join(''));
-            
-        });
-    }
+    $('.auth-require-modal .close-btn').on('click', function(){
+        $('.auth-require-modal').toggleClass( "is-active" );
+    })
+    $('.auth-require-modal .modal-background').on('click', function(){
+        $('.auth-require-modal').toggleClass( "is-active" );
+    })
     
 });
+
 const toast = swal.mixin({
     toast: true,
     position: 'top-end',
