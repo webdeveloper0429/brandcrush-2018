@@ -211,16 +211,17 @@
                             padding: 0 15px;
                             outline: none;
                             @media (max-width: $tablet){
-                                padding: 0 5px;
+                                padding: 0 10px 0 0;
                             }
                             .image-w{
-                                width: 100%;
+                                width: 245px;
                                 height: 340px;
                                 background-position: center;
                                 background-size: cover;
                                 position: relative;
                                 @media (max-width: $tablet){
                                     height: 180px;
+                                    width: 130px;
                                 }
                                 &:hover{
                                     .overlay-w{
@@ -249,6 +250,9 @@
                                         text-align: center;
                                         color: $white;
                                         max-width: 320px;
+                                        @media (max-width: $tablet){
+                                            font-size: 12px;
+                                        }
                                     }
                                 }
                             }
