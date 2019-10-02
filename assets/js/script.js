@@ -53,7 +53,7 @@ const toast = swal.mixin({
 
 function case_studies_init(){
     AOS.refresh();
-    $('.category-slider-w').slick({
+    $('.casestudies-slider-w').slick({
         arrows: false,
         variableWidth: true,
     });
