@@ -1,6 +1,6 @@
 .activation-host-page{
     .banner-section{
-        background: linear-gradient(rgba($color: #000000, $alpha: 0.5), rgba($color: #000000, $alpha: 0.5)), url("/assets/images/Staticpages/Stocksy_txp829abf37kJ2200_Medium_983694.jpg");
+        background: linear-gradient(rgba($color: #000000, $alpha: 0.5), rgba($color: #000000, $alpha: 0.5)), url("/assets/images/Staticpages/Stocksy_txp829abf37kJ2200_Medium_891814.jpg");
         background-position: center;
         background-size: cover;
         .hero-body{
@@ -84,41 +84,47 @@
     
     .how-it-works-section{
         padding: 70px 1rem;
-        background-image: linear-gradient(111deg, #971b50, #db0a5b);
+        background: $pale-grey;
         .how-it-works-w{
             .section-title{
-                color: $white;
+                color: $cerise;
                 margin-bottom: 1rem;
             }
             .block-w{
                 padding: 1rem 0;
                 margin: auto;
                 max-width: 310px;
+                display: flex;
                 .number-w{
-                    font-family: Karla;
-                    font-size: 38px;
-                    color: $white;
-                    width: 60px;
-                    height: 60px;
-                    border: 2px solid $white;
-                    border-radius: 30px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
+                    margin-right: 15px;
+                    .num{
+                        font-family: Karla;
+                        font-size: 38px;
+                        color: $cerise;
+                        width: 50px;
+                        height: 50px;
+                        border: 2px solid $cerise;
+                        border-radius: 30px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
                 }
-                .title-w{
-                    padding: 10px 0;
-                    font-family: Poppins;
-                    font-size: 18px;
-                    font-weight: 600;
-                    line-height: 1.39;
-                    color: $white;
-                }
-                .description-w{
-                    font-family: Karla;
-                    font-size: 16px;
-                    line-height: 1.38;
-                    color: $white;
+                .content-w{
+                    .title-w{
+                        padding: 9px 0;
+                        font-family: Poppins;
+                        font-size: 16px;
+                        font-weight: 600;
+                        line-height: 1.25;
+                        color: $charcoal-grey;
+                    }
+                    .description-w{
+                        font-family: Karla;
+                        font-size: 16px;
+                        line-height: 1.5;
+                        color: $charcoal-grey;
+                    }
                 }
             }
         }
@@ -126,7 +132,7 @@
 
     .video-explain-section{
         padding: 3rem 1rem;
-        background-image: linear-gradient(to bottom, white, white 50%, $pale-grey 50%, $pale-grey);
+        background-image: linear-gradient(to bottom, white, white 60%, $pale-grey 60%, $pale-grey);
 	    background-size: cover;
         background-repeat: no-repeat;
         @media (max-width: $tablet) {
