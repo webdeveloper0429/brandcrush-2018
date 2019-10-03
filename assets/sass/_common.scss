@@ -777,16 +777,6 @@
                 }
             }
         }
-        .small-tiles-w{
-            display: flex;
-            justify-content: center;
-            .block-w{
-                margin: 0 21px;
-                .tile{
-                    width: 245px;
-                }
-            }
-        }
         .tiles-w{
             padding: 10px 0;
             .tile{
@@ -828,6 +818,16 @@
                         color: $white;
                         max-width: 320px;
                     }
+                }
+            }
+        }
+        .center-tiles-w{
+            display: flex;
+            justify-content: center;
+            .block-w{
+                margin: 0 21px;
+                .tile{
+                    width: 245px;
                 }
             }
         }
