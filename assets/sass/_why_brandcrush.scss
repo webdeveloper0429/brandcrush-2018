@@ -24,9 +24,13 @@
                 .button{
                     width: 190px;
                     height: 40px;
-                    font-family: Poppins;
-                    font-size: 20px;
-                    font-weight: 600;
+                    font-family: Karla;
+                    font-size: 18px;
+                    font-weight: bold;
+                    @media (max-width: $tablet){
+                        width: 220px;
+                        font-size: 15px;
+                    }
                     img{
                         margin-right: 0.5rem;
                     }

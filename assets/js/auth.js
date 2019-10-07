@@ -67,6 +67,7 @@ window.addEventListener('load', function(){
             var updateHeader = function() {
                 if(currentUser && currentUser.id){
                     $('.category-page .category-item .link-w').off('click');
+                    $('.homepage .activation-slider a').off('click');
                     
                     $('.navbar-item-logged-out').remove()
                     $('.navbar-item-logged-in').css('display', 'flex')

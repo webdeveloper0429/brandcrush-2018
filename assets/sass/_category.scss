@@ -178,62 +178,6 @@
             }
         }
     }
-
-    .auth-require-modal{
-        .modal-content{
-            width: 620px;
-            height: 350px;
-            background: $white;
-            padding: 1rem;
-            border-radius: 5px;
-            @media (max-width: $tablet) {
-                width: 100%;
-                height: 100%;
-                margin: 0;
-                max-height: 100%;
-                border-radius: 0;
-            }
-            .action-w{
-                display: flex;
-                justify-content: flex-end;
-                .close-btn{
-                    width: 2rem;
-                    height: 2rem;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    border-radius: 1rem;
-                    cursor: pointer;
-                    &:hover{
-                        background: $pale-grey;
-                    }
-                }
-            }
-            .section-title{
-                padding-top: 20px;
-            }
-            .desc-w{
-                margin: 30px auto;
-                max-width: 450px;
-                font-family: Karla;
-                font-size: 16px;
-                line-height: 1.5;
-                color: $charcoal-grey;
-                text-align: center;
-            }
-            .button-w{
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                .button{
-                    font-family: Karla;
-                    font-size: 18px;
-                    font-weight: bold;
-                    line-height: 1.22;
-                }
-            }
-        }
-    }
     
     .signup-free-section{
         .signup-free-w{
