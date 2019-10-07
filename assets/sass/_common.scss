@@ -1013,6 +1013,9 @@
 .signup-contact-section{
     padding: 2rem 1rem;
     background: $pale-grey;
+    .container{
+        max-width: 1200px;
+    }
     @media (max-width: $tablet){
         padding: 1rem;
     }

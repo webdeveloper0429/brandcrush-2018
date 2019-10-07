@@ -4,26 +4,23 @@
         background-position: center;
         background-size: cover;
         .hero-body{
+            @media (min-width: $desktop){
+                padding: 10rem 1rem 10rem;
+            }
             .banner-w{
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                .title{
+                .title-w{
                     font-family: Poppins;
                     font-size: 32px;
                     font-weight: bold;
                     text-align: center;
+                    margin-bottom: 30px;
                     @media (max-width: $tablet){
                         font-size: 26px;
                         margin-bottom: 10px;
                     }
-                }
-                .subtitle{
-                    font-family: Poppins;
-                    font-size: 18px;
-                    font-weight: 500;
-                    margin-top: -1rem;
-                    margin-bottom: 3rem;
                 }
                 .button{
                     width: 190px;
@@ -194,24 +191,21 @@
     }
 
     .video-explain-section{
-        padding: 3rem 1rem 1rem;
+        padding: 50px 1rem 20px;
         @media (max-width: $tablet) {
-            padding: 1rem;
+            padding: 20px 1rem;
         }
         .container{
             max-width: 1020px;
         }
         .video-explain-w{
             .title-w{
-                padding: 3rem 0 0.75rem;
-                @media (max-width: $tablet) {
-                    padding: 1rem 0 0.5rem;
-                }
+                padding: 20px 0 10px;
             }
             .description-w{
-                padding: 1.5rem 0;
+                padding-bottom: 40px;
                 @media (max-width: $tablet) {
-                    padding: 0.5rem;
+                    padding-bottom: 10px;
                 }
             }
             .video-w{
@@ -220,7 +214,7 @@
                 background-image: url(/assets/images/backgrounds/BondiSands-VideoCover.jpg);
                 background-position: center;
                 background-size: cover;
-                margin: 1rem auto;
+                margin: 10px auto;
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -256,6 +250,10 @@
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                padding-top: 20px;
+                @media (max-width: $tablet) {
+                    padding-top: 0;
+                }
                 .quote-w{
                     font-family: Poppins;
                     font-size: 102px;
@@ -268,7 +266,7 @@
                     }
                 }
                 .card-title-w{
-                    padding-bottom: 0.75rem;
+                    padding-bottom: 10px;
                     font-family: Poppins;
                     font-size: 22px;
                     font-weight: 600;
@@ -282,7 +280,7 @@
                 }
                 .card-description-w{
                     max-width: 350px;
-                    padding-bottom: 1rem;
+                    padding-bottom: 20px;
                     font-family: Karla;
                     font-size: 20px;
                     line-height: 1.4;
@@ -290,6 +288,7 @@
                     color: $charcoal-grey;
                     @media (max-width: $tablet) {
                         font-size: 13px;
+                        padding-bottom: 0;
                     }
                 }
             }
