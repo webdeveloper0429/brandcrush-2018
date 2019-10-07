@@ -240,9 +240,10 @@
             .button{
                 width: 126px;
                 height: 40px;
-                font-family: Poppins;
-                font-size: 20px;
-                font-weight: 600;
+                font-family: Karla;
+                font-size: 18px;
+                font-weight: bold;
+                line-height: 1.22;
                 @media (max-width: $tablet){
                     font-size: 15px;
                     height: 32px;
