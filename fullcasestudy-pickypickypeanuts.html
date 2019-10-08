@@ -135,7 +135,7 @@
                                     <div class="summary-item">
                                         <div class="summary-tag">
                                             Avg. CPR 
-                                            <div class="tooltip" data-tooltip="Average Cost per Reach ex TAX">
+                                            <div class="tooltip is-tooltip-right" data-tooltip="Average Cost per Reach ex TAX">
                                                 <img src="/assets/images/icons/info.svg" />
                                             </div>
                                         </div>
@@ -328,11 +328,13 @@
                 speed: 1000,
                 autoplay: true,
                 autoplaySpeed: 5000,
+                adaptiveHeight: true,
             });
         });
         $('.casestudies-slider-w').slick({
             arrows: false,
             variableWidth: true,
+            infinite: false,
         });
     </script>
 </html>
