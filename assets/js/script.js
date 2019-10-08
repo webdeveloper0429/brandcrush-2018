@@ -59,15 +59,20 @@ function navbar_init(){
 
         
         //////toggle sub menu//////
-        $('.menu-to-sub').click(function(e){
+        $('.menu-to-howitworks').click(function(e){
             e.preventDefault();
-            $('.menu-level-1').css('display', 'none');
-            $('.menu-level-2').css('display', 'block');
+            $('.menu-level-main').css('display', 'none');
+            $('.menu-level-howitworks').css('display', 'block');
+        })
+        $('.menu-to-activations').click(function(e){
+            e.preventDefault();
+            $('.menu-level-main').css('display', 'none');
+            $('.menu-level-activations').css('display', 'block');
         })
         $('.menu-to-back').click(function(e){
             e.preventDefault();
-            $('.menu-level-1').css('display', 'block');
-            $('.menu-level-2').css('display', 'none');
+            $('.menu-level-main').css('display', 'block');
+            $(this.parentNode).css('display', 'none');
         })
 
     });
