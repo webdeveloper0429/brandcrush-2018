@@ -128,11 +128,15 @@
                     font-weight: bold;
                     line-height: 1.4;
                     color: $charcoal-grey;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    overflow: hidden;
                     @media (max-width: $tablet){
                         font-size: 16px;
                         line-height: 1.75;
                         padding-top: 10px;
                         padding-bottom: 0px;
+                        width: 180px;
                     }
                 }
                 .tag-w{
