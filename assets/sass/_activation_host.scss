@@ -154,29 +154,26 @@
     }
 
     .video-explain-section{
-        padding: 3rem 1rem;
+        padding: 50px 1rem 50px;
         background-image: linear-gradient(to bottom, white, white 60%, $pale-grey 60%, $pale-grey);
 	    background-size: cover;
         background-repeat: no-repeat;
         @media (max-width: $tablet) {
-            padding: 1rem;
+            padding: 20px 1rem;
         }
         .container{
             max-width: 1020px;
         }
         .video-explain-w{
             .title-w{
-                padding: 3rem 0 0.75rem;
-                @media (max-width: $tablet) {
-                    padding: 1rem 0.5rem 0.5rem;
-                }
+                padding: 20px 0 10px;
             }
             .description-w{
-                padding: 1.5rem 0;
+                padding-bottom: 40px;
                 max-width: 820px;
                 margin: auto;
                 @media (max-width: $tablet) {
-                    padding: 0.5rem;
+                    padding-bottom: 10px;
                 }
             }
             .video-w{
@@ -185,7 +182,7 @@
                 background-image: url(/assets/images/backgrounds/ActivationHost_VideoCover.jpg);
                 background-position: center;
                 background-size: cover;
-                margin: 1rem auto;
+                margin: 10px auto 20px;
                 display: flex;
                 align-items: center;
                 justify-content: center;

@@ -747,7 +747,7 @@
         padding: 1rem;
     }
     .container{
-        max-width: 1024px;
+        max-width: 1030px;
         .title-w{
             margin: 30px auto 10px;
             @media (max-width: $tablet){
@@ -1069,7 +1069,7 @@
     padding: 2rem 1rem;
     background: $pale-grey;
     .container{
-        max-width: 1200px;
+        max-width: 1030px;
     }
     @media (max-width: $tablet){
         padding: 1rem;
@@ -1080,6 +1080,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            max-width: 400px;
             @media (max-width: $tablet){
                 padding: 0rem;
             }
