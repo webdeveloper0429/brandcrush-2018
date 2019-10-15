@@ -64,6 +64,7 @@ body{
     z-index: 10;
     width: 260px;
     height: 100%;
+    overflow: auto;
     .menu-item-w{
         height: 40px;
         padding: 0 12px;
@@ -84,8 +85,7 @@ body{
         justify-content: space-between;
     }
     .mobile-social-w{
-        position: fixed;
-        bottom: 0;
+        padding: 50px 0;
         width: 260px;
         .icons-w{
             margin: 0 auto 35px;
