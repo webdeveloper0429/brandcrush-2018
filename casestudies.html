@@ -106,7 +106,7 @@
         <div id="component_nav"></div>
         <div id="component_nav_mobile"></div>
         <div class="case-studies-page">
-            <section class="banner-section is-hidden-mobile">
+            <section class="banner-section is-hidden-touch">
                 <div class="banner-w">
                     <div class="hero is-large is-primary banner-image-w">
                         <div class="hero-body">
@@ -157,7 +157,7 @@
                 </div>
             </section>
             
-            <section class="banner-mobile-section is-hidden-tablet">
+            <section class="banner-mobile-section is-hidden-desktop">
                 <div class="image-banner">
                     <div class="title-w">
                         Case studies
@@ -233,7 +233,7 @@
                     </div>
                     <div class="tiles-w is-hidden-mobile">
                         <div class="columns is-multiline">
-                            <div class="column is-one-quarter-desktop">
+                            <div class="column is-one-quarter-tablet">
                                 <a href="/fullcasestudy-greenblacks" class="tile" data-aos="fade-up">
                                     <div class="image-w" style="background-image: url(/assets/images/Homepage/case_studies/green-blacks@2x.jpg)" ></div>
                                     <div class="overlay-w">
@@ -243,7 +243,7 @@
                                     </div>
                                 </a>
                             </div>
-                            <div class="column is-one-quarter-desktop">
+                            <div class="column is-one-quarter-tablet">
                                 <a href="/fullcasestudy-covergirl" class="tile" data-aos="fade-up">
                                     <div class="image-w" style="background-image: url(/assets/images/Homepage/case_studies/covergirl-case-study@2x.jpg)" ></div>
                                     <div class="overlay-w">
@@ -253,7 +253,7 @@
                                     </div>
                                 </a>
                             </div>
-                            <div class="column is-one-quarter-desktop">
+                            <div class="column is-one-quarter-tablet">
                                 <a href="/fullcasestudy-pickypickypeanuts" class="tile" data-aos="fade-up">
                                     <div class="image-w" style="background-image: url(/assets/images/Homepage/case_studies/PickyPeanuts.png)" ></div>
                                     <div class="overlay-w">
@@ -263,7 +263,7 @@
                                     </div>
                                 </a>
                             </div>
-                            <div class="column is-one-quarter-desktop">
+                            <div class="column is-one-quarter-tablet">
                                 <a href="/fullcasestudy-bondisands" class="tile" data-aos="fade-up">
                                     <div class="image-w" style="background-image: url(/assets/images/Homepage/case_studies/BondiSands.png)" ></div>
                                     <div class="overlay-w">
@@ -273,7 +273,7 @@
                                     </div>
                                 </a>
                             </div>
-                            <div class="column is-one-quarter-desktop">
+                            <div class="column is-one-quarter-tablet">
                                 <a href="/fullcasestudy-bondisandsbody" class="tile" data-aos="fade-up">
                                     <div class="image-w" style="background-image: url(/assets/images/Homepage/case_studies/bondi-sands-body-case-stduy@2x.jpg)" ></div>
                                     <div class="overlay-w">
@@ -283,7 +283,7 @@
                                     </div>
                                 </a>
                             </div>
-                            <div class="column is-one-quarter-desktop">
+                            <div class="column is-one-quarter-tablet">
                                 <a href="/fullcasestudy-chiaco" class="tile" data-aos="fade-up">
                                     <div class="image-w" style="background-image: url(/assets/images/Homepage/case_studies/chia-co@2x.jpg)" ></div>
                                     <div class="overlay-w">
@@ -293,7 +293,7 @@
                                     </div>
                                 </a>
                             </div>
-                            <div class="column is-one-quarter-desktop">
+                            <div class="column is-one-quarter-tablet">
                                 <a href="/fullcasestudy-optimumnutrition" class="tile" data-aos="fade-up">
                                     <div class="image-w" style="background-image: url(/assets/images/Homepage/case_studies/ON.jpg)" ></div>
                                     <div class="overlay-w">
@@ -303,7 +303,7 @@
                                     </div>
                                 </a>
                             </div>
-                            <div class="column is-one-quarter-desktop">
+                            <div class="column is-one-quarter-tablet">
                                 <a href="/fullcasestudy-goldnya" class="tile" data-aos="fade-up">
                                     <div class="image-w" style="background-image: url(/assets/images/Homepage/case_studies/Goldyna.png)" ></div>
                                     <div class="overlay-w">
@@ -313,7 +313,7 @@
                                     </div>
                                 </a>
                             </div>
-                            <div class="column is-one-quarter-desktop">
+                            <div class="column is-one-quarter-tablet">
                                 <a href="/fullcasestudy-pears" class="tile" data-aos="fade-up">
                                     <div class="image-w" style="background-image: url(/assets/images/Homepage/case_studies/Pears.jpg)" ></div>
                                     <div class="overlay-w">
@@ -323,7 +323,7 @@
                                     </div>
                                 </a>
                             </div>
-                            <div class="column is-one-quarter-desktop">
+                            <div class="column is-one-quarter-tablet">
                                 <a href="/fullcasestudy-tictacgum" class="tile" data-aos="fade-up">
                                     <div class="image-w" style="background-image: url(/assets/images/Homepage/case_studies/TicTacGum-CaseStudy.png)" ></div>
                                     <div class="overlay-w">
@@ -333,7 +333,7 @@
                                     </div>
                                 </a>
                             </div>
-                            <div class="column is-one-quarter-desktop">
+                            <div class="column is-one-quarter-tablet">
                                 <a href="/fullcasestudy-uncletobys" class="tile" data-aos="fade-up">
                                     <div class="image-w" style="background-image: url(/assets/images/Homepage/case_studies/UncleTobys-CaseStudy.png)" ></div>
                                     <div class="overlay-w">
@@ -354,7 +354,7 @@
     <script>
         $(document).ready(function(){
             $(window).on('load resize', function(){
-                const height = $('.image-slider-w').height();
+                const height = $('.banner-w').height();
                 $('.image-slider-w .image').height(height);
             });
             $('.image-slider-w').slick({
