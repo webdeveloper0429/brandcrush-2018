@@ -1132,6 +1132,10 @@
                 line-height: 1.27;
                 text-align: center;
                 color: $charcoal-grey;
+                @media (max-width: $desktop){
+                    font-size: 18px;
+                    height: 5rem;
+                }
                 @media (max-width: $tablet){
                     font-size: 14px;
                 }
