@@ -897,6 +897,9 @@
         }
         .image-w{
             height: 340px;
+            @media (max-width: $desktop){
+                height: 250px;
+            }
             @media (max-width: $tablet){
                 height: 190px;
             }
@@ -938,6 +941,9 @@
                     font-size: 20px;
                     line-height: 1.4;
                     color: $charcoal-grey;
+                    @media(max-width: $desktop){
+                        font-size: 18px;
+                    }
                     @media(max-width: $tablet){
                         margin: 0 0 0.5rem;
                         font-size: 13px;
@@ -1012,6 +1018,9 @@
         .section-description{
             height: 6rem;
             max-width: 436px;
+            @media (max-width: $desktop){
+                height: 4rem;
+            }
             @media (max-width: $tablet){
                 height: inherit;
                 margin-bottom: 20px;

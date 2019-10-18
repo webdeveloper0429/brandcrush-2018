@@ -217,6 +217,9 @@
 
     .homepage-portfolio{
         padding: 60px 1rem;
+        @media (max-width: $desktop){
+            padding: 25px 1rem;
+        }
         @media (max-width: $tablet){
             padding: 25px 1rem;
         }
@@ -236,6 +239,10 @@
         background-image: linear-gradient(to bottom, white, white 40%, $pale-grey 40%, $pale-grey);
 	    background-size: cover;
         background-repeat: no-repeat;
+        @media (max-width: $desktop){
+            padding: 20px 1rem;
+            background: $white;
+        }
         @media (max-width: $tablet){
             padding: 20px 1rem;
             background: $white;
@@ -264,6 +271,10 @@
                 align-items: center;
                 justify-content: center;
                 z-index: 1;
+                @media (max-width: $desktop){
+                    max-width: 600px;
+                    height: 350px;
+                }
                 @media (max-width: $tablet){
                     height: 160px;
                 }
@@ -329,6 +340,10 @@
                         line-height: 1.4;
                         text-align: center;
                         color: $charcoal-grey;
+                        @media (max-width: $desktop){
+                            height: 4rem;
+                            font-size: 15px;
+                        }
                         @media (max-width: $tablet){
                             font-size: 13px;
                             text-align: left;
@@ -363,6 +378,9 @@
                 font-weight: normal;
                 line-height: 1.29;
                 margin-bottom: 2.5rem;
+                @media (max-width: $desktop) {
+                    font-size: 24px;
+                }
                 @media (max-width: $tablet) {
                     font-weight: 600;
                     font-size: 14px;
