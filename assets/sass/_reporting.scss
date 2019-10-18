@@ -10,6 +10,9 @@
                 color: $charcoal-grey;
                 margin: 4rem 0 1rem;
                 max-width: 300px;
+                @media (max-width: $desktop){
+                    max-width: 100%;
+                }
                 @media (max-width: $tablet){
                     margin: 0 auto;
                     font-size: 20px;                    

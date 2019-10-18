@@ -414,6 +414,10 @@
             font-weight: 600;
             color: $charcoal-grey;
             margin: 2rem 0;
+            @media (max-width: $desktop){
+                font-size: 20px;
+                margin: 1rem 0;
+            }
             @media (max-width: $tablet){
                 margin: 1rem 0;
             }
@@ -422,6 +426,9 @@
             font-family: Karla;
             font-size: 16px;
             color: $charcoal-grey;
+            @media (max-width: $desktop){
+                font-size: 14px;
+            }
             @media (max-width: $tablet){
                 font-size: 12.5px;
             }
