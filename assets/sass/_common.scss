@@ -872,6 +872,9 @@
                 margin: 0 21px;
                 .tile{
                     width: 245px;
+                    @media (max-width: $desktop){
+                        width: 180px;
+                    }
                 }
             }
         }
