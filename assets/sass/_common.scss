@@ -5,7 +5,7 @@
     font-size: 16px;
     color: $cerise;
     margin-right: 2rem;
-    @media (max-width: $tablet) {
+    @media (max-width: $desktop) {
         font-size: 13px;
     }
 }
@@ -637,6 +637,9 @@
     line-height: 1.29;
     text-align: center;
     color: $cerise;
+    @media (max-width: $desktop){
+        font-size: 24px;
+    }
     @media (max-width: $tablet){
         font-size: 20px;
         line-height: 1.4;
@@ -648,6 +651,9 @@
     line-height: 1.4;
     text-align: center;
     color: $charcoal-grey;
+    @media (max-width: $desktop){
+        font-size: 16px;
+    }
     @media (max-width: $tablet){
         font-size: 13px;
     }
@@ -682,6 +688,8 @@
         @media (max-width: $tablet) {
             flex-direction: row;
             font-size: 13px;
+            width: 320px;
+            margin: auto;
         }
         .image-w{
             @media (max-width: $tablet) {
@@ -690,6 +698,9 @@
             img{
                 height: 135px;
                 width: auto;
+                @media (max-width: $desktop) {
+                    height: 110px;
+                }
                 @media (max-width: $tablet) {
                     height: 100px;
                 }
@@ -711,6 +722,9 @@
                 line-height: 1.27;
                 text-align: center;
                 color: $charcoal-grey;
+                @media (max-width: $desktop) {
+                    font-size: 16px;
+                }
                 @media (max-width: $tablet) {
                     margin: 0.5rem auto;
                     font-size: 14px;
@@ -792,6 +806,9 @@
                 width: 100%;
                 position: relative;
                 overflow: hidden;
+                @media (max-width: $desktop){
+                    height: 240px;
+                }
                 &:hover{
                     .overlay-w{
                         opacity: 1;
@@ -1095,6 +1112,7 @@
             max-width: 400px;
             @media (max-width: $tablet){
                 padding: 0rem;
+                margin: auto;
             }
             .heading-w{
                 max-width: 436px;

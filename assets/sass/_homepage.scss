@@ -178,6 +178,10 @@
                             background-position: center;
                             background-size: cover;
                             border-radius: 5px;
+                            @media (max-width: $desktop){
+                                width: 295px;
+                                height: 210px;
+                            }
                             @media (max-width: $tablet){
                                 width: 180px;
                                 height: 130px;
