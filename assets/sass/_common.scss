@@ -1,3 +1,8 @@
+.button{
+    @media (max-width: $desktop) {
+        font-size: 16px !important;
+    }
+}
 
 .link-arrow{
     position: relative;
@@ -930,6 +935,9 @@
                     line-height: 1.27;
                     color: $charcoal-grey;
                     margin: 1rem 0;
+                    @media(max-width: $desktop){
+                        font-size: 18px;
+                    }
                     @media(max-width: $tablet){
                         font-size: 14px;
                         margin: 0 0 0.5rem;
@@ -942,7 +950,7 @@
                     line-height: 1.4;
                     color: $charcoal-grey;
                     @media(max-width: $desktop){
-                        font-size: 18px;
+                        font-size: 16px;
                     }
                     @media(max-width: $tablet){
                         margin: 0 0 0.5rem;
