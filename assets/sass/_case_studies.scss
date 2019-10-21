@@ -4,9 +4,9 @@
         @media (max-width: $widescreen){
             padding: 10rem 1rem 10rem !important;
         }
-        @media (max-width: $desktop){
-            padding: 7rem 1rem 4rem !important;
-        }
+        // @media (max-width: $desktop){
+        //     padding: 7rem 1rem 4rem !important;
+        // }
         @media (max-width: $tablet){
             padding: 3.75rem 1rem 3rem !important;
         }
@@ -27,7 +27,10 @@
                 }
                 .title-block{
                     width: 520px;
-                    float: right;
+                    float: left;
+                    @media (min-width: $widescreen){
+                        float: right;
+                    }
                     @media (max-width: $tablet){
                         width: inherit;
                     }
@@ -144,6 +147,12 @@
                 text-align: center;
                 color: $white;
                 max-width: 230px;
+                @media (max-width: $desktop){
+                    max-width: 80%;
+                }
+                @media (max-width: $tablet){
+                    max-width: 230px;
+                }
             }
         }
     }

@@ -127,6 +127,9 @@
                                 font-weight: 600;
                                 color: $cerise;
                                 margin-bottom: 10px;
+                                @media (max-width: $desktop){
+                                    font-size: 16px;
+                                } 
                                 @media (max-width: $tablet){
                                     font-size: 16px;
                                 } 
@@ -135,6 +138,9 @@
                                 font-family: Karla;
                                 font-size: 16px;
                                 color: $charcoal-grey;
+                                @media (max-width: $desktop){
+                                    font-size: 14px;
+                                } 
                                 @media (max-width: $tablet){
                                     font-size: 12px;
                                 } 
