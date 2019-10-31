@@ -153,18 +153,20 @@ window.addEventListener('load', function () {
         app.auth = auth;
 
         var elements = document.getElementsByTagName('a');
+
         for (var i = 0, len = elements.length; i < len; i++) {
             let el = elements[i];
             elements[i].onclick = function (ev) {
-
                 // Check that the link is an app link
-                if (!el.href.includes("/app") || el.className.includes('ignore-popup')) {
+
+                if (!(el.href.includes("/app") || el.href.includes("/brand") || el.href.includes("/host")) || el.className.includes('ignore-popup')) {
                     return;
                 }
 
                 // The user isn't logged in, show the modal
                 if (!appUser || !appUser.id) {
-                    $('.auth-require-modal').addClass('is-active')
+                    $('#auth-modal-started').attr('href', 'https://brandcrush.com/app/login?redirect=/'+el.href.replace(/^(?:\/\/|[^\/]+)*\//, ""))
+                    $('.auth-require-modal').addClass('is-active');
                     ev.preventDefault();
                 }
 
