@@ -159,7 +159,9 @@ window.addEventListener('load', function () {
             elements[i].onclick = function (ev) {
                 // Check that the link is an app link
 
-                if (!(el.href.includes("/app") || el.href.includes("/brand") || el.href.includes("/host")) || el.className.includes('ignore-popup')) {
+                var href = el.href.replace('brandcrush', '');
+
+                if (!(href.includes("/app") || (href.includes("/brand")) || href.includes("/host")) || el.className.includes('ignore-popup')) {
                     return;
                 }
 
