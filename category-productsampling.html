@@ -158,7 +158,7 @@
                     <div class="desc-w">
                         It's free to sign up, and only takes a minute or two to complete. Once signed up you can view this space, and hundreds like it.
                     </div>
-                    <a href="/app" class="button-w">
+                    <a id="auth-modal-started" href="/app" class="button-w">
                         <div class="button is-primary">Get started</div>
                     </a>
                 </div>
@@ -396,7 +396,7 @@
                                             '<div class="price-w">' +
                                                 '<span>$' + category.rate + '</span> ' + category.rateString +
                                             '</div>' +
-                                            '<a href="' + category.spaceLink + '" class="link-w">' +
+                                            '<a href="' + category.spaceLink + '" class="link-w auth-popup">' +
                                                 '<div class="link-arrow">View details</div>' +
                                             '</a>' +
                                         '</div>';
@@ -405,10 +405,6 @@
             });
             document.querySelector('.category-list-slider').innerHTML = categoriesDomString;
             document.querySelector('.category-list-block .columns').innerHTML = categoriesDomDesktopString;
-            $('.category-page .category-item .link-w').on('click', function(e){
-                e.preventDefault();
-                $('.auth-require-modal').toggleClass( "is-active" );
-            })
 
             $(".js-modal-btn").modalVideo({channel:'vimeo'});
             $('.category-list-slider').slick({

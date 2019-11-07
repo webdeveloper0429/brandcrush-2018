@@ -70,8 +70,6 @@ window.addEventListener('load', function () {
             }
             var updateHeader = function () {
                 if (currentUser && currentUser.id) {
-                    $('.category-page .category-item .link-w').off('click');
-                    $('.homepage .activation-slider a').off('click');
 
                     $('.navbar-item-logged-out').remove()
                     $('.navbar-item-logged-in').css('display', 'flex')
@@ -159,7 +157,7 @@ window.addEventListener('load', function () {
             elements[i].onclick = function (ev) {
                 // Check that the link is an app link
 
-                if (!el.className.includes('show-popup')) {
+                if (!el.className.includes('auth-popup')) {
                     return;
                 }
 
