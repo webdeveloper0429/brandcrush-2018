@@ -358,6 +358,10 @@
                 autoplaySpeed: 5000,
                 adaptiveHeight: true,
             });
+            AOS.refresh();
+            $('.review-slider-w').on('afterChange', function(event, slick, currentSlide, nextSlide){
+                AOS.refresh();
+            });
         });
         $('.casestudies-slider-w').slick({
             arrows: false,
