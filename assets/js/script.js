@@ -9,6 +9,18 @@
                         +        '</div>'
                         +    '</div>';
 
+const notification_popup_dom = 
+                            '<section class="site-notification-section">'
+                        +       '<div class="site-notification-w">'
+                        +           '<div class="description">'
+                        +               'Due to the Covid-19 isolation rules, many physical activation spaces are temporarily unavailable. Discover contactless and digital activation opportunities here.'
+                        +           '</div>'
+                        +           '<div class="button-w">'
+                        +               '<div class="button is-dark" id="allow_notification">Discover</div>'
+                        +           '</div>'
+                        +       '</div>'
+                        +   '</section>';
+
 $(document).ready(function() {
 
     AOS.init({
@@ -22,6 +34,13 @@ $(document).ready(function() {
         $("#allow_cookie_btn").click(function(){
             $(".cookie-popup-section").remove();
             localStorage.setItem("brandcrush_cookie", "true");
+        });
+    }
+    if(!localStorage.getItem("brandcrush_notification")){
+        $("body").prepend(notification_popup_dom);
+        $("#allow_notification").click(function(){
+            $(".site-notification-section").remove();
+            localStorage.setItem("brandcrush_notification", "true");
         });
     }
 
