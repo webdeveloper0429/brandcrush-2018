@@ -16,7 +16,9 @@ const notification_popup_dom =
                         +               'Due to the Covid-19 isolation rules, many physical activation spaces are temporarily unavailable. Discover contactless and digital activation opportunities here.'
                         +           '</div>'
                         +           '<div class="button-w">'
-                        +               '<div class="button is-dark" id="allow_notification">Discover</div>'
+                        +               '<a href="https://content.brandcrush.com/blog/contactless-digital-spaces">'
+                        +                   '<div class="button is-dark" id="allow_notification">Discover</div>'
+                        +               '</a>'
                         +           '</div>'
                         +       '</div>'
                         +   '</section>';
