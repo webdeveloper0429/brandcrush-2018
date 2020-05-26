@@ -223,11 +223,11 @@ var brandArr=[
     },
     {
         question: "What is a bathroom activation?",
-        answer: "Catch people at the right place and time by placing personal care, cosmetics or wellness products in our bathrooms. This passive self-serve activation will invite customers to interact with your brand in an organic way when they will appreciate it most."
+        answer: "Catch people at the right place and time by placing personal care, cosmetics or wellness products in bathrooms. This passive self-serve activation will invite customers to interact with your brand in an organic way when they will appreciate it most."
     },
     {
         question: "What is a counter-top activation?",
-        answer: "Create a passive display for brands on our countertop, catching the eye of customers while they're ordering coffee or paying the bill. This display could include a sample of your product, brand messaging, a discount voucher, or any other incentive."
+        answer: "Create a passive display for brands on counter-tops, catching the eye of customers while they're ordering coffee or paying the bill. This display could include a sample of your product, brand messaging, a discount voucher, or any other incentive."
     },
     {
         question: "What is a decal/poster activation?",
