@@ -203,7 +203,7 @@ var generalArr = [
         question: "How does Brandcrush monitor Activation Hosts & Customer Reach estimates?",
         answer: "Brandcrush has rich insight into foot traffic and reach trends through the thousands of space listed on our platform. We track and compare customer reach by category to ensure all space listings fall within a validated threshold."
     },{
-        question: "How does Brandcrush ensure Activations have been executed?",
+        question: "How does Brandcrush ensure activations have been executed?",
         answer: "Brandcrush executes \"mystery shopper\" reporting across randomly selected Activation Hosts as well as receiving \"photo proof\" for every activation."
     }
 ]
