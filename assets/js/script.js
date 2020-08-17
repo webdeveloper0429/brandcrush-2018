@@ -38,13 +38,13 @@ $(document).ready(function() {
             localStorage.setItem("brandcrush_cookie", "true");
         });
     }
-    if(!localStorage.getItem("brandcrush_notification")){
+    /*if(!localStorage.getItem("brandcrush_notification")){
         $("body").prepend(notification_popup_dom);
         $("#allow_notification").click(function(){
             $(".site-notification-section").remove();
             localStorage.setItem("brandcrush_notification", "true");
         });
-    }
+    }*/
 
     $('.auth-require-modal .close-btn').on('click', function(){
         $('.auth-require-modal').toggleClass( "is-active" );
