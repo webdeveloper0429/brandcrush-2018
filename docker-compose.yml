@@ -1,0 +1,24 @@
+version: '3'
+
+services:
+
+    brandcrush:
+        image: nginx
+        volumes:
+            - ./website:/usr/share/nginx/html
+            - ./website/conf.d:/etc/nginx/conf.d
+        ports:
+            - "80:80"
+    website:
+        image: node:10
+        working_dir: /home/node/app
+        volumes:
+            - ./website:/home/node/app
+        command: bash -c "npm install && npm run dev"
+
+networks:
+    default:
+        driver: bridge
+        ipam:
+            config:
+                - subnet: 10.10.1.0/24
